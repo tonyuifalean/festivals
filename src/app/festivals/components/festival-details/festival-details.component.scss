@@ -1,0 +1,35 @@
+
+img {
+  border-radius: 10px;
+  float: left;
+  margin: 0 10px 0 0;
+  max-width: 100%;
+  width: 400px;
+}
+
+.mat-raised-button {
+  display: block;
+  margin: 0 auto;
+}
+
+#festivalSchedule {
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .content-wrapper {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content-wrapper {
+    margin-top: 10px;
+  }
+
+  img {
+    width: 600px;
+    margin: 0 0 10px 0;
+  }
+}

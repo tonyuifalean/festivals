@@ -1,0 +1,16 @@
+<h1 class="page-title">{{ "FESTIVALS_PAGE" | translate }}</h1>
+
+<div class="items-wrapper" [class.space-between]="festivals.length > 2">
+  <mat-card *ngFor="let festival of festivals" class="item-card" (click)="openFestival(festival.id)" [@card]>
+    <mat-card-header>
+      <mat-card-title>{{'FESTIVAL.LIST.FESTIVAL_' + festival.id + '.NAME' | translate}}</mat-card-title>
+      <!-- <mat-card-subtitle>{{festival.address}}</mat-card-subtitle> -->
+    </mat-card-header>
+    <img mat-card-image src="assets/images/festivals/{{festival.imageName}}"
+      alt="{{'FESTIVAL.LIST.FESTIVAL_' + festival.id + '.NAME' | translate}}">
+    <mat-card-actions>
+      <a mat-raised-button routerLink="./festival-details/{{festival.id}}">Open</a>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

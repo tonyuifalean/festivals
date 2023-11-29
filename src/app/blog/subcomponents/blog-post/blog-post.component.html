@@ -1,0 +1,8 @@
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    {{ "BLOG.POST_" + postIndex + ".TITLE" | translate }}
+  </mat-expansion-panel-header>
+
+  <img src="{{imageUrl}}" title="{{imageTitle}}" alt="{{imageTitle}}">
+  <div>{{ "BLOG.POST_" + postIndex + ".CONTENT" | translate }}</div>
+</mat-expansion-panel>

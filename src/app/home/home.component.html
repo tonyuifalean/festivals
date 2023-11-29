@@ -1,0 +1,81 @@
+<h1 class="page-title">{{ "HOME_PAGE.TITLE" | translate }}</h1>
+
+<h2 *ngIf="currentUser?.firstName">
+  {{ "HOME_PAGE.HELLO" | translate }}, {{ currentUser?.firstName }}!
+</h2>
+<div id="home-content-wrapper">
+  <div class="home-row">
+    <div class="home-row-img" [@img]>
+      <img src="assets/images/festivals.jpg" title="Festivals" alt="Festivals">
+    </div>
+    <div class="home-row-description">
+      <p>{{ "HOME_PAGE.FESTIVALS.P_1" | translate }}</p>
+      <p>{{ "HOME_PAGE.FESTIVALS.P_2" | translate }}</p>
+      <p>{{ "HOME_PAGE.FESTIVALS.P_3" | translate }}</p>
+      <a mat-raised-button routerLink="../festivals">{{'MENU.FESTIVALS' | translate}}</a>
+    </div>
+  </div>
+  <br>
+  <!-- <div>
+          <p>
+            Suspendisse potenti. Etiam in tincidunt orci, quis ullamcorper metus. Donec vestibulum purus dui, a
+            condimentum ipsum faucibus ac. Morbi vel neque nec felis finibus lacinia a vel sem. Nam interdum, lectus id
+            condimentum feugiat, urna dolor rhoncus odio, ac varius tortor turpis vitae tellus. Phasellus id porta urna.
+            Morbi blandit at arcu sit amet suscipit. Duis semper neque eu tortor vehicula sagittis. Sed hendrerit, lacus
+            maximus ultricies tempor, augue purus elementum sapien, id tristique elit magna quis dui. Aliquam erat
+            volutpat. Morbi egestas, elit ac commodo facilisis, odio mi iaculis leo, sed aliquam velit arcu sed justo.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora
+            torquent
+            per conubia nostra, per inceptos himenaeos. Proin sit amet massa dui.
+          </p>
+          <a mat-raised-button routerLink="../news">{{'MENU.NEWS' | translate}}</a>
+        </div> -->
+  <!-- <br> -->
+  <div class="home-row switch-order">
+    <div class="home-row-img" [@img]>
+      <img src="assets/images/attractions.jpg" title="Attractions" alt="Attractions">
+    </div>
+    <div class="home-row-description">
+      <p>{{ "HOME_PAGE.TOURIST_ATTRACTIONS.P_1" | translate }}</p>
+      <p>{{ "HOME_PAGE.TOURIST_ATTRACTIONS.P_2" | translate }}</p>
+      <p>{{ "HOME_PAGE.TOURIST_ATTRACTIONS.P_3" | translate }}</p>
+      <a mat-raised-button routerLink="../attractions">{{'MENU.ATTRACTIONS' | translate}}</a>
+    </div>
+  </div>
+  <br>
+  <div class="home-row">
+    <div class="home-row-img" [@img]>
+      <img src="assets/images/accomodations.jpg" title="Accomodations" alt="Accomodations">
+    </div>
+    <div class="home-row-description">
+      <p>{{ "HOME_PAGE.ACCOMODATIONS.P_1" | translate }}</p>
+      <p>{{ "HOME_PAGE.ACCOMODATIONS.P_2" | translate }}</p>
+      <a mat-raised-button routerLink="../accomodations">{{'MENU.ACCOMODATIONS' | translate}}</a>
+    </div>
+  </div>
+  <div class="home-row switch-order">
+    <div class="home-row-img" [@img]>
+      <img src="assets/images/restaurants.jpg" title="Restaurants" alt="Restaurants">
+    </div>
+    <div class="home-row-description">
+      <p>{{ "HOME_PAGE.RESTAURANTS.P_1" | translate }}</p>
+      <p>{{ "HOME_PAGE.RESTAURANTS.P_2" | translate }}</p>
+      <p>{{ "HOME_PAGE.RESTAURANTS.P_3" | translate }}</p>
+      <a mat-raised-button routerLink="../restaurants">{{'MENU.RESTAURANTS' | translate}}</a>
+    </div>
+  </div>
+  <div class="home-row">
+    <div class="home-row-img" [@img]>
+      <img src="assets/images/blog.jpg" title="Blog" alt="Blog">
+    </div>
+    <div class="home-row-description">
+      <p>{{ "HOME_PAGE.BLOG.P_1" | translate }}</p>
+      <ul>
+        <li>{{ "HOME_PAGE.BLOG.UOL_1" | translate }}</li>
+        <li>{{ "HOME_PAGE.BLOG.UOL_2" | translate }}</li>
+        <li>{{ "HOME_PAGE.BLOG.UOL_3" | translate }}</li>
+      </ul>
+      <a mat-raised-button routerLink="../blog">{{'MENU.BLOG' | translate}}</a>
+    </div>
+  </div>
+</div>

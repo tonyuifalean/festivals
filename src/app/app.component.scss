@@ -1,0 +1,164 @@
+.festival-main-container {
+  display: flex;
+  flex-direction: column;
+  overflow: visible !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .festival-toolbar {
+    height: 60px;
+    min-height: 60px;
+    padding: 0 16px 0 0;
+
+    .mat-icon-button {
+      border-radius: 0px;
+      height: 60px;
+      margin-right: 8px;
+      width: 60px;
+    }
+
+    .nav-link {
+      &.home {
+        padding: 0.5rem 0;
+
+        img {
+          height: 40px;
+          width: 150px;
+        }
+      }
+
+      &.lang-switcher img {
+        border-radius: 3px;
+      }
+    }
+
+    .navbar-nav {
+      flex: 1;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      .nav-link {
+        color: white;
+        padding: 0 0.5rem;
+
+        &:hover {
+          color: grey;
+        }
+        img {
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .festival-sidenav-container {
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    flex: 1;
+  }
+
+  .mat-sidenav-content {
+    padding: 20px;
+  }
+}
+
+.is-small-screen {
+  .festival-toolbar {
+    position: fixed;
+    padding: 0 10px 0 0;
+    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+    z-index: 2;
+
+    .nav-link.home {
+      padding: 0;
+
+      img {
+        width: 40px;
+      }
+    }
+
+    .mat-icon-button {
+      margin-right: 0;
+    }
+  }
+
+  .festival-sidenav-container {
+    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+      `<body>` to be our scrolling element for mobile layouts. */
+    flex: 1 0 auto;
+  }
+
+  .mat-sidenav-content {
+    padding: 20px;
+  }
+}
+
+::ng-deep {
+  .mat-sidenav-container {
+    overflow: visible !important;
+  }
+
+  .page-title {
+    margin: 30px 0 10px 0 !important;
+    text-align: center;
+  }
+
+  .items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px -10px 0 -10px;
+
+    &.space-between {
+      justify-content: space-between;
+    }
+
+    .item-card {
+      cursor: pointer;
+      display: inline-block;
+      max-width: 400px;
+      margin: 10px;
+
+      .mat-card-actions {
+        display: flex;
+
+        .copy-location-wrapper {
+          display: flex;
+          flex: 1;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .items-wrapper {
+        display: block;
+        margin-top: 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        width: 100vw;
+
+      .item-card {
+        max-width: 400px;
+        margin-right: 10px;
+        width: 80%;
+      }
+    }
+  }
+
+}
+
+// TODO: Move it to a dedicated sylesheet file.
+::ng-deep {
+  .mat-card-header-text {
+    margin: 0 !important;
+
+    .mat-card-title {
+      font-size: 16px;
+    }
+  }
+}

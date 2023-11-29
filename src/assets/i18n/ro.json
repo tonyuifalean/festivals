@@ -1,0 +1,272 @@
+{
+  "LOGIN_PAGE": {
+    "USERNAME": "Utilizator",
+    "PASSWORD": "Parola",
+    "FIELD": "Campul",
+    "IS_REQUIRED": "este obligatoriu",
+    "WRONG_CREDENTIALS": "Credentiale gresite!"
+  },
+  "HOME_PAGE": {
+    "TITLE": "Sighișoara și uimitoarele sale festivaluri",
+    "FESTIVALS": {
+      "P_1": "Sighișoara are o viață culturală intensă: pe tot parcursul anului aici au loc evenimente care acoperă o gama largă de gusturi: de la blues la muzică de cameră, de fanfară, tradiții și meșteșuguri, obiceiuri, etc. Punctul culminant al calendarului cultural este la sfârșitul lunii Iulie, când Cetatea se reintoarce în Evul Mediu retrăindu-și, prin arta medievala, acea epocă.",
+      "P_2": "Sighișoara este un adevărat muzeu medieval în aer liber și merită străbătută la pas pentru a o descoperi, iar prin participarea la faimoasele sale festivaluri poți afla de ce este percepută așa. Festivalul Medieval, Festivalul Fanfarelor, Festivalul Blues, Festivalul ProEtnica Sighișoara sunt doar cateva din festivalurile care te îmbie să descoperi farmecul ascuns al Cetății Medievale, care se dezvăluie în timpul unei plimbări pe străduțele întortocheate.",
+      "P_3": "Sighișoara este adesea comparată cu alte cetăți medievale din România sau Europa. E clar că fiecare oraș are farmecul și unicitatea sa, și se diferențiază prin anumite caracteristici. Dar, ce putem afirma cu tărie e că, dacă nu o vizitezi în plin sezon, când îți vor ieși în cale mii de turiști, veniți din toate colțurile lumii, orașul constituie o premisă bună pentru a te detașa de agitația altor orașe mai mari, și a vizita în voie locuri frumoase."
+    },
+    "TOURIST_ATTRACTIONS": {
+      "P_1": "Legendele din spatele burgului medieval sighișorean îi captivează fără putință de tăgadă pe cei care îi „trec pragul”, iar Sighișoara, \"Bijuteria medievală a României\", își așteaptă vizitatorii pentru a-și dezvălui misterul ascuns în zidurile îmbătrânite de vreme, în sutele de ani de existentă",
+      "P_2": "Astăzi, vechea Cetate - cu turnuri semețe și ziduri sumbre dar ospitaliere, ce se înalță vertical spre veacurile care vin, păstrând grijuliu, între zidurile sale bătrâne case policrome descrise cu generozitate în filele cronicarilor - este considerată a fi singura cetate medievală locuită în întregime din Sud-estul  Europei, fiind și parte a Patrimoniului Mondial UNESCO.",
+      "P_3": "Punctele de atracție sunt o invitație în a descoperi fascinația locului, descris în cronici și recreat în timpurile moderne în cele mai neașteptate moduri."
+    },
+    "ACCOMODATIONS": {
+      "P_1": "O promenadă pe străduțele ce duc la emblematicul Turnul cu Ceas, când umbrele serii coboară enigmatic invaluind cetatea, iar lumina caldă a felinarelor ghidează calea, este mereu o încântare pentru oricine, fie el turist, localnic, sau doar un efemer personaj.",
+      "P_2": "Te-am făcut curios? Plănuiești să vizitezi Sighișoara, acest oraș de poveste, în perioada următoare sau poate să participi la festivalurile din acest an? Iți prezentăm noi o listă cu cele mai frumoase și cochete hoteluri din Sighișoara."
+    },
+    "RESTAURANTS": {
+      "P_1": "Alături de monumente faimoase, ce ies în evidentă, merită menționate restaurantele și terasele orașului Sighișoara, localuri ce pot fi admirate de-a lungul străzilor cetății.",
+      "P_2": "Pentru a lua pulsul orașului și a admira în voie culorile pastelate ale clădirilor sighișorene, se impune un răgaz benefic pentru trup și o savurare în tihnă a unei limonade cinstite, la una din terasele îmbietoare din speciala Piață a Cetății.",
+      "P_3": "Restaurante cu specific tradițional, care aduc spiritul și aromele culinare autentice românești din diferite zone ale țării, precum și restaurante cu specific internațional la care veți găsi un meniu bogat și o amenajare cu stil."
+    },
+    "BLOG": {
+      "P_1": "Te invităm cu drag să descoperi blogul nostru, care te atrage într-o călătorie nostalgică în timp.",
+      "UOL_1": "SIGHIȘOARA, orașul pitoresc învăluit în mister",
+      "UOL_2": "Top 10 curiozități despre Sighișoara",
+      "UOL_3": "Descoperă Cetatea din Sighișoara în 48 ore"
+    }
+  },
+  "ACCOMODATIONS_PAGE": "Cazare",
+  "BLOG_PAGE": "Blog",
+  "FESTIVALS_PAGE": "Festivaluri",
+  "NEWS_PAGE": "Stiri",
+  "REGISTRATION_PAGE": "Inregistrare",
+  "RESTAURANTS_PAGE": "Restaurante",
+  "TOURIST_ATTRACTIONS_PAGE": {
+    "TITLE": "Atractii turistice",
+    "CONTENT": "<p><b>Casa cu Cerb</b>, denumită astfel dupa capul cu cerb fixat pe colțul clădirii, este o construcție specifică renașterii transilvane, datând probabil din secolul al XVII-lea. Notabile sunt formele ei robuste și echilibrate, boltirile parterului, ancadramentele de piatră cu denticuli și micul burduf cu fereastră, orientat spre piață. Casa cu Cerb a fost restaurată de Asociația Restauro Messerschmitt din 1997 - 2001. În prezent, în Casa cu Cerb poți regăsi colecția Art Coloris Transilvaniae a artistului sighișorean Rareș Kerekeș.</p><p><b>Casa Venețiană</b>, denumită după ancadramentele de piatră ale ferestrelor care imită goticul venețian, datează din secolul al XVI-lea fiind reședința primarului Stephanus Mann, a cărui piatră funerară poate fi văzută în Biserica din Deal.</p><p>Situat în partea de răsărit a platoului inferior al Cetății, <b>Turnul cu Ceas</b> - simbolul orașului - oglindește efortul de apărare, dorința de afirmare și autoritate a Cetății Sighișoara. Construcția are la bază o prismă dreptunghiulară, prezintă cinci nivele, care împreună cu balconul și acoperișul piramidal au o înălțime de 64m. Muzeul de Istorie din Sighișoara se regăsește în Turnul cu Ceas.</p><p>În <b>Casa Vlad Dracul</b>, una din cele mai vechi construcții de piatră din Cetate, se presupune că a locuit Vlad Dracul, domn al Țării Românești, fiu a lui Mircea cel Batran și tatăl lui Vlad Tepes.</p><p><b>Piața Cetății</b> a fost în Evul Mediu piața comercială și loc de judecare a proceselor. Aici se află \"Stâlpul infamiei\", o coloană cu inele de fier, de care erau legați cu o piatră de 6 kg atârnată de gât cei care săvârșeau fărădelegi. Ia-ți un răgaz și savurează în tihnă o limonadă la una din terasele îmbietoare din speciala Piață a Cetății.</p><p><b>Scara acoperită</b> sau <b>Scara școlarilor</b>, cu 300 de trepte a fost construită în anul 1642. A fost acoperită pentru protejarea copiilor, care urmau această cale spre liceului Joseph Haltrich. În urma modificărilor din 1849, au rămas doar 175 de trepte. Ca o răsplată ca ai parcurs aceste scări, vei ajunge la Biserica din deal, una din cele mai reprezentative edificii ecleziastice în stil gotic.</p><p>Din cele patru biserici existente cândva în incinta cetății s-au păstrat trei: <b>Biserica Romano-catolică</b>, <b>Biserica Mănăstirii</b> și <b>Biserica din deal</b>, pe care vă recomandăm călduros să le vizitați. Biserica din deal este a treia ca mărime din Transilvania.</p><p><b>Turnurile Cetății</b> - Turnul cu Ceas, Turnul Fierarilor, care găzduiește expoziția permanentă \"Dracula Galleries\", Turnul Cizmarilor în care este stabilită stația locală de radio, Turnul Croitorilor, TurnulTăbăcarilor, Turnul Măcelarilor, Turnul Franghierilor care servește în prezent drept locuința paznicului cimitirului, Turnul Cositorarilor și Turnul Cojocarilor.</p>"
+  },
+  "BLOG": {
+    "POST_1": {
+      "TITLE": "Sighișoara, orașul pitoresc învăluit în mister",
+      "CONTENT": "Sighișoara, acest burg medieval pitoresc cu aer gotic-misterios, așezată pe malurile râului Târnava Mare, într-un cadru natural feeric, cu o pădure ce împrejmuiește cetatea aflată pe vârful unui deal, este atestată documentar de la 14 decembrie 1280, denumirea în limba română a orașului fiind de proveniență maghiară: „Segesvár”.\n\nDacă iei la pas acest oraș fermecător, îți iese-n cale Casa Vlad Dracul (locul unde se presupune că a locuit însuși Vlad Dracul, tatăl lui Vlad Țepeș) și poți să fii transpus într-o lume fascinantă, unde se întâlnesc adevărul istoric cu legendele învăluite în mister deopotrivă.\n\nCa și obiective turistice, care au ajutat la dobândirea denumirii \"Perla Transilvaniei\", amintim de: Piața Cetății (una dintre cele mai frumoase piețe medievale ale României), Turnul cu Ceas - înalt de 64 metri (cu propria legendă care spune că ceasul din turn nu rămâne în urmă niciodată), Biserica din Deal (cu a sa frumusețe arhitecturală în stil gotic), Scara Acoperită (cu ale sale 175 de trepte), Biserica Mănăstirii, Casa cu Cerb și, nu în ultimul rând, clădirile viu colorate care încântă privirea.\n\nÎn Cetatea Medievală din Sighișoara, care se află și printre puținele cetăți medievale din Europa locuite permanent, totul este o poveste dacă facem un exercițiu de imaginație: străzi înguste pe unde s-au perindat cavaleri neînfricați și domnițe care așteptau să fie salvate, domnitori și doamnele lor care își duceau traiul în clădiri medievale, cu arhitectură în stil baroc, gotic și renascentist, în odăi somptuoase cu mobilier de lemn masiv, toboșari (deschizătorii Cetății) costumați ca-n vremurile demult apuse.\n\nÎn zilele noastre, regăsim un alt toboșar, alți cavaleri și alte domnițe, de data aceasta la celebrul Festival Medieval, care atrage an de an zeci de mii de turiști, din țară și străinătate, dornici de voioșie.\n\nPoveștile sunt mai frumoase când devin realități, așadar povestea continuă, prin intermediul Sighișoara Shop.\n\nFrumusețea pitorească a orașului împreună cu tradițiile sale deosebite încercăm să le ducem mai departe cu ajutorul produselor tematice-tradiționale din Sighișoara și în colaborare cu producătorii locali.\n\nPrin urmare, vă invităm cu drag să vizitați magazinul nostru și să vă achiziționați produse care spun povestea acestui oraș deosebit, din inima Transilvaniei."
+    },
+    "POST_2": {
+      "TITLE": "Top 10 curiozități despre Sighișoara",
+      "CONTENT": "Cetatea a constituit de-a lungul Evului Mediu centrul administrativ, juridic, cultural și spiritual al așezării; aici s-au aflat sediile primăriei, bisericile și mănăstirile, casa parohială, școlile și locuințele patriciatului.\n\nÎntre 1431 - 1436 prințul valah Vlad Dracul îsi stabileste “cuibul de pândă” la Sighișoara, oraș din care va emite moneda cu efigie proprie.\n\nÎn 1431 fiul său Vlad Tepes Draculea se va naște.\n\nPrimul recensământ al populației din Sighișoara arată ca în 1488 orașul avea 600 gospodării, 20 de țărani liberi, 3 funcționari publici, 2 morari, 9 săraci și 5 ciurdari.\n\nCel mai celebru absolvent al Școlii din Deal a fost savantul Hermann Oberth (1894-1989) creatorul motorului de rachetă și un titan al navigației cosmice.\n\nÎn Decembrie 1999, Sighișoara a fost trecută pe lista patrimoniului UNESCO.\n\nSighișoara se împarte în orașul vechi sau Orașul de Sus (Cetatea), iar la poalele Cetății se află Orașul de Jos, un fost cartier medieval.\n\nDin cele 14 turnuri de apărare ale Cetății sunt păstrate doar 9: Turnul cu Ceas, Turnul Fierarilor, Turnul Cizmarilor, Turnul Croitorilor, Turnul Tăbăcarilor, Turnul Măcelarilor, Turnul Franghierilor, Turnul Cositorarilor și Turnul Cojocarilor.\n\n5 turnuri au dispărut în timp: Turnul Dogarilor, în locul lui a fost construită actuala Primărie a orașului; Turnul Țesătorilor, Turnul Lăcătușilor, în locul lui a fost construită Biserica Romano-Catolică, Turnul Aurarilor, în locul lui a fost construită capela mortuară aparținând Bisericii din Deal, Turnul Zidarilor care se află între Turnul cu Ceas și Turnul Tăbăcarilor.\n\nSighișoara este singura cetate medievală din Europa de sud - est locuită permanent."
+    },
+    "POST_3": {
+      "TITLE": "Descoperă Cetatea din Sighișoara în 48 ore",
+      "CONTENT": "Dacă stați câteva zile în Sighișoara și doriți să vizitați principalele atracții turistice și muzee ale orașului, vă prezentăm itinerariul nostru, care include informații detaliate despre acestea, precum și în ce mod să vă organizați timpul.\n\n\nAtracții turistice pe care nu trebuie să le ratați atunci când sunteți în Sighișoara:\n\n1. Casa cu Cerb denumită astfel dupa capul cu cerb fixat pe colțul clădirii, este o construcție specifică renașterii transilvane, datând probabil din secolul al XVII-lea. Notabile sunt formele ei robuste și echilibrate, boltirile parterului, ancadramentele de piatră cu denticuli și micul burduf cu fereastră, orientat spre piață. Casa cu Cerb a fost restaurată de Asociația Restauro Messerschmitt din 1997 - 2001. În prezent, în Casa cu Cerb poți regăsi colecția Art Coloris Transilvaniae a artistului sighișorean Rareș Kerekeș.\n\n2. Casa Venețiană denumită după ancadramentele de piatră ale ferestrelor care imită goticul venețian, datează din secolul al XVI-lea fiind reședința primarului Stephanus Mann, a cărui piatră funerară poate fi văzută în Biserica din Deal.\n\n3. Situat în partea de răsărit a platoului inferior al Cetății, Turnul cu Ceas - simbolul orașului - oglindește efortul de apărare, dorința de afirmare și autoritate a Cetății Sighișoara. Construcția are la bază o prismă dreptunghiulară, prezintă cinci nivele, care împreună cu balconul și acoperișul piramidal au o înălțime de 64 m. Muzeul de Istorie din Sighișoara se regăsește în Turnul cu Ceas.\n\n4. În Casa Vlad Dracul, una din cele mai vechi construcții de piatră din Cetate, se presupune că a locuit Vlad Dracul, domn al Țării Românești, fiu a lui Mircea cel Batran și tatăl lui Vlad Tepes.\n\n5. Piața Cetății a fost în Evul Mediu piața comercială și loc de judecare a proceselor. Aici se află “Stâlpul infamiei”, o coloană cu inele de fier, de care erau legați cu o piatră de 6 kg atârnată de gât cei care săvârșeau fărădelegi. Ia-ți un răgaz și savurează în tihnă o limonadă la una din terasele îmbietoare din speciala Piață a Cetății.\n\n6. Scara acoperită sau Scara școlarilor, cu 300 de trepte a fost construită în anul 1642. A fost acoperită pentru protejarea copiilor, care urmau această cale spre liceului Joseph Haltrich. În urma modificărilor din 1849, au rămas doar 175 de trepte. Ca o răsplată ca ai parcurs aceste scări, vei ajunge la Biserica din deal, una din cele mai reprezentative edificii ecleziastice în stil gotic.\n\n7. Din cele patru biserici existente cândva în incinta cetății s-au păstrat trei: Biserica Romano-catolică, Biserica Mănăstirii și Biserica din deal, pe care vă recomandăm călduros să le vizitați. Biserica din deal este a treia ca mărime din Transilvania.\n\n8. Turnurile Cetății - Turnul cu Ceas, Turnul Fierarilor, care găzduiește expoziția permanentă “Dracula Galleries”, Turnul Cizmarilor în care este stabilită stația locală de radio, Turnul Croitorilor, Turnul Tăbăcarilor, Turnul Măcelarilor, Turnul Franghierilor care servește în prezent drept locuința paznicului cimitirului, Turnul Cositorarilor și Turnul Cojocarilor.\n\n\nUnde te cazezi în Sighișoara:\n\n1. Casa Savri - este un monument istoric, fiind cea mai veche clădire a cetății, ce datează din 1568. Situată pe Ulița Morii, Casa Savri este considerată parte a Patrimoniului Mondial UNESCO. Fiecare cameră are un stil aparte, își pastrează stilul vechi, combinând în același timp și toate facilitățile moderne. Curtea interioară și terasa în aer liber sunt decorate cu flori și culori tradiționale, iar dacă urmezi scările interioare ajungi, în final, lângă Primăria orașului și faimosul Turn cu Ceas.\n\n2. Taschler Boutique Hotel - nascută în anii 1670, este o casă săsească situată la numai 150 m de simbolul cetății, Turnul cu Ceas. Hotelul dispune de 10 camere, fiecare cameră având o poveste și prezentând meseriile sașilor meșteșugari. La intrare, sub boltă, se regăsește curtea țărănească, decorată cu elemente tradiționale vieții sașilor și activitățile acestora în gospodărie. Un alt loc de interes este crama în care se regăsesc obiecte și simboluri din gospodăriile tradiționale săsești, precum și picturi realizate manual.\n\n\nRecomandări pentru restaurante în Sighișoara:\n\n1. Restaurant Casa Joseph Haydn - Wine & Cuisine situat pe strada Bastionului 10, este un restaurant rafinat, clasic și elegant.\n\n2. Restaurant Casa Georgius Krauss este un restaurant tradițional și internațional, situat în Cetate, pe strada Bastionului 11.\n\n3. Restaurant Casa Ferdinand este întotdeauna o alegere pe masură atunci când vizitezi Sighișoara. Situat la baza Cetății, acest restaurant are o teresă cochetă și cea mai bună pizza din oraș.\n\n\nDacă ți-am stârnit interesul și dorești să petreci câteva zile de poveste, Sighișoara te așteaptă să o descoperi."
+    }
+  },
+  "FESTIVAL": {
+    "NAME": "Nume",
+    "START_DATE": "Data start",
+    "END_DATE": "Data sfarsit",
+    "VIEW": "Vizualizeaza",
+    "LIST": {
+      "FESTIVAL_1": {
+        "NAME": "Festivalul \"Sighișoara Medievală\"",
+        "VIEW_SCHEDULE": "Vezi Program 2022",
+        "DESCRIPTION": {
+          "P_1": "Poftiți în lumea poveștilor și obiceiurilor din Transilvania medievală!",
+          "P_2": "La sfârșit de iulie, în Cetatea Sighișoarei, trecutul reînvie, vară de vară, începând cu anul 1992 până în zilele de azi, datorită celebrului Festival Medieval. Toată această magie are loc în perioada 29-31 iulie. Sub ocrotirea zidurilor vechi, care duc povara sutelor de ani de istorie captivantă, și pe străzile înguste, cu poteci ce poartă urma pașilor unor personaje cu rezonanță istorică, apar pe nepusă masă, alimentând apetitul de povești cu tentă dramatică tocmai acele personaje venite parcă din scenariul celei mai fascinante epoci din istorie, Evul Mediu: cavaleri neînfricați, vrăjitori terifianți, clovni amuzanți, duhuri întrupate parcă din alte lumi, dar și prințese cu frumuseți neasemuite, zâne bune și eroi care vor duce o luptă tăcută cu forțele răului, spre deliciul spectatorilor.",
+          "P_3": "Ediție cu ediție, la Festivalul Medieval putem călători în timp, în urmă cu sute de ani, în timpurile străvechi, medievale, când denumirile de străjeri, vrăjitori, cavaleri, domnițe și domnitori nu păreau simpli termeni desueți dați uitării prin cronicile îngălbenite de vreme și regăsiți de cei pasionați, în cărțile tematice sau în poveștile străbunilor. Festivalul Sighișoara Medievală își face numărul de magie, an de an și readuce la viață o epocă ce părea că o vom alătura deseori sintagmei: „A fost odată ca niciodată”.",
+          "P_4": "Cum se întâmplă toată această magie, nu e greu de presupus. Prin intermediul celei mai profunde expresii ale creativității umane, prin intermediul ARTEI.",
+          "P_5": "Privitorii vor fi transpuși vizual în Evul Mediu, prin costumațiile și decorurile specifice acelor vremuri și vor uita, pentru o clipă, de prezentul cotidian.",
+          "P_6": "Un vârtej de senzații, un dans al minții, un cântec ce transcende veacuri de existență, și o fascinantă punere în scenă, vor încânta audiența și o vor face să fie implicată în actul artistic, să simtă cu adevărat nemurirea ce se poate obține doar prin artă. Arta teatrului, arta dansului, arta muzicii vor înlesni procesul de multiculturalitate și diversitate, un țel de maximă importanță pentru pitorescul oraș sighișorean.",
+          "P_7": "De la un festival ce inspiră medievalitate prin toți porii, nu puteau lipsi cavalerii medievali, actorii ei cei mai reprezentativi. Cu a lor imagine idealizată, ce a constituit o mare sursă de inspirație pentru povești și filme romantizate.",
+          "P_8": "Apariția fermecătoare a domnițelor în rochii cu parfum medieval îi vor obliga pe bravii cavaleri la o lovire de spadă halucinantă, spre satisfacția publicului cu apetență spre iubirile curtenești de odinioară.",
+          "P_9": "Cu fiecare ediție, Festivalul Medieval știe cum să atragă publicul, prin   alegerea unei teme diferite pentru fiecare ediție, astfel încât, atât turiștii din țară, cât și din străinătate vor fi încântați de diversele surprize din meniul acestui festival.",
+          "P_10": "Prezența unuia dintre simbolurile cetății, vestitul toboșar, maestru de ceremonii și deschizătorul cetății  nu poate decât să anime mai mult audiența, și să confere un plus de năstrușnicie tuturor acestor activități.",
+          "P_11": "Costumația sa atrage priviri iscoditoare, iar replica “Am zis!” care încheie fiecare convorbire a sa, nu este deloc spusă la voia întămplării, fiind inspirată din procesele publice desfășurate în Evul Mediu care se încheiau prin acest enunț impunător.",
+          "P_12": "Suvenirurile și cadourile pentru cei dragi se vor găsi la tot pasul, meșteșugarii locali se vor întrece pe sine pentru a oferi doritorilor obiecte cu povești în spate, și mai mult decât simple obiecte, le vor oferi amintiri ce vor dăinui peste ani și ani.",
+          "P_13": "Iz al vremurilor de altădată, costume și decoruri  inspirate din Evul Mediu, atmosferă medievală acompaniată de muzica trubadurilor și concerte în aer liber, standuri pitorești cu suveniruri handmade și expoziții de pictură ale talentatilor artiști locali, constituie niște premise extraordinare pentru o escapadă de weekend atât pentru turiștii din țară cât și pentru cei de peste hotare."
+        },
+        "SCHEDULE": {
+          "TITLE": "Program Festivalul \"Sighișoara Medievală\" 2022",
+          "FILTER": {
+            "DAY_1": "Vineri",
+            "DAY_2": "Sâmbătă",
+            "DAY_3": "Duminică",
+            "LOCATION_1": "Piața Muzeului",
+            "LOCATION_1_2": "Piața Muzeului (zona Bisericii Mănăstirii)",
+            "LOCATION_2": "Piața Cetății",
+            "LOCATION_3": "Culoarul Bătrânelor Doamne",
+            "LOCATION_4": "Turnul Cizmarilor",
+            "LOCATION_5": "Piața Rățuștelor",
+            "LOCATION_6": "Zidul Cetății",
+            "SELECT_DAY": "Selectează ziua",
+            "SELECT_LOCATION": "Selectează locația"
+          },
+          "BREAK": "- PAUZĂ TEHNICÃ -",
+          "INFO": "Notă: Organizatorul își rezervă dreptul de a modifica programul.",
+          "DAY_1": {
+            "P_1": "<b>Parada de deschidere:</b> Str. 1 Decembrie 1918 - Str. Hermann Oberth - Piața Hermann Oberth - Str. Turnului - Piața Muzeului - Piața Cetății",
+            "P_2": "<b>Rugăciunea Cavalerilor - Biserica Mănăstirii</b>",
+            "P_3": "Deschiderea oficială",
+            "P_4": "Moment dedicat Zilei Imnului Național al României",
+            "P_5": "Spectacol cu steaguri - ART GOTICA",
+            "P_6": " Concert - <b>BUCOVINA</b>",
+            "P_7": "Salve de tun",
+            "P_8": "Vizitare Tabere Cavalerești și Ateliere",
+            "P_9": "Atelier de pictură pentru copii - Profesor de arte vizuale Dorin Stanciu",
+            "P_10": "Atelier de călărie",
+            "P_11": "Expozitie de pictură \"Sighișoara Medievală și pictură în Evul Mediu\"",
+            "P_12": "Expozitie \"Sighișoara Medievală în imagini\"",
+            "P_13": "Tabere cavalerești, Atelier de sticlărie, Atelier de pielărie, Atelier de fierări, Atelier de mânuire - arme medievale"
+          },
+          "DAY_2": {
+            "P_1": "Garda Cetății - Toboșarul Cetății și Scutierii de Muhlbach",
+            "P_2": "Prezentare lupte - Cavalerii Paladinii de Terra Medies",
+            "P_3": "Teatru pentru copii - Drumul lui Făt-Frumos - Marian RÂLEA și ABRACADABRA",
+            "P_4": "Miniconcert - Cimpoierii din Transilvania",
+            "P_5": "Zânele și forța lor tămăduitoare - Zânele SILVANE",
+            "P_6": "Lupte și dansuri istorice - Scutierii și Domnițele de Muhlbach",
+            "P_7": "Târg de robi",
+            "P_8": "Statuie cu suflet itineranță - Marian RÂLEA si ABRACADABRA",
+            "P_9": "Interactiv cu copii - Terra Ultrasilvana",
+            "P_10": "Dansuri medievale - NOSA",
+            "P_11": "Moment artistic cu cai - Proclamația Voievodului Vlad Draculea",
+            "P_12": "Târg de robi",
+            "P_13": "Scenetă - Legenda Prințesei Blestemate - Zânele SILVANE",
+            "P_14": "Concert de muzică medievală - CIMPOIERII DIN TRANSILVANIA",
+            "P_15": "Spectacol de jonglerii cu foc - SIRIUS",
+            "P_16": "Demonstrații de duel - Cavalerii Terra Ultrasilvana",
+            "P_17": "Scenetă - Poiana Zânelor - Zânele SILVANE",
+            "P_18": "Caraulă cu ponei",
+            "P_19": "Confruntarea - Cavalerii Paladinii de Terra Medies și Terra Ultrasilvana",
+            "P_20": "Animație stradală - NOSA & SIRIUS",
+            "P_21": "Calatorie in lumea Zânelor - Zânele SILVANE",
+            "P_22": "Statuie cu suflet itineranță - Marian RÂLEA si ABRACADABRA",
+            "P_23": "Spectacol de magie pentru copii cu Magul Cetății Sighișoara Adrian Pintea",
+            "P_24": "Miniconcert de muzica celtică - Cimpoierii din Transilvania",
+            "P_25": "Caraulă cu ponei",
+            "P_26": "Salve de tun",
+            "P_27": "Atelier de pictură pentru copii - Profesor de arte vizuale Dorin Stanciu",
+            "P_28": "Atelier de muzică arhaică - instrumente muzicale - Zânele SILVANE",
+            "P_29": "Scenetă - Dansuri, Vrajă și Descântec - Zânele SILVANE",
+            "P_30": "Spectacol de magie pentru copii cu Magul Celații Sighișoara - Adrian Pintea",
+            "P_31": "Atelier de pictură pentru copii - Profesor de arte vizuale Dorin Stanciu",
+            "P_32": "Dansuri medievale - NOSA",
+            "P_33": "Atelier de muzică arhaică - Zânele SILVANE",
+            "P_34": "Dansuri medivale - Cavalerii Paladinii de Terra Medies",
+            "P_35": "Duelul scutierilor - Scutierii de Muhlbach",
+            "P_36": "Statuie cu suflet itineranță - Marian RÂLEA si ABRACADABRA",
+            "P_37": "Inițiere in arta zânelor - Zânele SILVANE",
+            "P_38": "Atelier de călărie",
+            "P_39": "Tir de tras cu arcul - Cavalerii Paladinii de Terra Medies",
+            "P_40": "Expozitie de pictură \"Sighișoara Medievală și pictură în Evul Mediu\"",
+            "P_41": "Expozitie \"Sighișoara Medievală în imagini\"",
+            "P_42": "Tabere cavalerești, Atelier de sticlărie, Atelier de pielărie, Atelier de fierări, Atelier de mânuire - arme medievale"
+          },
+          "DAY_3": {
+            "P_1": "Garda Cetății - Toboșarul Cetății și Scutierii de Muhlbach",
+            "P_2": "Demonstrații de duel - Terra Ultrasilvana",
+            "P_3": "Teatru interactiv pentru copii - Marian RÂLEA și ABRACADABRA",
+            "P_4": "Scenetă - Dansuri, Vrajă și Descântec - Zânele SILVANE",
+            "P_5": "Animație stradală - NOSA & SIRIUS",
+            "P_6": "Târg de robi",
+            "P_7": "Dansuri medievale - NOSA",
+            "P_8": "Statuie cu suflet itineranță - Marian RÂLEA si ABRACADABRA",
+            "P_9": "Dansuri - Trupa K-Boom, Clubul Copiilor Sighișoara",
+            "P_10": "Spiritul scutierilor și dansuri medievale - Scutierii și Domnițele de Muhlbach",
+            "P_11": "Interactiv cu publicul - Cavalerii Terra Ultrasilvana",
+            "P_12": "Spectacol de teatru - Legenda prințesei blestemate - Zânele SILVANE",
+            "P_13": "Dansuri medievale - Zânele SILVANE",
+            "P_14": " Concert - <b>CARGO</b>",
+            "P_15": "FOC DE ARTIFICII",
+            "P_16": "Dansuri medivale - Cavalerii Paladinii de Terra Medies",
+            "P_17": "Descântece de deochi - Zânele SILVANE",
+            "P_18": "Demonstrații de luptă - Cavalerii Paladinii de Terra Medies",
+            "P_19": "Școala scutierilor - Scutierii de Muhlbach",
+            "P_20": "Caraulă cu ponei",
+            "P_21": "Jocuri medievale interactive - Cavalerii Paladinii de Terra Medies și Terra Ultrasilvana",
+            "P_22": "Spiritul și școala scutierilor - Scutierii de Muhlbach",
+            "P_23": "Plante magice - Zânele SILVANE",
+            "P_24": "Magie stradală cu Magul Cetății Sighișoara",
+            "P_25": "Statuie cu suflet itineranță - Marian RÂLEA si ABRACADABRA",
+            "P_26": "Dansuri medievale - NOSA",
+            "P_27": "Salve de tun",
+            "P_28": "Atelier de pielărie - brățări - Zânele SILVANE",
+            "P_29": "Atelier de pictură pentru copii - Profesor de arte vizuale Dorin Stanciu",
+            "P_30": "Atelier de pictură pentru copii - Profesor de arte vizuale Dorin Stanciu",
+            "P_31": "Poiana Zânelor - Zânele SILVANE",
+            "P_32": "Animație stradală - NOSA & SIRIUS",
+            "P_33": "Școala scutierilor - Cavalerii Paladinii de Terra Medies",
+            "P_34": "Statuie cu suflet itineranță - Marian RÂLEA si ABRACADABRA",
+            "P_35": "Dansuri - Trupa Karisma, Clubul Copiilor Sighișoara",
+            "P_36": "Atelier de călărie",
+            "P_37": "Tir de tras cu arcul - Cavalerii Paladinii de Terra Medies",
+            "P_38": "Expozitie de pictură \"Sighișoara Medievală și pictură în Evul Mediu\"",
+            "P_39": "Expozitie \"Sighișoara Medievală în imagini\"",
+            "P_40": "Tabere cavalerești, Atelier de sticlărie, Atelier de pielărie, Atelier de fierări, Atelier de mânuire - arme medievale"
+          }
+        }
+      },
+      "FESTIVAL_2": {
+        "NAME": "Festivalul \"Sighișoara Blues\"",
+        "DESCRIPTION": {
+          "P_1": "Primul festival internațional de blues a avut loc în primăvara lui 2005, iar de atunci se organizează anual, în frumosul oraș Sighișoara, datorită  succesului raportat la edițiile precedente, și interesului tot mai crescut pentru blues, al locuitorilor acestui vechi oraș, fondat de emigranți germani, acum mai bine de nouă sute de ani.",
+          "P_2": "Sighișoara sau Schäßburg cum se numește în limba emigranților saxoni, este cunoscută  și ca \"Perla Tansilvaniei\", unul dintre orașele medievale cele mai fascinante, un adevărat monument al istoriei și culturii, datorită superbei sale cetăți.",
+          "P_3": "Festivalul își propune promovarea blues-ului, un gen muzical, care pe plan national, nu are foarte mulți reprezentanți, atrăgând totuși un public numeros de fiecare dată, prin numele sonore care vor fi capete de afiș.",
+          "P_4": "În această călătorie muzicală, participanții se vor bucura de concerte cu artiști  foarte apreciați și cunoscuți, la nivel internațional. Este singura manifestare culturală de prestigiu de acest gen din țară și se desfășoară în Sala de Spectacole a Casei de Cultură “Mihai Eminescu”.",
+          "P_5": "Sighișoara Blues Festival este organizat de Asociația Culturală Sighișoara Blues Hospital în parteneriat cu Primăria Municipiului Sighișoara."
+        }
+      },
+      "FESTIVAL_3": {
+        "NAME": "Festivalul Intercultural Sighișoara – ProEtnica",
+        "DESCRIPTION": {
+          "P_1": "Încă din 2001, la Sighișoara se desfășoară Festivalul Proetnica, cel mai mare festival interetnic din România. Acesta este organizat de Asociaţia Centrul Educaţional Interetnic pentru Tineret Sighişoara, aducând un plus de valoare  eforturilor consolidării și dezvoltării relațiilor în direcția unui climat de armonie și interacțiune între etniile din România.",
+          "P_2": "Din punct de vedere al misiunii sale, acest festival este gândit spre a oferi șansa unei libere exprimări și un cadru în care comunitățile etnice din România să prezinte și să-și pună în valoare obiceiurile culturale și spirituale, precum și de a promova diversitatea etnoculturală.",
+          "P_3": "Acest festival vine în întâmpinarea spectatorilor cu un program artistic foarte divers, ce cuprinde reprezentații muzicale, dans, prelegeri și mese rotunde, teatru de păpuși, simpozioane și întâlniri cu scriitori de literatură în limba maternă. De asemenea, meșteșugarii vor avea standuri de prezentare, unde își vor putea expune cele mai frumoase și reprezentative produse specifice zonei lor.",
+          "P_4": "Festivalul are loc în mai multe locații din Sighișoara, după cum urmează:  Piața Cetății (unde este și scena principală și se desfășoară programul artistic), Piața Muzeului (cu standurile de prezentare și Târgul ProEtnica), Strada Școlii (unde se va ține Târgul Meșteșugarilor), Sala Mare și Sala Mică a Primăriei, Sala Sander."
+        }
+      },
+      "FESTIVAL_4": {
+        "NAME": "Festivalul Fanfarelor Sighișoara",
+        "DESCRIPTION": {
+          "P_1": "În primul weekend din septembrie, când prin Sighișoara încă se perindă mulți turiști și vizitatori, iubitorii muzicii de promenadă se pot bucura de Festivalul Fanfarelor care se află la ediția a XVII-a și este organizat de Primăria Municipiului Sighișoara, fiind un festival care aduce laolaltă fanfare atât din România cât și din orașele cu care acesta colaborează frumos, spre atingerea targetului de oraș multicultural, aliniat la standardele europene. Participanții se vor delecta timp de două zile de mini recitalurile care vor fi susținute de aceste fanfare în diverse locații din oraș."
+        }
+      }
+    }
+  },
+  "ACCOMODATION": {
+    "NAME": "Nume",
+    "LOCATION": "Locatie",
+    "VIEW": "Vizualizeaza"
+  },
+  "MENU": {
+    "ATTRACTIONS": "Obiective",
+    "ATTRACTIONS_DESCRIPTION": "Dacă stați câteva zile în Sighișoara și doriți să vizitați principalele atracții turistice și muzee ale orașului, vă prezentăm itinerariul nostru, care include informații detaliate despre acestea, precum și în ce mod să vă organizați timpul.",
+    "BLOG": "Blog",
+    "FESTIVALS": "Festivaluri",
+    "HOME": "Acasă",
+    "ACCOMODATIONS": "Cazare",
+    "NEWS": "Stiri",
+    "RESTAURANTS": "Restaurante"
+  },
+  "RESTAURANT": {
+    "NAME": "Nume",
+    "LOCATION": "Locatie",
+    "VIEW": "Vizualizeaza"
+  },
+  "MONTHS": {
+    "JAN": "Ian.",
+    "FEB": "Feb.",
+    "MAR": "Mar.",
+    "APR": "Apr.",
+    "MAY": "Mai",
+    "JUN": "Jun.",
+    "JUL": "Jul.",
+    "AUG": "Aug.",
+    "SEP": "Sep.",
+    "OCT": "Oct.",
+    "NOV": "Noi.",
+    "DEC": "Dec."
+  },
+  "cookie": {
+    "message": "Acest site web folosește cookie-uri pentru a ne asigura că aveți cea mai bună experiență pe site-ul nostru.",
+    "dismiss": "Am înțeles!",
+    "link": "Citește mai mult"
+  }
+}

@@ -1,0 +1,18 @@
+<div *ngIf="festivalData$ | async as festivalData">
+  <h1 class="page-title">{{'FESTIVAL.LIST.FESTIVAL_' + festivalData.id + '.NAME' | translate}}</h1>
+  <button mat-raised-button
+    (click)="scrollToSchedule()">{{'FESTIVAL.LIST.FESTIVAL_' + festivalData.id + '.VIEW_SCHEDULE' | translate}}</button>
+  <div class="content-wrapper" id="festivalContentWrapper">
+    <img src="assets/images/festivals/{{festivalData.imageName}}"
+        alt="{{'FESTIVAL.LIST.FESTIVAL_' + festivalData.id + '.NAME' | translate}}">
+    <div>
+      <p *ngFor="let paragraphIndex of getFestivalPagragraphs(festivalData.paragraphTotalNo)">
+        {{'FESTIVAL.LIST.FESTIVAL_' + festivalData.id + '.DESCRIPTION.P_' + paragraphIndex | translate}}
+      </p>
+    </div>
+  </div>
+  <div id="festivalSchedule" *ngIf="festivalData.id === '1'">
+    <app-festival-schedule></app-festival-schedule>
+  </div>
+  <google-maps-wrapper *ngIf="festivalData.id === '1'" [markers]="locations"></google-maps-wrapper>
+</div>

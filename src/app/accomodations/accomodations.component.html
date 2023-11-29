@@ -1,0 +1,19 @@
+<h1 class="page-title">{{ "ACCOMODATIONS_PAGE" | translate }}</h1>
+
+<div class="items-wrapper" [class.space-between]="accomodations.length > 2">
+  <mat-card *ngFor="let accomodation of accomodations" class="item-card" [@card]>
+    <mat-card-header>
+      <mat-card-title>{{accomodation.info.title}}</mat-card-title>
+      <mat-card-subtitle>{{accomodation.address}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="assets/images/accomodations/{{accomodation.imgName}}" alt="{{accomodation.info.title}}">
+    <mat-card-actions>
+      <!-- <a mat-raised-button>Open</a> -->
+      <a mat-raised-button [href]="accomodation.info.link" target="_blank">Visit location</a>
+      <span class="copy-location-wrapper">
+        <button mat-raised-button color="primary" (click)="copyLocation(accomodation.info.link)">Copy location</button>
+      </span>
+    </mat-card-actions>
+  </mat-card>
+</div>
+<google-maps-wrapper [markers]="accomodations"></google-maps-wrapper>

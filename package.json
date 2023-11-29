@@ -1,0 +1,51 @@
+{
+  "name": "sighisoara-festival",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^14.0.1",
+    "@angular/cdk": "^12.2.4",
+    "@angular/common": "^14.0.1",
+    "@angular/compiler": "^14.0.1",
+    "@angular/core": "^14.0.1",
+    "@angular/forms": "^14.0.1",
+    "@angular/google-maps": "^14.0.1",
+    "@angular/material": "^12.2.4",
+    "@angular/platform-browser": "^14.0.1",
+    "@angular/platform-browser-dynamic": "^14.0.1",
+    "@angular/router": "^14.0.1",
+    "@ngx-translate/core": "^13.0.0",
+    "@ngx-translate/http-loader": "^6.0.0",
+    "angular-gtag": "^1.0.4",
+    "bootstrap": "^5.1.0",
+    "material-icons-font": "^2.1.0",
+    "ngx-clipboard": "^15.1.0",
+    "ngx-cookieconsent": "^2.2.3",
+    "ngx-scrolltop": "^4.1.2",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^14.0.1",
+    "@angular/cli": "^14.0.1",
+    "@angular/compiler-cli": "^14.0.1",
+    "@types/jasmine": "~3.8.0",
+    "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^1.0.0",
+    "jasmine-core": "~3.8.0",
+    "karma": "~6.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "typescript": "~4.7.3"
+  }
+}

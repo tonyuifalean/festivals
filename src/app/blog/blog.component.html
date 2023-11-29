@@ -1,0 +1,10 @@
+<h1 class="page-title">{{ "BLOG_PAGE" | translate }}</h1>
+<div class="content-wrapper">
+  <mat-accordion class="example-headers-align" multi>
+    <app-blog-post
+      *ngFor="let blogPost of blogPostList; index as i"
+      [postIndex]="i + 1"
+      [postData]="blogPost">
+    </app-blog-post>
+  </mat-accordion>
+</div>

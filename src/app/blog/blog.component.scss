@@ -1,0 +1,23 @@
+.mat-expansion-panel {
+  margin-bottom: 10px;
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .content-wrapper {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content-wrapper {
+    margin-top: 10px;
+  }
+}

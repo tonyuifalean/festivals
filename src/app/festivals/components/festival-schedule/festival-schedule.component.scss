@@ -1,0 +1,98 @@
+.day-list,
+.location-list {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 0 10px;
+  width: 100%;
+
+  .day-item,
+  .location-item {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    ::ng-deep {
+      .mat-checkbox-layout {
+        background-color: #502233;
+        border: 1px solid white;
+        color: white;
+        padding: 10px;
+
+        .mat-checkbox-frame {
+          border-color: white;
+        }
+      }
+    }
+
+    &:first-of-type {
+      ::ng-deep {
+        .mat-checkbox-layout {
+          border-radius: 10px 0 0 10px;
+        }
+      }
+    }
+
+    &:last-of-type {
+      ::ng-deep {
+        .mat-checkbox-layout {
+          border-radius: 0 10px 10px 0;
+        }
+      }
+    }
+  }
+}
+
+.schedule-content {
+  margin-top: 30px;
+
+  .day-schedule {
+    border: 1px solid #502233 !important;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
+
+.padding-left {
+  padding-left: 10px;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.day-list-mobile,
+.location-list-mobile {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .day-list,
+  .location-list {
+    display: none;
+  }
+
+  // ::ng-deep {
+  //   .mat-checkbox-layout {
+  //       border-radius: 10px !important;
+  //   }
+  // }
+}
+
+@media only screen and (min-width: 1000px) {
+  .day-list-mobile,
+  .location-list-mobile {
+    display: none;
+  }
+}

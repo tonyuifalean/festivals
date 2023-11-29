@@ -1,0 +1,439 @@
+<h2 class="page-title">{{translationKeyPrefix + 'TITLE' | translate}}</h2>
+<section class="day-list">
+  <mat-checkbox class="day-item"
+                [checked]="dayFilterValue[dayKey.Vineri]"
+                (change)="filterByDay(dayKey.Vineri, $event.checked)">{{translationKeyPrefix + 'FILTER.DAY_1' | translate}} 29.07.2022</mat-checkbox>
+  <mat-checkbox class="day-item"
+                [checked]="dayFilterValue[dayKey.Sambata]"
+                (change)="filterByDay(dayKey.Sambata, $event.checked)">{{translationKeyPrefix + 'FILTER.DAY_2' | translate}} 30.07.2022</mat-checkbox>
+  <mat-checkbox class="day-item"
+                [checked]="dayFilterValue[dayKey.Duminica]"
+                (change)="filterByDay(dayKey.Duminica, $event.checked)">{{translationKeyPrefix + 'FILTER.DAY_3' | translate}} 31.07.2022</mat-checkbox>
+</section>
+<section class="day-list-mobile">
+  <mat-form-field appearance="outline">
+    <mat-label>{{translationKeyPrefix + 'FILTER.SELECT_DAY' | translate}}</mat-label>
+    <mat-select multiple [value]="dayValue" (selectionChange)="updateFilterByDayValue($event.value)">
+      <mat-option [value]="dayKey.Vineri">{{translationKeyPrefix + 'FILTER.DAY_1' | translate}} 29.07.2022
+      </mat-option>
+      <mat-option [value]="dayKey.Sambata">{{translationKeyPrefix + 'FILTER.DAY_2' | translate}} 30.07.2022
+      </mat-option>
+      <mat-option [value]="dayKey.Duminica">{{translationKeyPrefix + 'FILTER.DAY_3' | translate}} 31.07.2022
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</section>
+<section class="location-list">
+  <mat-checkbox class="location-item"
+                [checked]="locationFilterValue[locationKey.PiataMuzeului]"
+                (change)="filterByLocation(locationKey.PiataMuzeului, $event.checked)">{{translationKeyPrefix + 'FILTER.LOCATION_1' | translate}}</mat-checkbox>
+  <mat-checkbox class="location-item"
+                [checked]="locationFilterValue[locationKey.PiataCetatii]"
+                (change)="filterByLocation(locationKey.PiataCetatii, $event.checked)">{{translationKeyPrefix + 'FILTER.LOCATION_2' | translate}}</mat-checkbox>
+  <mat-checkbox class="location-item"
+                [checked]="locationFilterValue[locationKey.CuloarulBatranelorDoamne]"
+                (change)="filterByLocation(locationKey.CuloarulBatranelorDoamne, $event.checked)">{{translationKeyPrefix + 'FILTER.LOCATION_3' | translate}}</mat-checkbox>
+  <mat-checkbox class="location-item"
+                [checked]="locationFilterValue[locationKey.TurnulCizmarilor]"
+                (change)="filterByLocation(locationKey.TurnulCizmarilor, $event.checked)">{{translationKeyPrefix + 'FILTER.LOCATION_4' | translate}}</mat-checkbox>
+  <mat-checkbox class="location-item"
+                [checked]="locationFilterValue[locationKey.PiataRatustelor]"
+                (change)="filterByLocation(locationKey.PiataRatustelor, $event.checked)">{{translationKeyPrefix + 'FILTER.LOCATION_5' | translate}}</mat-checkbox>
+  <mat-checkbox class="location-item"
+                [checked]="locationFilterValue[locationKey.ZidulCetatii]"
+                (change)="filterByLocation(locationKey.ZidulCetatii, $event.checked)">{{translationKeyPrefix + 'FILTER.LOCATION_6' | translate}}</mat-checkbox>
+</section>
+<section class="location-list-mobile">
+  <mat-form-field appearance="outline">
+    <mat-label>{{translationKeyPrefix + 'FILTER.SELECT_LOCATION' | translate}}</mat-label>
+    <mat-select multiple [value]="locationValue" (selectionChange)="updateFilterByLocationValue($event.value)">
+      <mat-option [value]="locationKey.PiataMuzeului">{{translationKeyPrefix + 'FILTER.LOCATION_1' | translate}}</mat-option>
+      <mat-option [value]="locationKey.PiataCetatii">{{translationKeyPrefix + 'FILTER.LOCATION_2' | translate}}</mat-option>
+      <mat-option [value]="locationKey.CuloarulBatranelorDoamne">{{translationKeyPrefix + 'FILTER.LOCATION_3' | translate}}</mat-option>
+      <mat-option [value]="locationKey.TurnulCizmarilor">{{translationKeyPrefix + 'FILTER.LOCATION_4' | translate}}</mat-option>
+      <mat-option [value]="locationKey.PiataRatustelor">{{translationKeyPrefix + 'FILTER.LOCATION_5' | translate}}</mat-option>
+      <mat-option [value]="locationKey.ZidulCetatii">{{translationKeyPrefix + 'FILTER.LOCATION_6' | translate}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</section>
+
+<section class="schedule-content">
+  <div *ngIf="dayFilterValue[dayKey.Vineri]" class="day-schedule">
+    <h3><i><b>{{translationKeyPrefix + 'FILTER.DAY_1' | translate}} 29.07.2022</b></i></h3>
+    <div class="padding-left">
+      <div>
+        <b>19:00</b>
+        <ul>
+          <li [innerHTML]="translationKeyPrefix + 'DAY_1.P_1' | translate"></li>
+          <li [innerHTML]="translationKeyPrefix + 'DAY_1.P_2' | translate"></li>
+        </ul>
+      </div>
+
+      <ng-container *ngIf="locationFilterValue[locationKey.PiataCetatii]" >
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_2' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/YQv6RZB6MxeCGHbk7" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>20:00 {{translationKeyPrefix + 'DAY_1.P_3' | translate}}</b></p>
+          <p><b>20:30</b> {{translationKeyPrefix + 'DAY_1.P_4' | translate}}</p>
+          <p><b>20:45</b> {{translationKeyPrefix + 'DAY_1.P_5' | translate}}</p>
+          <p><b>21:00</b><span [innerHTML]="translationKeyPrefix + 'DAY_1.P_6' | translate"></span></p>
+          <p><b>22:00 {{translationKeyPrefix + 'DAY_1.P_7' | translate}}</b></p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.PiataMuzeului]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_1' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/piAmsPXput6xF3Ka9" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>20:00 - 22:00</b> {{translationKeyPrefix + 'DAY_1.P_8' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.PiataRatustelor]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_5' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/VfbZNELwWbGiDbZw6" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>20:00 - 21:00</b> {{translationKeyPrefix + 'DAY_1.P_9' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.TurnulCizmarilor]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_4' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/BVQ79cMfUcPbWoLS7" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>20:00 - 21:00</b> {{translationKeyPrefix + 'DAY_1.P_10' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.CuloarulBatranelorDoamne]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_3' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/ZLqivARpvzXUtqKp7" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>20:00 - 22:00</b> {{translationKeyPrefix + 'DAY_1.P_11' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.PiataMuzeului]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_1' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/piAmsPXput6xF3Ka9" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>20:00 - 22:00</b> {{translationKeyPrefix + 'DAY_1.P_12' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.PiataMuzeului]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_1_2' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/CX2jh21Us73w18BA6" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>20:00 - 22:00 {{translationKeyPrefix + 'DAY_1.P_13' | translate}}</b></p>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div *ngIf="dayFilterValue[dayKey.Sambata]" class="day-schedule">
+    <h3><i><b>{{translationKeyPrefix + 'FILTER.DAY_2' | translate}} 30.07.2022</b></i></h3>
+    <div class="padding-left">
+      <ng-container *ngIf="locationFilterValue[locationKey.PiataCetatii]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_2' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/YQv6RZB6MxeCGHbk7" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <div>
+            <b>10:00</b>
+            <ul>
+              <li>{{translationKeyPrefix + 'DAY_2.P_1' | translate}}</li>
+              <li>{{translationKeyPrefix + 'DAY_2.P_2' | translate}}</li>
+            </ul>
+          </div>
+          <p><b>11:00</b> {{translationKeyPrefix + 'DAY_2.P_3' | translate}}</p>
+          <p><b>12:00</b> {{translationKeyPrefix + 'DAY_2.P_4' | translate}}</p>
+          <p><b>12:30</b> {{translationKeyPrefix + 'DAY_2.P_5' | translate}}</p>
+          <br>
+          <p><b>{{translationKeyPrefix + 'BREAK' | translate}}</b></p>
+          <br>
+          <p><b>16:30</b> {{translationKeyPrefix + 'DAY_2.P_6' | translate}}</p>
+          <p><b>17:15</b> {{translationKeyPrefix + 'DAY_2.P_7' | translate}}</p>
+          <p><b>18:00</b> {{translationKeyPrefix + 'DAY_2.P_8' | translate}}</p>
+          <p><b>18:30</b> {{translationKeyPrefix + 'DAY_2.P_9' | translate}}</p>
+          <p><b>19:00</b> {{translationKeyPrefix + 'DAY_2.P_10' | translate}}</p>
+          <p><b>19:30</b> {{translationKeyPrefix + 'DAY_2.P_11' | translate}}</p>
+          <p><b>20:00</b> {{translationKeyPrefix + 'DAY_2.P_12' | translate}}</p>
+          <p><b>20:30</b> {{translationKeyPrefix + 'DAY_2.P_13' | translate}}</p>
+          <p><b>21:00</b> {{translationKeyPrefix + 'DAY_2.P_14' | translate}}</p>
+          <p><b>22:00</b> {{translationKeyPrefix + 'DAY_2.P_15' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.PiataMuzeului]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_1' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/piAmsPXput6xF3Ka9" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>10:30</b> {{translationKeyPrefix + 'DAY_2.P_16' | translate}}</p>
+          <p><b>11:00</b> {{translationKeyPrefix + 'DAY_2.P_17' | translate}}</p>
+          <p><b>12:00</b> {{translationKeyPrefix + 'DAY_2.P_18' | translate}}</p>
+          <br>
+          <p><b>{{translationKeyPrefix + 'BREAK' | translate}}</b></p>
+          <br>
+          <p><b>17:00</b> {{translationKeyPrefix + 'DAY_2.P_19' | translate}}</p>
+          <p><b>17:30</b> {{translationKeyPrefix + 'DAY_2.P_20' | translate}}</p>
+          <p><b>18:00</b> {{translationKeyPrefix + 'DAY_2.P_21' | translate}}</p>
+          <p><b>18:30</b> {{translationKeyPrefix + 'DAY_2.P_22' | translate}}</p>
+          <p><b>19:00</b> {{translationKeyPrefix + 'DAY_2.P_23' | translate}}</p>
+          <p><b>19:30</b> {{translationKeyPrefix + 'DAY_2.P_24' | translate}}</p>
+          <p><b>20:00</b> {{translationKeyPrefix + 'DAY_2.P_25' | translate}}</p>
+          <p><b>20:30 {{translationKeyPrefix + 'DAY_2.P_26' | translate}}</b></p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.PiataRatustelor]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_5' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/VfbZNELwWbGiDbZw6" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <div>
+            <b>10:00</b>
+            <ul>
+              <li>{{translationKeyPrefix + 'DAY_2.P_27' | translate}}</li>
+              <li>{{translationKeyPrefix + 'DAY_2.P_28' | translate}}</li>
+            </ul>
+          </div>
+          <p><b>11:00</b> {{translationKeyPrefix + 'DAY_2.P_29' | translate}}</p>
+          <p><b>12:30</b> {{translationKeyPrefix + 'DAY_2.P_30' | translate}}</p>
+          <br>
+          <p><b>{{translationKeyPrefix + 'BREAK' | translate}}</b></p>
+          <br>
+          <p><b>16:00</b> {{translationKeyPrefix + 'DAY_2.P_31' | translate}}</p>
+          <p><b>16:30</b> {{translationKeyPrefix + 'DAY_2.P_32' | translate}}</p>
+          <p><b>17:30</b> {{translationKeyPrefix + 'DAY_2.P_33' | translate}}</p>
+          <p><b>18:00</b> {{translationKeyPrefix + 'DAY_2.P_34' | translate}}</p>
+          <p><b>18:30</b> {{translationKeyPrefix + 'DAY_2.P_35' | translate}}</p>
+          <p><b>19:00</b> {{translationKeyPrefix + 'DAY_2.P_36' | translate}}</p>
+          <p><b>19:30</b> {{translationKeyPrefix + 'DAY_2.P_37' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.TurnulCizmarilor]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_4' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/BVQ79cMfUcPbWoLS7" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>10:00 - 21:00</b> {{translationKeyPrefix + 'DAY_2.P_38' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.ZidulCetatii]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_6' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/27Bhs4aY3ZFqtHp37" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>10:00 - 18:30</b> {{translationKeyPrefix + 'DAY_2.P_39' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.CuloarulBatranelorDoamne]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_3' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/ZLqivARpvzXUtqKp7" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>10:00 - 22:00</b> {{translationKeyPrefix + 'DAY_2.P_40' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.PiataMuzeului]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_1' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/piAmsPXput6xF3Ka9" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>10:00 - 22:00</b> {{translationKeyPrefix + 'DAY_2.P_41' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.PiataMuzeului]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_1_2' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/CX2jh21Us73w18BA6" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>10:00 - 22:00 {{translationKeyPrefix + 'DAY_2.P_42' | translate}}
+            </b></p>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div *ngIf="dayFilterValue[dayKey.Duminica]" class="day-schedule">
+    <h3><i><b>{{translationKeyPrefix + 'FILTER.DAY_3' | translate}} 31.07.2022</b></i></h3>
+    <div class="padding-left">
+      <ng-container *ngIf="locationFilterValue[locationKey.PiataCetatii]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_2' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/YQv6RZB6MxeCGHbk7" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>10:00</b> {{translationKeyPrefix + 'DAY_3.P_1' | translate}}</p>
+          <p><b>10:30</b> {{translationKeyPrefix + 'DAY_3.P_2' | translate}}</p>
+          <p><b>11:00</b> {{translationKeyPrefix + 'DAY_3.P_3' | translate}}</p>
+          <p><b>12:30</b> {{translationKeyPrefix + 'DAY_3.P_4' | translate}}</p>
+          <br>
+          <p><b>{{translationKeyPrefix + 'BREAK' | translate}}</b></p>
+          <br>
+          <p><b>16:00</b> {{translationKeyPrefix + 'DAY_3.P_5' | translate}}</p>
+          <p><b>16:30</b> {{translationKeyPrefix + 'DAY_3.P_6' | translate}}</p>
+          <p><b>17:00</b> {{translationKeyPrefix + 'DAY_3.P_7' | translate}}</p>
+          <p><b>18:00</b> {{translationKeyPrefix + 'DAY_3.P_8' | translate}}</p>
+          <p><b>18:30</b> {{translationKeyPrefix + 'DAY_3.P_9' | translate}}</p>
+          <p><b>19:00</b> {{translationKeyPrefix + 'DAY_3.P_10' | translate}}</p>
+          <p><b>20:00</b> {{translationKeyPrefix + 'DAY_3.P_11' | translate}}</p>
+          <p><b>20:30</b> {{translationKeyPrefix + 'DAY_3.P_12' | translate}}</p>
+          <p><b>21:00</b> {{translationKeyPrefix + 'DAY_3.P_13' | translate}}</p>
+          <p><b>21:30</b> <span [innerHTML]="translationKeyPrefix + 'DAY_3.P_14' | translate"></span></p>
+          <p><b>22:30 </b>{{translationKeyPrefix + 'DAY_3.P_15' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.PiataMuzeului]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_1' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/piAmsPXput6xF3Ka9" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>10:00</b> {{translationKeyPrefix + 'DAY_3.P_16' | translate}}</p>
+          <p><b>10:30</b> {{translationKeyPrefix + 'DAY_3.P_17' | translate}}</p>
+          <p><b>11:00</b> {{translationKeyPrefix + 'DAY_3.P_18' | translate}}</p>
+          <p><b>11:30</b> {{translationKeyPrefix + 'DAY_3.P_19' | translate}}</p>
+          <p><b>12:00</b> {{translationKeyPrefix + 'DAY_3.P_20' | translate}}</p>
+          <br>
+          <p><b>{{translationKeyPrefix + 'BREAK' | translate}}</b></p>
+          <br>
+          <p><b>16:00</b> {{translationKeyPrefix + 'DAY_3.P_21' | translate}}</p>
+          <p><b>17:00</b> {{translationKeyPrefix + 'DAY_3.P_22' | translate}}</p>
+          <p><b>17:30</b> {{translationKeyPrefix + 'DAY_3.P_23' | translate}}</p>
+          <p><b>18:00</b> {{translationKeyPrefix + 'DAY_3.P_24' | translate}}</p>
+          <p><b>18:30</b> {{translationKeyPrefix + 'DAY_3.P_25' | translate}}</p>
+          <p><b>19:00</b> {{translationKeyPrefix + 'DAY_3.P_26' | translate}}</p>
+          <p><b>20:00 {{translationKeyPrefix + 'DAY_3.P_27' | translate}}</b></p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.PiataRatustelor]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_5' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/VfbZNELwWbGiDbZw6" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>10:00</b> {{translationKeyPrefix + 'DAY_3.P_28' | translate}}</p>
+          <p><b>12:00</b> {{translationKeyPrefix + 'DAY_3.P_29' | translate}}</p>
+          <br>
+          <p><b>{{translationKeyPrefix + 'BREAK' | translate}}</b></p>
+          <br>
+          <p><b>16:00</b> {{translationKeyPrefix + 'DAY_3.P_30' | translate}}</p>
+          <p><b>17:30</b> {{translationKeyPrefix + 'DAY_3.P_31' | translate}}</p>
+          <p><b>18:00</b> {{translationKeyPrefix + 'DAY_3.P_32' | translate}}</p>
+          <p><b>18:30</b> {{translationKeyPrefix + 'DAY_3.P_33' | translate}}</p>
+          <p><b>19:00</b> {{translationKeyPrefix + 'DAY_3.P_34' | translate}}</p>
+          <p><b>19:30</b> {{translationKeyPrefix + 'DAY_3.P_35' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.TurnulCizmarilor]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_4' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/BVQ79cMfUcPbWoLS7" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>10:00 - 21:00</b> {{translationKeyPrefix + 'DAY_3.P_36' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.ZidulCetatii]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_6' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/27Bhs4aY3ZFqtHp37" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>10:00 - 19:00</b> {{translationKeyPrefix + 'DAY_3.P_37' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.CuloarulBatranelorDoamne]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_3' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/ZLqivARpvzXUtqKp7" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>10:00 - 22:00</b> {{translationKeyPrefix + 'DAY_3.P_38' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.PiataMuzeului]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_1' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/piAmsPXput6xF3Ka9" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>10:00 - 22:00</b> {{translationKeyPrefix + 'DAY_3.P_39' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.PiataMuzeului]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_1_2' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/CX2jh21Us73w18BA6" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>10:00 - 22:00 {{translationKeyPrefix + 'DAY_3.P_40' | translate}}</b></p>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+<b>* {{translationKeyPrefix + 'INFO' | translate}}</b>
