@@ -17,6 +17,18 @@
       <li class="nav-item" *ngIf="isAdminRoute && currentUser?.username">
         <a class="nav-link" href="#" (click)="logout()">Logout</a>
       </li>
+      <li class="contact">
+        <a class="nav-link" href="mailto:admin@veezble.com">
+          <span class="material-icons">mail</span>
+          <span class="contact-text">admin@veezble.com</span>
+        </a>
+      </li>
+      <li class="contact">
+        <a class="nav-link" href="tel:+40741373555">
+          <span class="material-icons">call</span>
+          <span class="contact-text">+40741373555</span>
+        </a>
+      </li>
       <li (click)="switchLang()">
         <a class="nav-link lang-switcher" href="javascript:void(0)">
           <img src="assets/images/{{language === 'en' ? 'ro' : 'en'}}.png">

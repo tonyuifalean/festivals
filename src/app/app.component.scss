@@ -35,20 +35,42 @@
       }
     }
 
+    .contact {
+      display: flex;
+
+      .nav-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 14px;
+
+        .material-icons {
+          font-size: 14px;
+        }
+      }
+    }
+
     .navbar-nav {
       flex: 1;
       flex-direction: row;
       justify-content: flex-end;
 
-      .nav-link {
-        color: white;
-        padding: 0 0.5rem;
+      li {
+        display: flex;
+        align-items: center;
 
-        &:hover {
-          color: grey;
-        }
-        img {
-          height: 20px;
+        .nav-link {
+          display: flex;
+          align-items: center;
+          color: white;
+          padding: 0 0.5rem;
+
+          &:hover {
+            color: grey;
+          }
+          img {
+            height: 20px;
+          }
         }
       }
     }
@@ -77,6 +99,18 @@
 
       img {
         width: 40px;
+      }
+    }
+
+    .contact {
+      .nav-link {
+        .contact-text {
+          display: none;
+        }
+
+        .material-icons {
+          font-size: 20px;
+        }
       }
     }
 
