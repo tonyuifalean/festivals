@@ -6,7 +6,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '1',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Casa cu Cerb',
     },
     info: {
@@ -25,7 +25,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '2',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Casa Venețiană',
     },
     info: {
@@ -44,7 +44,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '3',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Turnul cu Ceas',
     },
     info: {
@@ -63,7 +63,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '4',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Piața Cetății',
     },
     info: {
@@ -82,7 +82,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '5',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Scara Acoperită',
     },
     info: {
@@ -101,7 +101,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '6',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Biserica Romano-Catolică',
     },
     info: {
@@ -120,7 +120,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '7',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Biserica Mănăstirii',
     },
     info: {
@@ -139,7 +139,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '8',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Biserica din Deal',
     },
     info: {
@@ -158,7 +158,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '9',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Turnul Fierarilor',
     },
     info: {
@@ -177,7 +177,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '10',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Turnul Cizmarilor',
     },
     info: {
@@ -196,7 +196,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '11',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Turnul Croitorilor',
     },
     info: {
@@ -215,7 +215,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '12',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Turnul Tăbăcarilor',
     },
     info: {
@@ -234,7 +234,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '13',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Turnul Măcelarilor',
     },
     info: {
@@ -253,7 +253,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '14',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Turnul Franghierilor',
     },
     info: {
@@ -272,7 +272,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '15',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Turnul Cositorarilor',
     },
     info: {
@@ -291,7 +291,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
     id: '16',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Turnul Cojocarilor',
     },
     info: {

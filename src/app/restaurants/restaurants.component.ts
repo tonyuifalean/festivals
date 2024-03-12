@@ -1,6 +1,5 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
 import { Meta, Title } from '@angular/platform-browser';
 import { environment } from '@environments/environment';
 import { TranslateService } from '@ngx-translate/core';
@@ -9,6 +8,7 @@ import { ClipboardService } from 'ngx-clipboard';
 
 import { RESTAURANTS } from './restaurant.data';
 import { RestaurantModel } from './restaurant.model';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-restaurants',

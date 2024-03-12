@@ -6,7 +6,7 @@ export const ACCOMODATIONS: AccomodationModel[] = [
     address: "Str. Bastionului, Nr. 11",
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Casa Georgius Krauss',
     },
     imgName: "casa_georgius_krauss.jpg",
@@ -27,7 +27,7 @@ export const ACCOMODATIONS: AccomodationModel[] = [
     address: "Str. Bastionului, Nr. 10",
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Casa Joseph Haydn',
     },
     imgName: "casa_joseph_haydn.jpg",

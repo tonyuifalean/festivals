@@ -6,7 +6,7 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
     id: '1',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Piața Muzeului',
     },
     info: {
@@ -25,7 +25,7 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
     id: '2',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Piața Cetății',
     },
     info: {
@@ -44,7 +44,7 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
     id: '3',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Culoarul Bătrânelor Doamne',
     },
     info: {
@@ -63,7 +63,7 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
     id: '4',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Turnul Cizmarilor',
     },
     info: {
@@ -82,7 +82,7 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
     id: '5',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Piața Rățuștelor',
     },
     info: {
@@ -101,7 +101,7 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
     id: '6',
     // Data below is needed for Google Maps pins
     label: {
-      color: '#502233',
+      color: '#230E11',
       text: 'Zidul Cetății',
     },
     info: {

@@ -11,12 +11,19 @@ import { TranslateModule } from '@ngx-translate/core';
 
 import { GoogleMapsWrapperModule } from '@app/google-maps-wrapper';
 import { httpTranslateLoader, SharedModule } from '@app/shared';
-import { FestivalDetailsComponent, FestivalListComponent, FestivalScheduleComponent } from './components';
+import {
+  FestivalDetailsComponent,
+  FestivalListComponent,
+  FestivalScheduleComponent,
+} from './components';
 import { FestivalsRoutingModule } from './festivals-routing.module';
 
-
 @NgModule({
-  declarations: [FestivalListComponent, FestivalDetailsComponent, FestivalScheduleComponent],
+  declarations: [
+    FestivalListComponent,
+    FestivalDetailsComponent,
+    FestivalScheduleComponent,
+  ],
   imports: [
     CommonModule,
     FestivalsRoutingModule,
