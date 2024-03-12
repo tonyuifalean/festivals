@@ -141,10 +141,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 50px -10px 0 -10px;
-
-    &.space-between {
-      justify-content: space-between;
-    }
+    justify-content: center;
 
     .item-card {
       cursor: pointer;
@@ -166,17 +163,16 @@
 
   @media only screen and (max-width: 600px) {
     .items-wrapper {
-        display: block;
-        margin-top: 10px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        white-space: nowrap;
-        width: 100vw;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
 
       .item-card {
-        max-width: 400px;
-        margin-right: 10px;
-        width: 80%;
+        flex: 1;
+        max-width: none;
       }
     }
   }

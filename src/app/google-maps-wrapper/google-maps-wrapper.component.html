@@ -7,9 +7,9 @@
     [title]="marker.title"
     (mapClick)="openInfo(markerElem, marker.info)">
   </map-marker>
-  <map-info-window>
-    <strong>{{ infoContent?.title }}</strong>
+  <map-info-window *ngIf="infoContent">
+    <strong>{{ infoContent.title }}</strong>
     <br>
-    <a target="_blank" [href]="infoContent?.link"><strong>Open in Google Maps</strong></a>
+    <a target="_blank" [href]="infoContent.link"><strong>Open in Google Maps</strong></a>
   </map-info-window>
 </google-map>

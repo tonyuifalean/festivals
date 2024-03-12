@@ -1,6 +1,6 @@
 <h1 class="page-title">{{ "RESTAURANTS_PAGE" | translate }}</h1>
 
-<div class="items-wrapper" [class.space-between]="restaurants.length > 2">
+<div class="items-wrapper">
   <mat-card *ngFor="let restaurant of restaurants" class="item-card" [@card]>
     <mat-card-header>
       <mat-card-title>{{restaurant.info.title}}</mat-card-title>

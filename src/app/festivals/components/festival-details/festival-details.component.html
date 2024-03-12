@@ -1,7 +1,10 @@
 <div *ngIf="festivalData$ | async as festivalData">
   <h1 class="page-title">{{'FESTIVAL.LIST.FESTIVAL_' + festivalData.id + '.NAME' | translate}}</h1>
   <button mat-raised-button
-    (click)="scrollToSchedule()">{{'FESTIVAL.LIST.FESTIVAL_' + festivalData.id + '.VIEW_SCHEDULE' | translate}}</button>
+          *ngIf="festivalData.id === '1'"
+          (click)="scrollToSchedule()">
+          {{'FESTIVAL.LIST.FESTIVAL_' + festivalData.id + '.VIEW_SCHEDULE' | translate}}
+  </button>
   <div class="content-wrapper" id="festivalContentWrapper">
     <img src="assets/images/festivals/{{festivalData.imageName}}"
         alt="{{'FESTIVAL.LIST.FESTIVAL_' + festivalData.id + '.NAME' | translate}}">

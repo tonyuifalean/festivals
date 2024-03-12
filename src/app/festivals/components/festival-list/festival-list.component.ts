@@ -58,7 +58,8 @@ export class FestivalListComponent implements OnInit {
         // finalize(() => setTimeout(() => (this.isLoading = false), 500))
       )
       .subscribe((festivals: FestivalModel[]) => {
-        this.festivals = festivals;
+        // Display the first 3 festivals for now
+        this.festivals = festivals.slice(0, 3);
         // this.years = Object.keys(sources);
         // if (this.years.length) {
         //   this.defaultYear = this.years[0];

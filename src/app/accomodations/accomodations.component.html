@@ -1,6 +1,6 @@
 <h1 class="page-title">{{ "ACCOMODATIONS_PAGE" | translate }}</h1>
 
-<div class="items-wrapper" [class.space-between]="accomodations.length > 2">
+<div class="items-wrapper">
   <mat-card *ngFor="let accomodation of accomodations" class="item-card" [@card]>
     <mat-card-header>
       <mat-card-title>{{accomodation.info.title}}</mat-card-title>
