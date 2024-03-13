@@ -78,10 +78,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "sighisoara-festival:build:production"
+              "buildTarget": "sighisoara-festival:build:production"
             },
             "development": {
-              "browserTarget": "sighisoara-festival:build:development"
+              "buildTarget": "sighisoara-festival:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -89,7 +89,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sighisoara-festival:build"
+            "buildTarget": "sighisoara-festival:build"
           }
         },
         "test": {
