@@ -37,11 +37,10 @@
     </ul>
   </mat-toolbar>
 
-  <mat-sidenav-container class="festival-sidenav-container"
-    [style.marginTop.px]="mobileQuery.matches ? 56 : 60">
-    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+  <mat-sidenav-container class="festival-sidenav-container">
+    <mat-sidenav class="festival-sidenav" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
       [fixedInViewport]="mobileQuery.matches"
-      fixedTopGap="56">
+      fixedTopGap="60">
       <mat-nav-list (click)="mobileQuery.matches ? snav.toggle() : false">
         <a mat-list-item *ngFor="let nav of fillerNav"
           routerLink="{{nav.route}}">
