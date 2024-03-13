@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { httpTranslateLoader, MaterialModule } from './shared';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
@@ -67,7 +68,9 @@ const cookieConfig: NgcCookieConsentConfig = {
       }
     }),
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

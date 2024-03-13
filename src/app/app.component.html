@@ -1,6 +1,6 @@
 <div class="festival-main-container"
   [class.is-small-screen]="mobileQuery.matches">
-  <mat-toolbar color="primary" class="festival-toolbar">
+  <mat-toolbar color="primary" class="festival-toolbar mat-elevation-z6">
     <button mat-icon-button class="toggle-sidebar" (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
@@ -38,7 +38,7 @@
   </mat-toolbar>
 
   <mat-sidenav-container class="festival-sidenav-container"
-    [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    [style.marginTop.px]="mobileQuery.matches ? 56 : 60">
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
       [fixedInViewport]="mobileQuery.matches"
       fixedTopGap="56">
