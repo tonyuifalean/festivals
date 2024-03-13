@@ -3,7 +3,13 @@ import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import { NavigationStart, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { NgcCookieConsentService, NgcInitializeEvent, NgcNoCookieLawEvent, NgcStatusChangeEvent } from 'ngx-cookieconsent';
+import {
+  NgcCookieConsentService,
+  NgcInitializationErrorEvent,
+  NgcInitializingEvent,
+  NgcNoCookieLawEvent,
+  NgcStatusChangeEvent,
+} from 'ngx-cookieconsent';
 import { Subscription } from 'rxjs';
 import { AuthenticationService, User } from './shared';
 
@@ -12,7 +18,7 @@ import { AuthenticationService, User } from './shared';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   mobileQuery: MediaQueryList;
 
   fillerNav = [
@@ -54,7 +60,9 @@ export class AppComponent implements OnInit{
   //keep refs to subscriptions to be able to unsubscribe later
   private popupOpenSubscription!: Subscription;
   private popupCloseSubscription!: Subscription;
-  private initializeSubscription!: Subscription;
+  private initializingSubscription!: Subscription;
+  private initializedSubscription!: Subscription;
+  private initializationErrorSubscription!: Subscription;
   private statusChangeSubscription!: Subscription;
   private revokeChoiceSubscription!: Subscription;
   private noCookieLawSubscription!: Subscription;
@@ -80,18 +88,20 @@ export class AppComponent implements OnInit{
 
     this.updateCookieTranslation();
 
-    this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+    this.authenticationService.currentUser.subscribe(
+      (x) => (this.currentUser = x)
+    );
 
     this.translate
       .get(['cookie.message', 'cookie.dismiss', 'cookie.link'])
-      .subscribe(data => {
-       this.ccService.getConfig().content = {
-         message: data['cookie.message'],
-         dismiss: data['cookie.dismiss'],
-         link: data['cookie.link']
-        }
+      .subscribe((data) => {
+        this.ccService.getConfig().content = {
+          message: data['cookie.message'],
+          dismiss: data['cookie.dismiss'],
+          link: data['cookie.link'],
+        };
 
-        this.ccService.destroy();//remove previous cookie bar (with default messages)
+        this.ccService.destroy(); //remove previous cookie bar (with default messages)
         this.ccService.init(this.ccService.getConfig()); // update config with translated messages
       });
   }
@@ -107,11 +117,14 @@ export class AppComponent implements OnInit{
 
     // Add tags for SEO purpose
     this.metatagService.addTags([
-      { name: 'keywords', content: 'Sighișoara, Festival, Medieval, Transylvania' },
+      {
+        name: 'keywords',
+        content: 'Sighișoara, Festival, Medieval, Transylvania',
+      },
       { name: 'robots', content: 'index, follow' },
       { name: 'author', content: 'VEEZBLE SRL' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'date', content: '2022-05-01', scheme: 'YYYY-MM-DD'},
+      { name: 'date', content: '2022-05-01', scheme: 'YYYY-MM-DD' },
       { name: 'charset', content: 'UTF-8' },
     ]);
 
@@ -124,11 +137,28 @@ export class AppComponent implements OnInit{
       // you can use this.ccService.getConfig() to do stuff...
     });
 
-    this.initializeSubscription = this.ccService.initialize$.subscribe(
-      (event: NgcInitializeEvent) => {
-        // you can use this.ccService.getConfig() to do stuff...
+    this.initializingSubscription = this.ccService.initializing$.subscribe(
+      (event: NgcInitializingEvent) => {
+        // the cookieconsent is initilializing... Not yet safe to call methods like `NgcCookieConsentService.hasAnswered()`
+        console.log(`initializing: ${JSON.stringify(event)}`);
       }
     );
+
+    this.initializedSubscription = this.ccService.initialized$.subscribe(() => {
+      // the cookieconsent has been successfully initialized.
+      // It's now safe to use methods on NgcCookieConsentService that require it, like `hasAnswered()` for eg...
+      console.log(`initialized: ${JSON.stringify(event)}`);
+    });
+
+    this.initializationErrorSubscription =
+      this.ccService.initializationError$.subscribe(
+        (event: NgcInitializationErrorEvent) => {
+          // the cookieconsent has failed to initialize...
+          console.log(
+            `initializationError: ${JSON.stringify(event.error?.message)}`
+          );
+        }
+      );
 
     this.statusChangeSubscription = this.ccService.statusChange$.subscribe(
       (event: NgcStatusChangeEvent) => {
@@ -165,7 +195,9 @@ export class AppComponent implements OnInit{
     // unsubscribe to cookieconsent observables to prevent memory leaks
     this.popupOpenSubscription.unsubscribe();
     this.popupCloseSubscription.unsubscribe();
-    this.initializeSubscription.unsubscribe();
+    this.initializingSubscription.unsubscribe();
+    this.initializedSubscription.unsubscribe();
+    this.initializationErrorSubscription.unsubscribe();
     this.statusChangeSubscription.unsubscribe();
     this.revokeChoiceSubscription.unsubscribe();
     this.noCookieLawSubscription.unsubscribe();
@@ -178,17 +210,17 @@ export class AppComponent implements OnInit{
 
   updateCookieTranslation() {
     this.translate
-    .get(['cookie.message', 'cookie.dismiss', 'cookie.link'])
-    .subscribe(data => {
-     this.ccService.getConfig().content = {
-       message: data['cookie.message'],
-       dismiss: data['cookie.dismiss'],
-       link: data['cookie.link']
-      }
+      .get(['cookie.message', 'cookie.dismiss', 'cookie.link'])
+      .subscribe((data) => {
+        this.ccService.getConfig().content = {
+          message: data['cookie.message'],
+          dismiss: data['cookie.dismiss'],
+          link: data['cookie.link'],
+        };
 
-      this.ccService.destroy();//remove previous cookie bar (with default messages)
-      this.ccService.init(this.ccService.getConfig()); // update config with translated messages
-    });
+        this.ccService.destroy(); //remove previous cookie bar (with default messages)
+        this.ccService.init(this.ccService.getConfig()); // update config with translated messages
+      });
   }
 }
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { environment } from '@environments/environment';
-import { Gtag } from 'angular-gtag';
+import { GoogleTagManagerService } from 'angular-google-tag-manager';
 
 import { BlogPost } from './subcomponents/blog-post/blog-post.component';
 
@@ -36,7 +36,11 @@ export class BlogComponent implements OnInit {
     },
   ];
 
-  constructor(private gtag: Gtag, private meta: Meta, private title: Title) {
+  constructor(
+    private gtag: GoogleTagManagerService,
+    private meta: Meta,
+    private title: Title
+  ) {
     this.meta.addTags([
       { name: 'description', content: 'Blog about Sighișoara' },
       { name: 'author', content: 'VEEZBLE SRL' },
@@ -45,11 +49,12 @@ export class BlogComponent implements OnInit {
     this.title.setTitle('Blog - SighișoaraFestival');
 
     if (environment.production) {
-      this.gtag.pageview({
+      const gtmTag = {
+        event: 'page',
         page_title: 'Blog',
-        page_path: '/blog',
-        page_location: 'https://sighisoarafestival.com/blog',
-      });
+        page_location: 'https://sighisoarafestival.com/blog'
+      };
+      this.gtag.pushTag(gtmTag);
     }
   }
 

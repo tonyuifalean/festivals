@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from '@environments/environment';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { GtagModule } from 'angular-gtag';
+import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 import { NgcCookieConsentConfig, NgcCookieConsentModule } from 'ngx-cookieconsent';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
 
@@ -15,7 +15,7 @@ import { httpTranslateLoader, MaterialModule } from './shared';
 
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
-    domain: 'https://sighisoarafestival.com',
+    domain: 'sighisoarafestival.com',
   },
   position: 'bottom-left',
   theme: 'classic',
@@ -52,7 +52,9 @@ const cookieConfig: NgcCookieConsentConfig = {
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
-    GtagModule.forRoot({ trackingId: environment.gaTrackingId, trackPageviews: true }),
+    GoogleTagManagerModule.forRoot({
+      id: environment.gaTrackingId,
+    }),
     HttpClientModule,
     MaterialModule,
     NgcCookieConsentModule.forRoot(cookieConfig),

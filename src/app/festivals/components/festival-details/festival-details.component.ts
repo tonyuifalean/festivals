@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { GoogleTagManagerService } from 'angular-google-tag-manager';
 import { Observable } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 
+import { environment } from '@environments/environment';
 import { FestivalModel } from '../../models';
 import { FestivalsService } from '../../services';
 import { FestivalLocationModel } from './festival-location.model';
 import { FESTIVAL_LOCATIONS } from './festival-location.data';
-import { Gtag } from 'angular-gtag';
-import { environment } from '@environments/environment';
 
 @Component({
   selector: 'app-festival-details',
@@ -25,14 +25,15 @@ export class FestivalDetailsComponent implements OnInit {
     public translate: TranslateService,
     private activatedRoute: ActivatedRoute,
     private festivalsService: FestivalsService,
-    private gtag: Gtag,
+    private gtag: GoogleTagManagerService,
   ) {
     if (environment.production) {
-      this.gtag.pageview({
+      const gtmTag = {
+        event: 'page',
         page_title: 'Festival Details',
-        page_path: '/festivals/festival-details',
         page_location: 'https://sighisoarafestival.com/festivals/festival-details'
-      });
+      };
+      this.gtag.pushTag(gtmTag);
     }
   }
 
@@ -53,7 +54,10 @@ export class FestivalDetailsComponent implements OnInit {
     el?.scrollIntoView({ behavior: "smooth", block: "start" });
 
     if (environment.production) {
-      this.gtag.event('Scroll to Schedule');
+      const gtmTag = {
+        event: 'Scroll to Schedule',
+      };
+      this.gtag.pushTag(gtmTag);
     }
   }
 }

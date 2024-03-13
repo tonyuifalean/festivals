@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { environment } from '@environments/environment';
 import { TranslateService } from '@ngx-translate/core';
-import { Gtag } from 'angular-gtag';
-
+import { GoogleTagManagerService } from 'angular-google-tag-manager';
 
 enum DayKey {
   Vineri = 'vineri',
@@ -54,14 +53,15 @@ export class FestivalScheduleComponent {
 
   constructor(
     public translate: TranslateService,
-    private gtag: Gtag,
+    private gtag: GoogleTagManagerService,
   ) {
     if (environment.production) {
-      this.gtag.pageview({
+      const gtmTag = {
+        event: 'page',
         page_title: 'Festival Schedule',
-        page_path: '/festivals/festival-details',
         page_location: 'https://sighisoarafestival.com/festivals/festival-details'
-      });
+      };
+      this.gtag.pushTag(gtmTag);
     }
   }
 
@@ -74,7 +74,10 @@ export class FestivalScheduleComponent {
     }
 
     if (environment.production) {
-      this.gtag.event('Filter by Day - Desktop');
+      const gtmTag = {
+        event: 'Filter by Day - Desktop',
+      };
+      this.gtag.pushTag(gtmTag);
     }
   }
 
@@ -85,7 +88,10 @@ export class FestivalScheduleComponent {
     }
 
     if (environment.production) {
-      this.gtag.event('Filter by Day - Mobile');
+      const gtmTag = {
+        event: 'Filter by Day - Mobile',
+      };
+      this.gtag.pushTag(gtmTag);
     }
   }
 
@@ -98,7 +104,10 @@ export class FestivalScheduleComponent {
     }
 
     if (environment.production) {
-      this.gtag.event('Filter by Location - Desktop');
+      const gtmTag = {
+        event: 'Filter by Location - Desktop',
+      };
+      this.gtag.pushTag(gtmTag);
     }
   }
 
@@ -109,7 +118,10 @@ export class FestivalScheduleComponent {
     }
 
     if (environment.production) {
-      this.gtag.event('Filter by Location - Mobile');
+      const gtmTag = {
+        event: 'Filter by Location - Desktop',
+      };
+      this.gtag.pushTag(gtmTag);
     }
   }
 }

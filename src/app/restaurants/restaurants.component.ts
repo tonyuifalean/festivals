@@ -1,14 +1,14 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-import { environment } from '@environments/environment';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { TranslateService } from '@ngx-translate/core';
-import { Gtag } from 'angular-gtag';
+import { GoogleTagManagerService } from 'angular-google-tag-manager';
 import { ClipboardService } from 'ngx-clipboard';
 
+import { environment } from '@environments/environment';
 import { RESTAURANTS } from './restaurant.data';
 import { RestaurantModel } from './restaurant.model';
-import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-restaurants',
@@ -33,7 +33,7 @@ export class RestaurantsComponent {
   constructor(
     public translate: TranslateService,
     private clipboardService: ClipboardService,
-    private gtag: Gtag,
+    private gtag: GoogleTagManagerService,
     private meta: Meta,
     private title: Title,
     private snackBar: MatSnackBar
@@ -46,11 +46,12 @@ export class RestaurantsComponent {
     this.title.setTitle('Restaurants - SighișoaraFestival');
 
     if (environment.production) {
-      this.gtag.pageview({
+      const gtmTag = {
+        event: 'page',
         page_title: 'Restaurants',
-        page_path: '/restaurants',
         page_location: 'https://sighisoarafestival.com/restaurants'
-      });
+      };
+      this.gtag.pushTag(gtmTag);
     }
   }
 

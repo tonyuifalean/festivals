@@ -4,7 +4,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Meta, Title } from '@angular/platform-browser';
 import { environment } from '@environments/environment';
 import { TranslateService } from '@ngx-translate/core';
-import { Gtag } from 'angular-gtag';
+import { GoogleTagManagerService } from 'angular-google-tag-manager';
 import { ClipboardService } from 'ngx-clipboard';
 
 import { ACCOMODATIONS } from './accomodation.data';
@@ -33,7 +33,7 @@ export class AccomodationsComponent {
   constructor(
     public translate: TranslateService,
     private clipboardService: ClipboardService,
-    private gtag: Gtag,
+    private gtag: GoogleTagManagerService,
     private meta: Meta,
     private title: Title,
     private snackBar: MatSnackBar
@@ -46,11 +46,12 @@ export class AccomodationsComponent {
     this.title.setTitle('Accomodations - SighișoaraFestival');
 
     if (environment.production) {
-      this.gtag.pageview({
+      const gtmTag = {
+        event: 'page',
         page_title: 'Accomodations',
-        page_path: '/accomodations',
         page_location: 'https://sighisoarafestival.com/accomodations'
-      });
+      };
+      this.gtag.pushTag(gtmTag);
     }
   }
 

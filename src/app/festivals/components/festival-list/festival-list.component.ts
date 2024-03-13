@@ -3,12 +3,12 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { GoogleTagManagerService } from 'angular-google-tag-manager';
 import { take } from 'rxjs/operators';
 
+import { environment } from '@environments/environment';
 import { FestivalsService } from '../../services';
 import { FestivalModel } from '../../models';
-import { environment } from '@environments/environment';
-import { Gtag } from 'angular-gtag';
 
 @Component({
   selector: 'app-festival-list',
@@ -44,7 +44,7 @@ export class FestivalListComponent implements OnInit {
   constructor(
     public translate: TranslateService,
     private festivalsService: FestivalsService,
-    private gtag: Gtag,
+    private gtag: GoogleTagManagerService,
     private router: Router,
     private meta: Meta,
     private title: Title
@@ -78,11 +78,12 @@ export class FestivalListComponent implements OnInit {
     this.title.setTitle('Festivals - SighișoaraFestival');
 
     if (environment.production) {
-      this.gtag.pageview({
+      const gtmTag = {
+        event: 'page',
         page_title: 'Festivals',
-        page_path: '/festivals',
         page_location: 'https://sighisoarafestival.com/festivals'
-      });
+      };
+      this.gtag.pushTag(gtmTag);
     }
   }
 

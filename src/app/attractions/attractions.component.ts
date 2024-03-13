@@ -1,7 +1,7 @@
 import { Component } from '@angular/core'
 import { Meta, Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
-import { Gtag } from 'angular-gtag';
+import { GoogleTagManagerService } from 'angular-google-tag-manager';
 
 import { environment } from '@environments/environment';
 import { ATTRACTIONS_LOCATIONS } from './attraction-location.data';
@@ -18,7 +18,7 @@ export class AttractionsComponent {
 
   constructor(
     public translate: TranslateService,
-    private gtag: Gtag,
+    private gtag: GoogleTagManagerService,
     private meta: Meta,
     private title: Title,
   ) {
@@ -30,11 +30,12 @@ export class AttractionsComponent {
     this.title.setTitle('Tourist Attractions - SighișoaraFestival');
 
     if (environment.production) {
-      this.gtag.pageview({
+      const gtmTag = {
+        event: 'page',
         page_title: 'Attractions',
-        page_path: '/attractions',
         page_location: 'https://sighisoarafestival.com/attractions'
-      });
+      };
+      this.gtag.pushTag(gtmTag);
     }
   }
 }
