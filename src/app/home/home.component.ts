@@ -1,5 +1,5 @@
-import { animate, query, stagger, state, style, transition, trigger } from '@angular/animations';
-import { ThisReceiver } from '@angular/compiler';
+import { animate, /* query, stagger, */ state, style, transition, trigger } from '@angular/animations';
+// import { ThisReceiver } from '@angular/compiler';
 import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
@@ -27,19 +27,19 @@ import { TranslateService } from '@ngx-translate/core';
   ],
 })
 export class HomeComponent {
-  public currentUser: User = {};
+  // public currentUser: User = {};
 
   constructor(
     public translate: TranslateService,
-    private authenticationService: AuthenticationService,
+    // private authenticationService: AuthenticationService,
     private gtag: GoogleTagManagerService,
-    private router: Router,
+    // private router: Router,
     private meta: Meta,
     private title: Title,
   ) {
-    this.authenticationService.currentUser.subscribe(
-      (x) => (this.currentUser = x)
-    );
+    // this.authenticationService.currentUser.subscribe(
+    //   (x) => (this.currentUser = x)
+    // );
 
     this.meta.addTags([
       { name: 'description', content: 'Home of Festivals in Sighișoara' },

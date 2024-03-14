@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'admin', component: HomeComponent },
+  // { path: 'admin', component: HomeComponent },
   {
     path: 'attractions',
     loadChildren: () =>
@@ -36,11 +36,11 @@ const routes: Routes = [
     path: 'blog',
     loadChildren: () => import('./blog').then((m) => m.BlogModule),
   },
-  {
-    path: 'login',
-    redirectTo: 'auth/login',
-    pathMatch: 'full'
-  },
+  // {
+  //   path: 'login',
+  //   redirectTo: 'auth/login',
+  //   pathMatch: 'full'
+  // },
   {
     path: 'register',
     redirectTo: 'auth/register',
@@ -54,6 +54,7 @@ const routes: Routes = [
       ),
     pathMatch: 'prefix'
   },
+  { path: '**', redirectTo: '/home' },
 ];
 
 @NgModule({
