@@ -39,11 +39,19 @@ export class AccomodationsComponent {
     private snackBar: MatSnackBar
   )  {
     this.meta.addTags([
-      { name: 'description', content: 'Accomodations in Sighișoara' },
-      { name: 'author', content: 'VEEZBLE SRL' },
-      { name: 'keywords', content: 'Sighișoara, Festival, Medieval, Transylvania, Accomodations' },
+      {
+        name: 'description',
+        content:
+          'Visit the Accommodations in Sighisoara page for a curated selection of the best places to stay in this historic town.',
+      },
+      { name: 'author', content: 'VEEZBLE' },
+      {
+        name: 'keywords',
+        content:
+          'Sighisoara accommodations, Hotels in Sighisoara, Sighisoara lodging, Stay in Sighisoara, Sighisoara guesthouses, Sighisoara vacation rentals, Best places to stay Sighisoara, Sighisoara hotel deals, Luxury accommodation Sighisoara, Budget hotels Sighisoara',
+      },
     ]);
-    this.title.setTitle('Accomodations - SighișoaraFestival');
+    this.title.setTitle('Accomodations - Sighisoara Festival');
 
     if (environment.production) {
       const gtmTag = {

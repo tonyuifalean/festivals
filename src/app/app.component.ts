@@ -74,7 +74,7 @@ export class AppComponent implements OnInit {
     private authenticationService: AuthenticationService,
     private metatagService: Meta,
     private router: Router,
-    private ccService: NgcCookieConsentService,
+    private ccService: NgcCookieConsentService
   ) {
     this.mobileQuery = this.media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => this.changeDetectorRef.detectChanges();
@@ -118,11 +118,17 @@ export class AppComponent implements OnInit {
     // Add tags for SEO purpose
     this.metatagService.addTags([
       {
+        name: 'description',
+        content:
+          "Discover the enchanting Sighisoara Festival website, your ultimate guide to the vibrant and colorful cultural celebrations of Sighisoara, Romania. Dive into the heart of medieval festivities, explore schedules, events, and exclusive insights into the world-famous Medieval Festival, along with other local celebrations and traditions. Experience the magic of Sighisoara through captivating images, detailed event descriptions, and practical visitor information. Join us to celebrate the rich heritage and lively spirit of Sighisoara's festivals!",
+      },
+      {
         name: 'keywords',
-        content: 'Sighișoara, Festival, Medieval, Transylvania',
+        content:
+          'Sighisoara Festival website, Sighisoara cultural fest, Medieval Festival Sighisoara, Sighisoara event listings, Festival in Sighisoara, Sighisoara arts and culture, Sighisoara festival program, Visit Sighisoara festival, Sighisoara festival tickets, Sighisoara festival experience',
       },
       { name: 'robots', content: 'index, follow' },
-      { name: 'author', content: 'VEEZBLE SRL' },
+      { name: 'author', content: 'VEEZBLE' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'date', content: '2022-05-01', scheme: 'YYYY-MM-DD' },
       { name: 'charset', content: 'UTF-8' },

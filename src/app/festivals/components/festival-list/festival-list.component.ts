@@ -1,4 +1,10 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
@@ -54,7 +60,7 @@ export class FestivalListComponent implements OnInit {
     this.festivalsService
       .getFestivalList()
       .pipe(
-        take(1),
+        take(1)
         // finalize(() => setTimeout(() => (this.isLoading = false), 500))
       )
       .subscribe((festivals: FestivalModel[]) => {
@@ -68,20 +74,25 @@ export class FestivalListComponent implements OnInit {
       });
 
     this.meta.addTags([
-      { name: 'description', content: 'Festivals in Sighișoara' },
-      { name: 'author', content: 'VEEZBLE SRL' },
+      {
+        name: 'description',
+        content:
+          "Discover the Festivals of Sighisoara page, your gateway to the enchanting celebrations in Romania's medieval gem. Uncover the charm of Sighisoara's festivals, including the famous Medieval Festival, through detailed guides, stunning images, and the latest event information. Dive into the heart of Sighisoara's cultural vibrancy and plan your festive journey with ease.",
+      },
+      { name: 'author', content: 'VEEZBLE' },
       {
         name: 'keywords',
-        content: 'Sighișoara, Festival, Medieval, Transylvania',
+        content:
+          'Sighisoara festivals, Medieval Festival Sighisoara, Sighisoara events, Cultural festivals Sighisoara, Sighisoara annual celebrations, Sighisoara festival guide, Upcoming festivals Sighisoara, Sighisoara music festivals, Traditional festivals Sighisoara, Sighisoara festival dates',
       },
     ]);
-    this.title.setTitle('Festivals - SighișoaraFestival');
+    this.title.setTitle('Festivals - Sighisoara Festival');
 
     if (environment.production) {
       const gtmTag = {
         event: 'page',
         page_title: 'Festivals',
-        page_location: 'https://sighisoarafestival.com/festivals'
+        page_location: 'https://sighisoarafestival.com/festivals',
       };
       this.gtag.pushTag(gtmTag);
     }

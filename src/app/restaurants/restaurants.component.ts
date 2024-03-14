@@ -39,11 +39,19 @@ export class RestaurantsComponent {
     private snackBar: MatSnackBar
   ) {
     this.meta.addTags([
-      { name: 'description', content: 'Restaurants in Sighișoara' },
-      { name: 'author', content: 'VEEZBLE SRL' },
-      { name: 'keywords', content: 'Sighișoara, Transylvania, Restaurants'}
+      {
+        name: 'description',
+        content:
+          'Discover the Restaurants in Sighisoara page, your guide to the finest dining experiences in this medieval city. ',
+      },
+      { name: 'author', content: 'VEEZBLE' },
+      {
+        name: 'keywords',
+        content:
+          'Sighisoara restaurants, Best dining Sighisoara, Traditional food Sighisoara, Top eateries Sighisoara, Sighisoara cuisine, Sighisoara dining guide, Gourmet experiences Sighisoara, Sighisoara food recommendations, Culinary spots Sighisoara, Sighisoara restaurant reviews',
+      },
     ]);
-    this.title.setTitle('Restaurants - SighișoaraFestival');
+    this.title.setTitle('Restaurants - Sighisoara Festival');
 
     if (environment.production) {
       const gtmTag = {

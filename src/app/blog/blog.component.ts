@@ -42,11 +42,19 @@ export class BlogComponent implements OnInit {
     private title: Title
   ) {
     this.meta.addTags([
-      { name: 'description', content: 'Blog about Sighișoara' },
-      { name: 'author', content: 'VEEZBLE SRL' },
-      { name: 'keywords', content: 'Sighișoara, Transylvania, Blog' },
+      {
+        name: 'description',
+        content:
+          "Visit the Blog about Sighisoara page for engaging stories, travel tips, and insider knowledge on Sighisoara's hidden treasures. Discover the city's rich history, cultural insights, and must-see attractions through our informative and captivating blog posts",
+      },
+      { name: 'author', content: 'VEEZBLE' },
+      {
+        name: 'keywords',
+        content:
+          'Sighisoara blog, Travel tips Sighisoara, Sighisoara history, Cultural insights Sighisoara, Sighisoara attractions guide, Sighisoara tourism, Explore Sighisoara, Sighisoara hidden gems, Visit Sighisoara, Sighisoara travel guide',
+      },
     ]);
-    this.title.setTitle('Blog - SighișoaraFestival');
+    this.title.setTitle('Blog - Sighisoara Festival');
 
     if (environment.production) {
       const gtmTag = {

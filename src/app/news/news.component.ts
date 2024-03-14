@@ -19,10 +19,10 @@ export class NewsComponent {
   ) {
     this.meta.addTags([
       { name: 'description', content: 'News about Sighișoara' },
-      { name: 'author', content: 'VEEZBLE SRL' },
+      { name: 'author', content: 'VEEZBLE' },
       { name: 'keywords', content: 'Sighișoara, Transylvania, News' },
     ]);
-    this.title.setTitle('News - SighișoaraFestival');
+    this.title.setTitle('News - Sighisoara Festival');
 
     if (environment.production) {
       const gtmTag = {
