@@ -16,7 +16,7 @@ export const RESTAURANTS: RestaurantModel[] = [
       link: 'https://g.page/casajosephhaydnwineandcuisine?share',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.22069948681924,
@@ -37,7 +37,7 @@ export const RESTAURANTS: RestaurantModel[] = [
       link: 'https://goo.gl/maps/HKHeSn7gp6ufCTsFA',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.22095377882968,
@@ -58,7 +58,7 @@ export const RESTAURANTS: RestaurantModel[] = [
       link: 'https://goo.gl/maps/DNUGCXZ6tMiV8jYU8',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.218894403148795,

@@ -36,7 +36,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
+        run: npm run prerender
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -46,7 +46,7 @@ jobs:
           aws-region: eu-central-1
 
       - name: Deploy to S3
-        run: aws s3 sync ./dist/sighisoara-festival s3://sighisoarafestival.com
+        run: aws s3 sync ./dist/sighisoara-festival/browser s3://sighisoarafestival.com
 
       - name: Invalidate CloudFront Cache
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"

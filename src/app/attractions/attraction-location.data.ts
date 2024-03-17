@@ -14,7 +14,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/bsmTTZNVEkqhHnnN6',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.219744529214566,
@@ -33,7 +33,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/tjtgWc3Q5bu3mLeQ9',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.21954293119714,
@@ -52,7 +52,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/MHBXryW57gxinX33A',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.21934353269155,
@@ -71,7 +71,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/z7HhZ6hQngYgVvYj6',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.22001961781612,
@@ -90,7 +90,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/z7HhZ6hQngYgVvYj6',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.218547186965736,
@@ -109,7 +109,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/6khXwR9mUroHPUn66',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.22102083207683,
@@ -128,7 +128,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/GQtsVok1dxSMa94c9',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.21976746581365,
@@ -147,7 +147,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/ztbXFnYp4zfiaD3g8',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.21773259218673,
@@ -166,7 +166,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/RjTDs6nKMzQt1MSy7',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.21959568227899,
@@ -185,7 +185,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/8ndaS65GkhHM9zYt8',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.22127766428962,
@@ -204,7 +204,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/GSq8KKerSYFvAA6S6',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.2202197178381,
@@ -223,7 +223,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/2xKCwYPApHfXzZHp6',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.21860832924236,
@@ -242,7 +242,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/trfhNL77Tv9j1TmF9',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.21874875948467,
@@ -261,7 +261,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/2DWYJn62NyTB2X648',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.21775835778944,
@@ -280,7 +280,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/uHkJYmf1VFB5Qjim9',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.21821321374431,
@@ -299,7 +299,7 @@ export const ATTRACTIONS_LOCATIONS: AttractionLocationModel[] = [
       link: 'https://goo.gl/maps/Z7tnc9hHnmkAMwoMA',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.21899212862332,

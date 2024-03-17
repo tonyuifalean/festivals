@@ -14,7 +14,7 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
       link: 'https://goo.gl/maps/piAmsPXput6xF3Ka9',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.2200903314813,
@@ -33,7 +33,7 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
       link: 'https://goo.gl/maps/YQv6RZB6MxeCGHbk7',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.220021397206246,
@@ -52,7 +52,7 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
       link: 'https://goo.gl/maps/ZLqivARpvzXUtqKp7',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.21912722353414,
@@ -71,7 +71,7 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
       link: 'https://goo.gl/maps/BVQ79cMfUcPbWoLS7',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.22127710132836,
@@ -90,7 +90,7 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
       link: 'https://goo.gl/maps/VfbZNELwWbGiDbZw6',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.218804991122546,
@@ -109,7 +109,7 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
       link: 'https://goo.gl/maps/27Bhs4aY3ZFqtHp37',
     },
     options: {
-      animation: google.maps.Animation.BOUNCE,
+      // animation: google.maps.Animation.BOUNCE,
     },
     position: {
       lat: 46.21987786106217,

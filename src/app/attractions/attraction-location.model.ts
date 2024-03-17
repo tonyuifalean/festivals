@@ -9,7 +9,7 @@ export interface AttractionLocationModel {
     link: string;
   };
   options: {
-    animation: google.maps.Animation;
+    // animation: google.maps.Animation;
   };
   position: {
     lat: number;

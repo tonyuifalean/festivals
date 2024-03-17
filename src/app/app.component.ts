@@ -71,7 +71,7 @@ export class AppComponent implements OnInit {
     public translate: TranslateService,
     private changeDetectorRef: ChangeDetectorRef,
     private media: MediaMatcher,
-    private authenticationService: AuthenticationService,
+    // private authenticationService: AuthenticationService,
     private metatagService: Meta,
     private router: Router,
     private ccService: NgcCookieConsentService
@@ -88,21 +88,23 @@ export class AppComponent implements OnInit {
 
     this.updateCookieTranslation();
 
-    this.authenticationService.currentUser.subscribe(
-      (x) => (this.currentUser = x)
-    );
+    // this.authenticationService.currentUser.subscribe(
+    //   (x) => (this.currentUser = x)
+    // );
 
     this.translate
       .get(['cookie.message', 'cookie.dismiss', 'cookie.link'])
       .subscribe((data) => {
-        this.ccService.getConfig().content = {
-          message: data['cookie.message'],
-          dismiss: data['cookie.dismiss'],
-          link: data['cookie.link'],
-        };
+        if (this.ccService.getConfig()) {
+          this.ccService.getConfig().content = {
+            message: data['cookie.message'],
+            dismiss: data['cookie.dismiss'],
+            link: data['cookie.link'],
+          };
 
-        this.ccService.destroy(); //remove previous cookie bar (with default messages)
-        this.ccService.init(this.ccService.getConfig()); // update config with translated messages
+          this.ccService.destroy(); //remove previous cookie bar (with default messages)
+          this.ccService.init(this.ccService.getConfig()); // update config with translated messages
+        }
       });
   }
 
@@ -210,7 +212,7 @@ export class AppComponent implements OnInit {
   }
 
   logout() {
-    this.authenticationService.logout();
+    // this.authenticationService.logout();
     this.router.navigate(['/login']);
   }
 
@@ -218,14 +220,16 @@ export class AppComponent implements OnInit {
     this.translate
       .get(['cookie.message', 'cookie.dismiss', 'cookie.link'])
       .subscribe((data) => {
-        this.ccService.getConfig().content = {
-          message: data['cookie.message'],
-          dismiss: data['cookie.dismiss'],
-          link: data['cookie.link'],
-        };
+        if (this.ccService.getConfig()) {
+          this.ccService.getConfig().content = {
+            message: data['cookie.message'],
+            dismiss: data['cookie.dismiss'],
+            link: data['cookie.link'],
+          };
 
-        this.ccService.destroy(); //remove previous cookie bar (with default messages)
-        this.ccService.init(this.ccService.getConfig()); // update config with translated messages
+          this.ccService.destroy(); //remove previous cookie bar (with default messages)
+          this.ccService.init(this.ccService.getConfig()); // update config with translated messages
+        }
       });
   }
 }

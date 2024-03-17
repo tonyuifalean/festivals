@@ -1,7 +1,8 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration, withHttpTransferCacheOptions } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { environment } from '@environments/environment';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { GoogleTagManagerModule } from 'angular-google-tag-manager';
@@ -12,7 +13,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { httpTranslateLoader, MaterialModule } from './shared';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
@@ -69,7 +69,13 @@ const cookieConfig: NgcCookieConsentConfig = {
     }),
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideClientHydration(
+      withHttpTransferCacheOptions({
+        includePostRequests: true,
+      })
+    ),
+    provideHttpClient(withFetch()),
   ],
   bootstrap: [AppComponent]
 })

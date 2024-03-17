@@ -1,0 +1,11 @@
+/
+/home
+/festivals
+/attractions
+/accomodations
+/restaurants
+/blog
+/festivals/festival-details/1
+/festivals/festival-details/2
+/festivals/festival-details/3
+/festivals/festival-details/4
