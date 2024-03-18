@@ -9,10 +9,10 @@
     <img mat-card-image src="assets/images/restaurants/{{restaurant.imgName}}" alt="{{restaurant.info.title}}">
     <mat-card-actions>
       <!-- <a mat-raised-button>Open</a> -->
-      <a mat-raised-button [href]="restaurant.info.link" target="_blank">Visit location</a>
       <span class="copy-location-wrapper">
         <button mat-raised-button color="primary" (click)="copyLocation(restaurant.info.link)">Copy location</button>
       </span>
+      <a mat-raised-button [href]="restaurant.info.link" target="_blank">Visit location</a>
     </mat-card-actions>
   </mat-card>
 </div>
