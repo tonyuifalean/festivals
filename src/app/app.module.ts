@@ -1,13 +1,14 @@
 import { HttpClient, HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration, withHttpTransferCacheOptions } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { environment } from '@environments/environment';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 import { NgcCookieConsentConfig, NgcCookieConsentModule } from 'ngx-cookieconsent';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
+import { firstValueFrom } from 'rxjs';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -44,6 +45,14 @@ const cookieConfig: NgcCookieConsentConfig = {
   },
 };
 
+export function initializeApp(translate: TranslateService) {
+  translate.addLangs(['en', 'ro']);
+  translate.setDefaultLang('en');
+
+  return (): Promise<any> =>
+    firstValueFrom(translate.use('en'));
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,6 +85,12 @@ const cookieConfig: NgcCookieConsentConfig = {
       })
     ),
     provideHttpClient(withFetch()),
+    {
+      provide: APP_INITIALIZER,
+      useFactory: initializeApp,
+      multi: true,
+      deps: [TranslateService],
+    },
   ],
   bootstrap: [AppComponent]
 })

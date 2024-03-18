@@ -11,6 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { SpinnerComponent, TableComponent } from './components';
+import { environment } from '@environments/environment';
 
 @NgModule({
   declarations: [SpinnerComponent, TableComponent],
@@ -30,11 +31,15 @@ import { SpinnerComponent, TableComponent } from './components';
       },
     }),
   ],
-  exports: [SpinnerComponent, TableComponent]
+  exports: [SpinnerComponent, TableComponent],
 })
-export class SharedModule { }
+export class SharedModule {}
 
 // AOT compilation support
 export function httpTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  return new TranslateHttpLoader(
+    http,
+    `${environment.frontEndUrl}/assets/i18n/`,
+    '.json'
+  );
 }

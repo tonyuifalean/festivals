@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  frontEndUrl: 'http://localhost:4200',
   backEndUrl: 'http://localhost:3000',
   gaTrackingId: ''
 };

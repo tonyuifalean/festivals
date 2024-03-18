@@ -81,10 +81,10 @@ export class AppComponent implements OnInit {
     this.mobileQuery.addListener(this._mobileQueryListener);
 
     // list of available languages
-    translate.addLangs(['en', 'ro']);
+    // translate.addLangs(['en', 'ro']);
 
     // language that will be used by default
-    translate.setDefaultLang(this.language);
+    // translate.setDefaultLang(this.language);
 
     this.updateCookieTranslation();
 
