@@ -116,4 +116,42 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
       lng: 24.790696945883838,
     },
   },
+  {
+    id: '7',
+    // Data below is needed for Google Maps pins
+    label: {
+      color: '#230E11',
+      text: 'MYstical Transylvania',
+    },
+    info: {
+      title: 'MYstical Transylvania',
+      link: 'https://maps.app.goo.gl/4kkLxHoXHUqqeYH36',
+    },
+    options: {
+      // animation: google.maps.Animation.BOUNCE,
+    },
+    position: {
+      lat: 46.21944756693958,
+      lng: 24.791854549196515,
+    },
+  },
+  {
+    id: '8',
+    // Data below is needed for Google Maps pins
+    label: {
+      color: '#230E11',
+      text: 'Primăria municipiului Sighișoara',
+    },
+    info: {
+      title: 'Primăria municipiului Sighișoara',
+      link: 'https://maps.app.goo.gl/BWJGpqaGw9YEW31w9',
+    },
+    options: {
+      // animation: google.maps.Animation.BOUNCE,
+    },
+    position: {
+      lat: 46.220205135835826,
+      lng: 24.793711963596543,
+    },
+  },
 ];

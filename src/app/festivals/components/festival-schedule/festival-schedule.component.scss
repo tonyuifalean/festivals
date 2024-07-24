@@ -77,7 +77,7 @@ ul {
   width: 100%;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .day-list,
   .location-list {
     display: none;
@@ -90,7 +90,7 @@ ul {
   // }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1201px) {
   .day-list-mobile,
   .location-list-mobile {
     display: none;

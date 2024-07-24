@@ -66,7 +66,7 @@
     "LIST": {
       "FESTIVAL_1": {
         "NAME": "Festivalul \"Sighișoara Medievală\"",
-        "VIEW_SCHEDULE": "Vezi Program 2022",
+        "VIEW_SCHEDULE": "Vezi Program 2024",
         "DESCRIPTION": {
           "P_1": "Poftiți în lumea poveștilor și obiceiurilor din Transilvania medievală!",
           "P_2": "La sfârșit de iulie, în Cetatea Sighișoarei, trecutul reînvie, vară de vară, începând cu anul 1992 până în zilele de azi, datorită celebrului Festival Medieval. Toată această magie are loc în perioada 29-31 iulie. Sub ocrotirea zidurilor vechi, care duc povara sutelor de ani de istorie captivantă, și pe străzile înguste, cu poteci ce poartă urma pașilor unor personaje cu rezonanță istorică, apar pe nepusă masă, alimentând apetitul de povești cu tentă dramatică tocmai acele personaje venite parcă din scenariul celei mai fascinante epoci din istorie, Evul Mediu: cavaleri neînfricați, vrăjitori terifianți, clovni amuzanți, duhuri întrupate parcă din alte lumi, dar și prințese cu frumuseți neasemuite, zâne bune și eroi care vor duce o luptă tăcută cu forțele răului, spre deliciul spectatorilor.",
@@ -83,7 +83,7 @@
           "P_13": "Iz al vremurilor de altădată, costume și decoruri  inspirate din Evul Mediu, atmosferă medievală acompaniată de muzica trubadurilor și concerte în aer liber, standuri pitorești cu suveniruri handmade și expoziții de pictură ale talentatilor artiști locali, constituie niște premise extraordinare pentru o escapadă de weekend atât pentru turiștii din țară cât și pentru cei de peste hotare."
         },
         "SCHEDULE": {
-          "TITLE": "Program Festivalul \"Sighișoara Medievală\" 2022",
+          "TITLE": "Program Festivalul \"Sighișoara Medievală\" 2024",
           "FILTER": {
             "DAY_1": "Vineri",
             "DAY_2": "Sâmbătă",
@@ -95,6 +95,8 @@
             "LOCATION_4": "Turnul Cizmarilor",
             "LOCATION_5": "Piața Rățuștelor",
             "LOCATION_6": "Zidul Cetății",
+            "LOCATION_7": "MYstical Transylvania",
+            "LOCATION_8": "Primăria municipiului Sighișoara",
             "SELECT_DAY": "Selectează ziua",
             "SELECT_LOCATION": "Selectează locația"
           },

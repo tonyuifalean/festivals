@@ -16,6 +16,8 @@ enum LocationKey {
   TurnulCizmarilor = 'turnulCizmarilor',
   PiataRatustelor = 'piataRatustelor',
   ZidulCetatii = 'zidulCetatii',
+  MYsticalTransylvania = 'mysticalTransylvania',
+  PrimariaMunicipiului = 'primariaMunicipiului',
 }
 
 @Component({
@@ -26,8 +28,8 @@ enum LocationKey {
 export class FestivalScheduleComponent {
   dayValue = [DayKey.Duminica];
   dayFilterValue = {
-    [DayKey.Vineri]: false,
-    [DayKey.Sambata]: false,
+    [DayKey.Vineri]: true,
+    [DayKey.Sambata]: true,
     [DayKey.Duminica]: true,
   };
   locationValue = [
@@ -37,6 +39,8 @@ export class FestivalScheduleComponent {
     LocationKey.TurnulCizmarilor,
     LocationKey.PiataRatustelor,
     LocationKey.ZidulCetatii,
+    LocationKey.MYsticalTransylvania,
+    LocationKey.PrimariaMunicipiului,
   ];
   locationFilterValue: {[key: string]: boolean} = {
     [LocationKey.PiataMuzeului]: true,
@@ -45,6 +49,8 @@ export class FestivalScheduleComponent {
     [LocationKey.TurnulCizmarilor]: true,
     [LocationKey.PiataRatustelor]: true,
     [LocationKey.ZidulCetatii]: true,
+    [LocationKey.MYsticalTransylvania]: true,
+    [LocationKey.PrimariaMunicipiului]: true,
   };
   translationKeyPrefix: string = 'FESTIVAL.LIST.FESTIVAL_1.SCHEDULE.';
 

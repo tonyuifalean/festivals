@@ -2,23 +2,23 @@
 <section class="day-list">
   <mat-checkbox class="day-item"
                 [checked]="dayFilterValue[dayKey.Vineri]"
-                (change)="filterByDay(dayKey.Vineri, $event.checked)">{{translationKeyPrefix + 'FILTER.DAY_1' | translate}} 29.07.2022</mat-checkbox>
+                (change)="filterByDay(dayKey.Vineri, $event.checked)">{{translationKeyPrefix + 'FILTER.DAY_1' | translate}} 26.07.2024</mat-checkbox>
   <mat-checkbox class="day-item"
                 [checked]="dayFilterValue[dayKey.Sambata]"
-                (change)="filterByDay(dayKey.Sambata, $event.checked)">{{translationKeyPrefix + 'FILTER.DAY_2' | translate}} 30.07.2022</mat-checkbox>
+                (change)="filterByDay(dayKey.Sambata, $event.checked)">{{translationKeyPrefix + 'FILTER.DAY_2' | translate}} 27.07.2024</mat-checkbox>
   <mat-checkbox class="day-item"
                 [checked]="dayFilterValue[dayKey.Duminica]"
-                (change)="filterByDay(dayKey.Duminica, $event.checked)">{{translationKeyPrefix + 'FILTER.DAY_3' | translate}} 31.07.2022</mat-checkbox>
+                (change)="filterByDay(dayKey.Duminica, $event.checked)">{{translationKeyPrefix + 'FILTER.DAY_3' | translate}} 28.07.2024</mat-checkbox>
 </section>
 <section class="day-list-mobile">
   <mat-form-field appearance="outline">
     <mat-label>{{translationKeyPrefix + 'FILTER.SELECT_DAY' | translate}}</mat-label>
     <mat-select multiple [value]="dayValue" (selectionChange)="updateFilterByDayValue($event.value)">
-      <mat-option [value]="dayKey.Vineri">{{translationKeyPrefix + 'FILTER.DAY_1' | translate}} 29.07.2022
+      <mat-option [value]="dayKey.Vineri">{{translationKeyPrefix + 'FILTER.DAY_1' | translate}} 26.07.2024
       </mat-option>
-      <mat-option [value]="dayKey.Sambata">{{translationKeyPrefix + 'FILTER.DAY_2' | translate}} 30.07.2022
+      <mat-option [value]="dayKey.Sambata">{{translationKeyPrefix + 'FILTER.DAY_2' | translate}} 27.07.2024
       </mat-option>
-      <mat-option [value]="dayKey.Duminica">{{translationKeyPrefix + 'FILTER.DAY_3' | translate}} 31.07.2022
+      <mat-option [value]="dayKey.Duminica">{{translationKeyPrefix + 'FILTER.DAY_3' | translate}} 28.07.2024
       </mat-option>
     </mat-select>
   </mat-form-field>
@@ -42,6 +42,12 @@
   <mat-checkbox class="location-item"
                 [checked]="locationFilterValue[locationKey.ZidulCetatii]"
                 (change)="filterByLocation(locationKey.ZidulCetatii, $event.checked)">{{translationKeyPrefix + 'FILTER.LOCATION_6' | translate}}</mat-checkbox>
+  <mat-checkbox class="location-item"
+                [checked]="locationFilterValue[locationKey.MYsticalTransylvania]"
+                (change)="filterByLocation(locationKey.MYsticalTransylvania, $event.checked)">{{translationKeyPrefix + 'FILTER.LOCATION_7' | translate}}</mat-checkbox>
+  <mat-checkbox class="location-item"
+                [checked]="locationFilterValue[locationKey.PrimariaMunicipiului]"
+                (change)="filterByLocation(locationKey.PrimariaMunicipiului, $event.checked)">{{translationKeyPrefix + 'FILTER.LOCATION_8' | translate}}</mat-checkbox>
 </section>
 <section class="location-list-mobile">
   <mat-form-field appearance="outline">
@@ -53,14 +59,16 @@
       <mat-option [value]="locationKey.TurnulCizmarilor">{{translationKeyPrefix + 'FILTER.LOCATION_4' | translate}}</mat-option>
       <mat-option [value]="locationKey.PiataRatustelor">{{translationKeyPrefix + 'FILTER.LOCATION_5' | translate}}</mat-option>
       <mat-option [value]="locationKey.ZidulCetatii">{{translationKeyPrefix + 'FILTER.LOCATION_6' | translate}}</mat-option>
+      <mat-option [value]="locationKey.MYsticalTransylvania">{{translationKeyPrefix + 'FILTER.LOCATION_7' | translate}}</mat-option>
+      <mat-option [value]="locationKey.PrimariaMunicipiului">{{translationKeyPrefix + 'FILTER.LOCATION_8' | translate}}</mat-option>
     </mat-select>
   </mat-form-field>
 </section>
 
 <section class="schedule-content">
   <div *ngIf="dayFilterValue[dayKey.Vineri]" class="day-schedule">
-    <h3><i><b>{{translationKeyPrefix + 'FILTER.DAY_1' | translate}} 29.07.2022</b></i></h3>
-    <div class="padding-left">
+    <h3><i><b>{{translationKeyPrefix + 'FILTER.DAY_1' | translate}} 26.07.2024</b></i></h3>
+    <div class="padding-left" style="display: none;">
       <div>
         <b>19:00</b>
         <ul>
@@ -153,8 +161,8 @@
     </div>
   </div>
   <div *ngIf="dayFilterValue[dayKey.Sambata]" class="day-schedule">
-    <h3><i><b>{{translationKeyPrefix + 'FILTER.DAY_2' | translate}} 30.07.2022</b></i></h3>
-    <div class="padding-left">
+    <h3><i><b>{{translationKeyPrefix + 'FILTER.DAY_2' | translate}} 27.07.2024</b></i></h3>
+    <div class="padding-left" style="display: none;">
       <ng-container *ngIf="locationFilterValue[locationKey.PiataCetatii]">
         <h4>
           <u>{{translationKeyPrefix + 'FILTER.LOCATION_2' | translate}}</u>
@@ -300,8 +308,8 @@
     </div>
   </div>
   <div *ngIf="dayFilterValue[dayKey.Duminica]" class="day-schedule">
-    <h3><i><b>{{translationKeyPrefix + 'FILTER.DAY_3' | translate}} 31.07.2022</b></i></h3>
-    <div class="padding-left">
+    <h3><i><b>{{translationKeyPrefix + 'FILTER.DAY_3' | translate}} 28.07.2024</b></i></h3>
+    <div class="padding-left" style="display: none;">
       <ng-container *ngIf="locationFilterValue[locationKey.PiataCetatii]">
         <h4>
           <u>{{translationKeyPrefix + 'FILTER.LOCATION_2' | translate}}</u>
