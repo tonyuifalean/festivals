@@ -87,7 +87,7 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
     },
     info: {
       title: 'Piața Rățuștelor',
-      link: 'https://goo.gl/maps/VfbZNELwWbGiDbZw6',
+      link: 'https://maps.app.goo.gl/459MhtwrsVHiv8uz8',
     },
     options: {
       // animation: google.maps.Animation.BOUNCE,
