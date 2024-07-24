@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { GoogleTagManagerService } from 'angular-google-tag-manager';
 import { Observable } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
+import { switchMap, take } from 'rxjs/operators';
 
 import { environment } from '@environments/environment';
 import { FestivalModel } from '../../models';
@@ -16,7 +16,7 @@ import { FESTIVAL_LOCATIONS } from './festival-location.data';
   templateUrl: './festival-details.component.html',
   styleUrls: ['./festival-details.component.scss']
 })
-export class FestivalDetailsComponent implements OnInit {
+export class FestivalDetailsComponent implements OnInit, AfterViewInit {
 
   festivalData$!: Observable<FestivalModel | undefined>;
   locations: FestivalLocationModel[] = FESTIVAL_LOCATIONS;
@@ -43,6 +43,15 @@ export class FestivalDetailsComponent implements OnInit {
         return this.festivalsService.getFestival(params.id)
       })
     );
+  }
+
+  ngAfterViewInit(): void {
+    this.festivalData$.pipe(take(1)).subscribe((festivalData: FestivalModel | undefined) => {
+      console.log(festivalData);
+      if (festivalData?.id === '1') {
+        setTimeout(() => this.scrollToSchedule(), 500);
+      }
+    })
   }
 
   getFestivalPagragraphs(paragraphTotalNo: number) {

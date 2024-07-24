@@ -12,7 +12,7 @@
       }
 
       a {
-        margin: 0 auto;
+        margin: 5px auto;
       }
     }
   }
@@ -46,6 +46,12 @@ ul li {
 
     .home-row-img {
       flex: 2;
+    }
+
+    .home-row-action-buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
     }
 
     &.switch-order {
