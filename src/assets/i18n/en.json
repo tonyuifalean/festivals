@@ -66,7 +66,7 @@
     "LIST": {
       "FESTIVAL_1": {
         "NAME": "Sighișoara Medieval Festival",
-        "VIEW_SCHEDULE": "View 2022 Schedule",
+        "VIEW_SCHEDULE": "View 2024 Schedule",
         "DESCRIPTION": {
           "P_1": "Welcome to the world of stories and customs from medieval Transylvania!",
           "P_2": "At the end of July, in the Sighișoara Fortress, the past is revived, summer after summer, from 1992 until today, thanks to its famous Medieval Festival. All this magic takes place between July 29-31. Under the protection of the old walls, which carry on the burden of hundreds of years of captivating history and on the narrow streets, on the paths imprinted by the traces of historical figures, they appear out of nowhere, feeding  the appetite for dramatic stories, precisely those characters who came as if from the script of the most fascinating era in history, the Middle Ages: fearless knights, terrifying wizards, funny clowns, spirits embodied as if from other worlds, but also princesses with incomparable beauties, good fairies and heroes who will lead a silent battle with the forces of evil, to the delight of the spectators.",
@@ -83,7 +83,7 @@
           "P_13": "The scent of the old days, costumes and decorations inspired by the Middle Ages, medieval atmosphere accompanied by troubadour music and outdoor concerts, picturesque stands with handmade souvenirs and painting exhibitions of talented local artists, are extraordinary premises for a weekend getaway ,both for local tourists and for foreigners."
         },
         "SCHEDULE": {
-          "TITLE": "Sighișoara Medieval Festival 2022 Schedule",
+          "TITLE": "Sighișoara Medieval Festival 2024 Schedule",
           "FILTER": {
             "DAY_1": "Friday",
             "DAY_2": "Saturday",
@@ -95,6 +95,8 @@
             "LOCATION_4": "Shoemaker's Tower",
             "LOCATION_5": "Duckling Square",
             "LOCATION_6": "Fortress Wall",
+            "LOCATION_7": "MYstical Transylvania",
+            "LOCATION_8": "Sighișoara City Hall",
             "SELECT_DAY": "Select day",
             "SELECT_LOCATION": "Select location"
           },
