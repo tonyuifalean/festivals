@@ -67,7 +67,7 @@
       "FESTIVAL_1": {
         "NAME": "Festivalul \"Sighișoara Medievală\"",
         "VIEW_SCHEDULE": "Vezi Program 2024",
-        "VIEW_FESTIVAL_SCHEDULE": "Vezi Program Festivalul \"Sighișoara Medievală\" 2024",
+        "VIEW_FESTIVAL_SCHEDULE": "Program Festivalul \"Sighișoara Medievală\" 2024",
         "DESCRIPTION": {
           "P_1": "Poftiți în lumea poveștilor și obiceiurilor din Transilvania medievală!",
           "P_2": "La sfârșit de iulie, în Cetatea Sighișoarei, trecutul reînvie, vară de vară, începând cu anul 1992 până în zilele de azi, datorită celebrului Festival Medieval. Toată această magie are loc în perioada 29-31 iulie. Sub ocrotirea zidurilor vechi, care duc povara sutelor de ani de istorie captivantă, și pe străzile înguste, cu poteci ce poartă urma pașilor unor personaje cu rezonanță istorică, apar pe nepusă masă, alimentând apetitul de povești cu tentă dramatică tocmai acele personaje venite parcă din scenariul celei mai fascinante epoci din istorie, Evul Mediu: cavaleri neînfricați, vrăjitori terifianți, clovni amuzanți, duhuri întrupate parcă din alte lumi, dar și prințese cu frumuseți neasemuite, zâne bune și eroi care vor duce o luptă tăcută cu forțele răului, spre deliciul spectatorilor.",
@@ -102,7 +102,7 @@
             "SELECT_LOCATION": "Selectează locația"
           },
           "BREAK": "- PAUZĂ TEHNICÃ -",
-          "INFO": "Notă: Organizatorul își rezervă dreptul de a modifica programul.",
+          "INFO": "Sursa programului festivalului",
           "DAY_1": {
             "P_1": "<b>Parada de deschidere:</b> Str. 1 Decembrie 1918 - Str. Hermann Oberth - Piața Hermann Oberth - Str. Turnului - Piața Muzeului - Piața Cetății",
             "P_2": "<b>Rugăciunea Cavalerilor - Biserica Mănăstirii</b>",
