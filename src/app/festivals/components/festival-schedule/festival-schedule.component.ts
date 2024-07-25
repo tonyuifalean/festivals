@@ -26,7 +26,11 @@ enum LocationKey {
   styleUrls: ['./festival-schedule.component.scss'],
 })
 export class FestivalScheduleComponent {
-  dayValue = [DayKey.Duminica];
+  dayValue = [
+    DayKey.Vineri,
+    DayKey.Sambata,
+    DayKey.Duminica
+  ];
   dayFilterValue = {
     [DayKey.Vineri]: true,
     [DayKey.Sambata]: true,
@@ -38,7 +42,7 @@ export class FestivalScheduleComponent {
     LocationKey.CuloarulBatranelorDoamne,
     LocationKey.TurnulCizmarilor,
     LocationKey.PiataRatustelor,
-    LocationKey.ZidulCetatii,
+    // LocationKey.ZidulCetatii,
     LocationKey.MYsticalTransylvania,
     LocationKey.PrimariaMunicipiului,
   ];
@@ -48,7 +52,7 @@ export class FestivalScheduleComponent {
     [LocationKey.CuloarulBatranelorDoamne]: true,
     [LocationKey.TurnulCizmarilor]: true,
     [LocationKey.PiataRatustelor]: true,
-    [LocationKey.ZidulCetatii]: true,
+    // [LocationKey.ZidulCetatii]: true,
     [LocationKey.MYsticalTransylvania]: true,
     [LocationKey.PrimariaMunicipiului]: true,
   };

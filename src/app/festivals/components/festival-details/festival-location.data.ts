@@ -97,25 +97,25 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
       lng: 24.792199588227064,
     },
   },
-  {
-    id: '6',
-    // Data below is needed for Google Maps pins
-    label: {
-      color: '#230E11',
-      text: 'Zidul Cetății',
-    },
-    info: {
-      title: 'Zidul Cetății',
-      link: 'https://goo.gl/maps/27Bhs4aY3ZFqtHp37',
-    },
-    options: {
-      // animation: google.maps.Animation.BOUNCE,
-    },
-    position: {
-      lat: 46.21987786106217,
-      lng: 24.790696945883838,
-    },
-  },
+  // {
+  //   id: '6',
+  //   // Data below is needed for Google Maps pins
+  //   label: {
+  //     color: '#230E11',
+  //     text: 'Zidul Cetății',
+  //   },
+  //   info: {
+  //     title: 'Zidul Cetății',
+  //     link: 'https://goo.gl/maps/27Bhs4aY3ZFqtHp37',
+  //   },
+  //   options: {
+  //     // animation: google.maps.Animation.BOUNCE,
+  //   },
+  //   position: {
+  //     lat: 46.21987786106217,
+  //     lng: 24.790696945883838,
+  //   },
+  // },
   {
     id: '7',
     // Data below is needed for Google Maps pins
