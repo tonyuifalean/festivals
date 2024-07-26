@@ -308,8 +308,7 @@
   </div>
   <div *ngIf="dayFilterValue[dayKey.Duminica]" class="day-schedule">
     <h3><i><b>{{translationKeyPrefix + 'FILTER.DAY_3' | translate}} 28.07.2024</b></i></h3>
-    <p>Work in progress...</p>
-    <div class="padding-left" style="display: none;">
+    <div class="padding-left">
       <ng-container *ngIf="locationFilterValue[locationKey.PiataCetatii]">
         <h4>
           <u>{{translationKeyPrefix + 'FILTER.LOCATION_2' | translate}}</u>
@@ -318,49 +317,60 @@
           </a>
         </h4>
         <div class="padding-left">
-          <p><b>10:00</b> {{translationKeyPrefix + 'DAY_3.P_1' | translate}}</p>
-          <p><b>10:30</b> {{translationKeyPrefix + 'DAY_3.P_2' | translate}}</p>
-          <p><b>11:00</b> {{translationKeyPrefix + 'DAY_3.P_3' | translate}}</p>
-          <p><b>12:30</b> {{translationKeyPrefix + 'DAY_3.P_4' | translate}}</p>
+          <p><b>10.00</b> {{translationKeyPrefix + 'DAY_3.P_1' | translate}}</p>
+          <p><b>10.30</b> {{translationKeyPrefix + 'DAY_3.P_2' | translate}}</p>
+          <p><b>11.00</b> {{translationKeyPrefix + 'DAY_3.P_3' | translate}}</p>
+          <p><b>11.30</b> {{translationKeyPrefix + 'DAY_3.P_4' | translate}}</p>
+          <p><b>12.00</b> {{translationKeyPrefix + 'DAY_3.P_5' | translate}}</p>
           <br>
           <p><b>{{translationKeyPrefix + 'BREAK' | translate}}</b></p>
           <br>
-          <p><b>16:00</b> {{translationKeyPrefix + 'DAY_3.P_5' | translate}}</p>
-          <p><b>16:30</b> {{translationKeyPrefix + 'DAY_3.P_6' | translate}}</p>
-          <p><b>17:00</b> {{translationKeyPrefix + 'DAY_3.P_7' | translate}}</p>
-          <p><b>18:00</b> {{translationKeyPrefix + 'DAY_3.P_8' | translate}}</p>
-          <p><b>18:30</b> {{translationKeyPrefix + 'DAY_3.P_9' | translate}}</p>
-          <p><b>19:00</b> {{translationKeyPrefix + 'DAY_3.P_10' | translate}}</p>
-          <p><b>20:00</b> {{translationKeyPrefix + 'DAY_3.P_11' | translate}}</p>
-          <p><b>20:30</b> {{translationKeyPrefix + 'DAY_3.P_12' | translate}}</p>
-          <p><b>21:00</b> {{translationKeyPrefix + 'DAY_3.P_13' | translate}}</p>
-          <p><b>21:30</b> <span [innerHTML]="translationKeyPrefix + 'DAY_3.P_14' | translate"></span></p>
-          <p><b>22:30 </b>{{translationKeyPrefix + 'DAY_3.P_15' | translate}}</p>
+          <p><b>16.00</b> {{translationKeyPrefix + 'DAY_3.P_6' | translate}}</p>
+          <p><b>16.30</b> {{translationKeyPrefix + 'DAY_3.P_7' | translate}}</p>
+          <p><b>17.30</b> {{translationKeyPrefix + 'DAY_3.P_8' | translate}}</p>
+          <p><b>18.30</b> {{translationKeyPrefix + 'DAY_3.P_9' | translate}}</p>
+          <p><b>19.00</b> {{translationKeyPrefix + 'DAY_3.P_10' | translate}}</p>
+          <p><b>19.30</b> {{translationKeyPrefix + 'DAY_3.P_11' | translate}}</p>
+          <p><b>20.00</b> {{translationKeyPrefix + 'DAY_3.P_12' | translate}}</p>
+          <p><b>20.30</b> {{translationKeyPrefix + 'DAY_3.P_13' | translate}}</p>
+          <p><b>21.30</b> {{translationKeyPrefix + 'DAY_3.P_14' | translate}}</p>
+          <p><b>22.30</b> {{translationKeyPrefix + 'DAY_3.P_15' | translate}}</p>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="locationFilterValue[locationKey.PrimariaMunicipiului]">
+        <h4>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_8' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://maps.app.goo.gl/BWJGpqaGw9YEW31w9" target="_blank">
+            Google Maps<mat-icon>open_in_new</mat-icon>
+          </a>
+        </h4>
+        <div class="padding-left">
+          <p><b>11.00</b> {{translationKeyPrefix + 'DAY_3.P_16' | translate}}</p>
         </div>
       </ng-container>
       <ng-container *ngIf="locationFilterValue[locationKey.PiataMuzeului]">
         <h4>
-          <u>{{translationKeyPrefix + 'FILTER.LOCATION_1' | translate}}</u>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_1_2' | translate}}</u>
           <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/piAmsPXput6xF3Ka9" target="_blank">
             Google Maps<mat-icon>open_in_new</mat-icon>
           </a>
         </h4>
         <div class="padding-left">
-          <p><b>10:00</b> {{translationKeyPrefix + 'DAY_3.P_16' | translate}}</p>
-          <p><b>10:30</b> {{translationKeyPrefix + 'DAY_3.P_17' | translate}}</p>
-          <p><b>11:00</b> {{translationKeyPrefix + 'DAY_3.P_18' | translate}}</p>
-          <p><b>11:30</b> {{translationKeyPrefix + 'DAY_3.P_19' | translate}}</p>
-          <p><b>12:00</b> {{translationKeyPrefix + 'DAY_3.P_20' | translate}}</p>
+          <p><b>10.30 - 22.30</b> {{translationKeyPrefix + 'DAY_3.P_17' | translate}}</p>
+          <p><b>10.30 - 22.30</b> {{translationKeyPrefix + 'DAY_3.P_18' | translate}}</p>
+          <p><b>10.30</b> {{translationKeyPrefix + 'DAY_3.P_19' | translate}}</p>
+          <p><b>11.00</b> {{translationKeyPrefix + 'DAY_3.P_20' | translate}}</p>
+          <p><b>11.30</b> {{translationKeyPrefix + 'DAY_3.P_21' | translate}}</p>
+          <p><b>12.00</b> {{translationKeyPrefix + 'DAY_3.P_22' | translate}}</p>
           <br>
           <p><b>{{translationKeyPrefix + 'BREAK' | translate}}</b></p>
           <br>
-          <p><b>16:00</b> {{translationKeyPrefix + 'DAY_3.P_21' | translate}}</p>
-          <p><b>17:00</b> {{translationKeyPrefix + 'DAY_3.P_22' | translate}}</p>
-          <p><b>17:30</b> {{translationKeyPrefix + 'DAY_3.P_23' | translate}}</p>
-          <p><b>18:00</b> {{translationKeyPrefix + 'DAY_3.P_24' | translate}}</p>
-          <p><b>18:30</b> {{translationKeyPrefix + 'DAY_3.P_25' | translate}}</p>
-          <p><b>19:00</b> {{translationKeyPrefix + 'DAY_3.P_26' | translate}}</p>
-          <p><b>20:00 {{translationKeyPrefix + 'DAY_3.P_27' | translate}}</b></p>
+          <p><b>17.00</b> {{translationKeyPrefix + 'DAY_3.P_23' | translate}}</p>
+          <p><b>17.30</b> {{translationKeyPrefix + 'DAY_3.P_24' | translate}}</p>
+          <p><b>18.00</b> {{translationKeyPrefix + 'DAY_3.P_25' | translate}}</p>
+          <p><b>18.30</b> {{translationKeyPrefix + 'DAY_3.P_26' | translate}}</p>
+          <p><b>19.00</b> {{translationKeyPrefix + 'DAY_3.P_27' | translate}}</p>
+          <p><b>20.00</b> {{translationKeyPrefix + 'DAY_3.P_28' | translate}}</p>
         </div>
       </ng-container>
       <ng-container *ngIf="locationFilterValue[locationKey.PiataRatustelor]">
@@ -371,17 +381,17 @@
           </a>
         </h4>
         <div class="padding-left">
-          <p><b>10:00</b> {{translationKeyPrefix + 'DAY_3.P_28' | translate}}</p>
-          <p><b>12:00</b> {{translationKeyPrefix + 'DAY_3.P_29' | translate}}</p>
+          <p><b>10.30 - 22.30</b> {{translationKeyPrefix + 'DAY_3.P_29' | translate}}</p>
+          <p><b>10.30 - 22.30</b> {{translationKeyPrefix + 'DAY_3.P_30' | translate}}</p>
+          <p><b>10.30</b> {{translationKeyPrefix + 'DAY_3.P_31' | translate}}</p>
+          <p><b>11.00</b> {{translationKeyPrefix + 'DAY_3.P_32' | translate}}</p>
           <br>
           <p><b>{{translationKeyPrefix + 'BREAK' | translate}}</b></p>
           <br>
-          <p><b>16:00</b> {{translationKeyPrefix + 'DAY_3.P_30' | translate}}</p>
-          <p><b>17:30</b> {{translationKeyPrefix + 'DAY_3.P_31' | translate}}</p>
-          <p><b>18:00</b> {{translationKeyPrefix + 'DAY_3.P_32' | translate}}</p>
-          <p><b>18:30</b> {{translationKeyPrefix + 'DAY_3.P_33' | translate}}</p>
-          <p><b>19:00</b> {{translationKeyPrefix + 'DAY_3.P_34' | translate}}</p>
-          <p><b>19:30</b> {{translationKeyPrefix + 'DAY_3.P_35' | translate}}</p>
+          <p><b>16.00</b> {{translationKeyPrefix + 'DAY_3.P_33' | translate}}</p>
+          <p><b>16.30</b> {{translationKeyPrefix + 'DAY_3.P_34' | translate}}</p>
+          <p><b>17.00</b> {{translationKeyPrefix + 'DAY_3.P_35' | translate}}</p>
+          <p><b>17.30</b> {{translationKeyPrefix + 'DAY_3.P_36' | translate}}</p>
         </div>
       </ng-container>
       <ng-container *ngIf="locationFilterValue[locationKey.TurnulCizmarilor]">
@@ -392,7 +402,10 @@
           </a>
         </h4>
         <div class="padding-left">
-          <p><b>10:00 - 21:00</b> {{translationKeyPrefix + 'DAY_3.P_36' | translate}}</p>
+          <p><b>10.30 - 21.00</b> {{translationKeyPrefix + 'DAY_3.P_37' | translate}}</p>
+          <p><b>10.30 - 22.30</b> {{translationKeyPrefix + 'DAY_3.P_38' | translate}}</p>
+          <p><b>10.30 - 22.30</b> {{translationKeyPrefix + 'DAY_3.P_39' | translate}}</p>
+          <p><b>20.30</b> {{translationKeyPrefix + 'DAY_3.P_40' | translate}}</p>
         </div>
       </ng-container>
       <ng-container *ngIf="locationFilterValue[locationKey.CuloarulBatranelorDoamne]">
@@ -403,29 +416,34 @@
           </a>
         </h4>
         <div class="padding-left">
-          <p><b>10:00 - 22:00</b> {{translationKeyPrefix + 'DAY_3.P_38' | translate}}</p>
+          <p><b>20.30 - 22.30</b> {{translationKeyPrefix + 'DAY_3.P_41' | translate}}</p>
         </div>
       </ng-container>
       <ng-container *ngIf="locationFilterValue[locationKey.PiataMuzeului]">
         <h4>
-          <u>{{translationKeyPrefix + 'FILTER.LOCATION_1' | translate}}</u>
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_1_1' | translate}}</u>
           <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/piAmsPXput6xF3Ka9" target="_blank">
             Google Maps<mat-icon>open_in_new</mat-icon>
           </a>
         </h4>
         <div class="padding-left">
-          <p><b>10:00 - 22:00</b> {{translationKeyPrefix + 'DAY_3.P_39' | translate}}</p>
+          <p><b>10.30 - 22.30</b> {{translationKeyPrefix + 'DAY_3.P_42' | translate}}</p>
+          <p><b>10.30 - 22.30</b> {{translationKeyPrefix + 'DAY_3.P_43' | translate}}</p>
+          <p><b>10.30 - 22.30</b> {{translationKeyPrefix + 'DAY_3.P_44' | translate}}</p>
+          <p><b>10.30 - 22.30</b> {{translationKeyPrefix + 'DAY_3.P_45' | translate}}</p>
+          <p><b>10.30 - 22.30</b> {{translationKeyPrefix + 'DAY_3.P_46' | translate}}</p>
         </div>
       </ng-container>
-      <ng-container *ngIf="locationFilterValue[locationKey.PiataMuzeului]">
+      <ng-container *ngIf="locationFilterValue[locationKey.MYsticalTransylvania]">
         <h4>
-          <u>{{translationKeyPrefix + 'FILTER.LOCATION_1_2' | translate}}</u>
-          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://goo.gl/maps/CX2jh21Us73w18BA6" target="_blank">
+          <u>{{translationKeyPrefix + 'FILTER.LOCATION_7' | translate}}</u>
+          <a mat-raised-button class="margin-left" aria-label="Open Google" href="https://maps.app.goo.gl/4kkLxHoXHUqqeYH36" target="_blank">
             Google Maps<mat-icon>open_in_new</mat-icon>
           </a>
         </h4>
         <div class="padding-left">
-          <p><b>10:00 - 22:00 {{translationKeyPrefix + 'DAY_3.P_40' | translate}}</b></p>
+          <p><b>10.00 - 22.00</b> {{translationKeyPrefix + 'DAY_3.P_47' | translate}}</p>
+          <p><b>10.00 - 22.00</b> {{translationKeyPrefix + 'DAY_3.P_48' | translate}}</p>
         </div>
       </ng-container>
     </div>
