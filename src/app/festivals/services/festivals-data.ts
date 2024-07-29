@@ -69,27 +69,30 @@ export const FESTIVAL_LIST_GROUP_BY_YEAR: DataSources = {
 export const FESTIVALS: FestivalModel[] = [
   {
     id: '1',
+    path: 'sighisoara-medieval-festival',
     imageName: 'medieval.jpg',
     paragraphTotalNo: 13,
   },
   {
     id: '2',
+    path: 'sighisoara-blues-festival',
     imageName: 'blues.jpg',
     paragraphTotalNo: 5,
   },
   {
     id: '3',
+    path: 'sighisoara-proetnica-festival',
     imageName: 'proetnica.jpg',
     paragraphTotalNo: 4,
   },
-  {
-    id: '4',
-    imageName: 'brass_band.jpg',
-    paragraphTotalNo: 1,
-  }
+  // {
+  //   id: '4',
+  //   imageName: 'brass_band.jpg',
+  //   paragraphTotalNo: 1,
+  // }
 ];
 
-export const getFestivalById = (id: string): FestivalModel | undefined => {
-  return FESTIVALS.find((item) => item.id === id);
+export const getFestivalByPath = (path: string): FestivalModel | undefined => {
+  return FESTIVALS.find((item) => item.path === path);
 }
 

@@ -40,7 +40,7 @@ export class FestivalDetailsComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.festivalData$ = this.activatedRoute.params.pipe(
       switchMap((params) => {
-        return this.festivalsService.getFestival(params.id)
+        return this.festivalsService.getFestival(params.path)
       })
     );
   }

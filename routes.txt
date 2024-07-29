@@ -5,7 +5,6 @@
 /accomodations
 /restaurants
 /blog
-/festivals/festival-details/1
-/festivals/festival-details/2
-/festivals/festival-details/3
-/festivals/festival-details/4
+/festivals/festival-details/sighisoara-medieval-festival
+/festivals/festival-details/sighisoara-blues-festival
+/festivals/festival-details/sighisoara-proetnica-festival

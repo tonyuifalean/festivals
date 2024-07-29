@@ -5,7 +5,7 @@ import { Observable, of } from 'rxjs';
 import { FestivalElement } from '@app/shared';
 import { environment } from '@environments/environment';
 import { DataSources, FestivalModel } from '../models';
-import { FESTIVALS, FESTIVAL_LIST_GROUP_BY_YEAR, getFestivalById } from './festivals-data';
+import { FESTIVALS, FESTIVAL_LIST_GROUP_BY_YEAR, getFestivalByPath } from './festivals-data';
 
 @Injectable({
   providedIn: 'root',
@@ -24,8 +24,8 @@ export class FestivalsService {
     return of(FESTIVALS);
   }
 
-  getFestival(id: string): Observable<FestivalModel | undefined> {
-    return of(getFestivalById(id));
+  getFestival(path: string): Observable<FestivalModel | undefined> {
+    return of(getFestivalByPath(path));
     // return <Observable<FestivalElement>>(
     //   this.http.get(`${environment.backEndUrl}/festivals/${id}`)
     // );

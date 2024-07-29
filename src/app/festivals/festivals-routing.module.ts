@@ -5,7 +5,7 @@ import { FestivalDetailsComponent, FestivalListComponent } from './components';
 
 const routes: Routes = [
   { path: '', component: FestivalListComponent },
-  { path: 'festival-details/:id', component: FestivalDetailsComponent}
+  { path: 'festival-details/:path', component: FestivalDetailsComponent}
 ];
 
 @NgModule({

@@ -6,6 +6,7 @@ export interface DataSources {
 
 export interface FestivalModel {
   id: string;
+  path: string;
   imageName: string;
   paragraphTotalNo: number;
 }
