@@ -45,13 +45,13 @@ export class BlogComponent implements OnInit {
       {
         name: 'description',
         content:
-          "Visit the Blog about Sighisoara page for engaging stories, travel tips, and insider knowledge on Sighisoara's hidden treasures. Discover the city's rich history, cultural insights, and must-see attractions through our informative and captivating blog posts",
+          "Visit the Blog about Sighisoara page for engaging stories, travel tips, and insider knowledge on Sighisoara's hidden treasures. Discover the city's rich history, cultural insights, and must-see attractions through our informative and captivating blog posts / Vizitează pagina \"Blog despre Sighișoara\" pentru povești captivante, sfaturi de călătorie și cunoștințe din interior despre comorile ascunse ale Sighișoarei. Descoperă istoria bogată a orașului, perspective culturale și atracții de neratat prin intermediul postărilor noastre informative și fascinante de pe blog.",
       },
       { name: 'author', content: 'VEEZBLE' },
       {
         name: 'keywords',
         content:
-          'Sighisoara blog, Travel tips Sighisoara, Sighisoara history, Cultural insights Sighisoara, Sighisoara attractions guide, Sighisoara tourism, Explore Sighisoara, Sighisoara hidden gems, Visit Sighisoara, Sighisoara travel guide',
+          'Sighisoara blog, Travel tips Sighisoara, Sighisoara history, Cultural insights Sighisoara, Sighisoara attractions guide, Sighisoara tourism, Explore Sighisoara, Sighisoara hidden gems, Visit Sighisoara, Sighisoara travel guide / Blog Sighișoara, Sfaturi de călătorie Sighișoara, Istoria Sighișoarei, Perspective culturale Sighișoara, Ghidul atracțiilor Sighișoara, Turism Sighișoara, Explorează Sighișoara, Comori ascunse Sighișoara, Vizitează Sighișoara, Ghid de călătorie Sighișoara',
       },
     ]);
     this.title.setTitle('Blog - Sighisoara Festival');

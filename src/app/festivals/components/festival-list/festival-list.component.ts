@@ -77,7 +77,7 @@ export class FestivalListComponent implements OnInit {
       {
         name: 'description',
         content:
-          "Discover the Festivals of Sighisoara page, your gateway to the enchanting celebrations in Romania's medieval gem. Uncover the charm of Sighisoara's festivals, including the famous Medieval Festival, through detailed guides, stunning images, and the latest event information. Dive into the heart of Sighisoara's cultural vibrancy and plan your festive journey with ease.",
+          "Discover the Festivals of Sighisoara page, your gateway to the enchanting celebrations in Romania's medieval gem. Uncover the charm of Sighisoara's festivals, including the famous Medieval Festival, through detailed guides, stunning images, and the latest event information. Dive into the heart of Sighisoara's cultural vibrancy and plan your festive journey with ease. / Descoperă pagina \"Festivaluri din Sighișoara\", poarta ta către sărbătorile fermecătoare din această bijuterie medievală a României. Descoperă farmecul festivalurilor din Sighișoara, inclusiv faimosul Festival Medieval, prin ghiduri detaliate, imagini uimitoare și cele mai recente informații despre evenimente. Scufundă-te în inima vibranței culturale a Sighișoarei și planifică-ți călătoria festivă cu ușurință.",
       },
       { name: 'author', content: 'VEEZBLE' },
       {

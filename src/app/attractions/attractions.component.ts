@@ -25,13 +25,13 @@ export class AttractionsComponent {
       {
         name: 'description',
         content:
-          "Explore the Attractions of Sighisoara page to uncover the hidden gems and iconic landmarks of this medieval city. Get a glimpse into Sighisoara's rich history and vibrant culture with our concise guides, beautiful imagery, and essential visitor information, making your trip planning seamless and enjoyable.",
+          "Explore the Attractions of Sighisoara page to uncover the hidden gems and iconic landmarks of this medieval city. Get a glimpse into Sighisoara's rich history and vibrant culture with our concise guides, beautiful imagery, and essential visitor information, making your trip planning seamless and enjoyable. / Explorează pagina \"Obiective în Sighișoara\" pentru a descoperi comorile ascunse și reperele iconice ale acestui oraș medieval. Află detalii despre bogata istorie și cultura vibrantă a Sighișoarei prin ghidurile noastre concise, imagini frumoase și informații esențiale pentru vizitatori, făcând planificarea călătoriei tale simplă și plăcută.",
       },
       { name: 'author', content: 'VEEZBLE' },
       {
         name: 'keywords',
         content:
-          'Sighisoara tourist attractions, Top sights Sighisoara, Sighisoara landmarks, Things to do in Sighisoara, Sighisoara must-see, Sighisoara historic sites, Visit Sighisoara, Sighisoara travel guide, Sighisoara sightseeing, Sighisoara points of interest',
+          'Sighisoara tourist attractions, Top sights Sighisoara, Sighisoara landmarks, Things to do in Sighisoara, Sighisoara must-see, Sighisoara historic sites, Visit Sighisoara, Sighisoara travel guide, Sighisoara sightseeing, Sighisoara points of interest / Atracții turistice Sighișoara, Obiective de top Sighișoara, Repere Sighișoara, Lucruri de făcut în Sighișoara, De neratat în Sighișoara, Situri istorice Sighișoara, Vizitează Sighișoara, Ghid de călătorie Sighișoara, Turism în Sighișoara, Puncte de interes Sighișoara',
       },
     ]);
     this.title.setTitle('Tourist Attractions - Sighisoara Festival');
