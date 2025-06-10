@@ -1,7 +1,9 @@
 <h1 class="page-title">{{ "TOURIST_ATTRACTIONS_PAGE.TITLE" | translate }}</h1>
 
 <!-- <h2>Atracții turistice pe care nu trebuie să le ratați atunci când sunteți în Sighișoara</h2> -->
-<div class="content-wrapper" [innerHTML]="'TOURIST_ATTRACTIONS_PAGE.CONTENT' | translate">
-</div>
+<div class="content-wrapper" [innerHTML]="'TOURIST_ATTRACTIONS_PAGE.CONTENT' | translate"></div>
+
+<!-- <h2>Tururi ghidate Cetatea Sighișoara</h2> -->
+<div class="info-wrapper" [innerHTML]="'TOURIST_ATTRACTIONS_PAGE.INFO' | translate"></div>
 
 <google-maps-wrapper [markers]="locations"></google-maps-wrapper>
