@@ -14,18 +14,18 @@ import { AccomodationModel } from './accomodation.model';
   selector: 'app-accomodations',
   templateUrl: './accomodations.component.html',
   styleUrls: ['./accomodations.component.scss'],
-  animations: [
-    trigger('card', [
-      state('in', style({ transform: 'translateX(0)' })),
-      transition('void => *', [
-        style({ transform: 'translateX(-100%)' }),
-        animate(500),
-      ]),
-      transition('* => void', [
-        animate(500, style({ transform: 'translateX(100%)' })),
-      ]),
-    ]),
-  ],
+  // animations: [
+  //   trigger('card', [
+  //     state('in', style({ transform: 'translateX(0)' })),
+  //     transition('void => *', [
+  //       style({ transform: 'translateX(-100%)' }),
+  //       animate(500),
+  //     ]),
+  //     transition('* => void', [
+  //       animate(500, style({ transform: 'translateX(100%)' })),
+  //     ]),
+  //   ]),
+  // ],
 })
 export class AccomodationsComponent {
   accomodations: AccomodationModel[] = ACCOMODATIONS;

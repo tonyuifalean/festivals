@@ -15,16 +15,16 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./home.component.scss'],
   animations: [
     trigger('img', [
-      state('in', style({ transform: 'translateX(0)' })),
+      state('in', style({ opacity: 1, transform: 'translateX(0) scale(1)' })),
       transition('void => *', [
-        style({ transform: 'translateX(-100%)' }),
-        animate(500),
+        style({ opacity: 0, transform: 'translateX(-40px) scale(0.98)' }),
+        animate('800ms ease-out')
       ]),
       transition('* => void', [
-        animate(500, style({ transform: 'translateX(100%)' })),
-      ]),
-    ]),
-  ],
+        animate('600ms ease-in', style({ opacity: 0, transform: 'translateX(40px) scale(1.02)' }))
+      ])
+    ])
+  ]
 })
 export class HomeComponent {
   // public currentUser: User = {};

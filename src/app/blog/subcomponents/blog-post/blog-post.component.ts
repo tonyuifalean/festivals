@@ -13,10 +13,7 @@ export interface BlogPost {
   styleUrls: ['./blog-post.component.scss']
 })
 export class BlogPostComponent implements OnInit {
-  imageUrl!: string;
-  imageTitle!: string;
-  isLoading = true;
-
+  @Input() isExpanded: boolean = false;
   @Input() postIndex!: number;
   @Input('postData')
   set postData(val: BlogPost) {
@@ -24,7 +21,10 @@ export class BlogPostComponent implements OnInit {
     this.imageTitle = val.imageData.title;
   }
 
-  constructor() { }
+  imageTitle!: string;
+  imageUrl!: string;
+  isLoading = true;
+
 
   ngOnInit(): void {
     setTimeout(() => {

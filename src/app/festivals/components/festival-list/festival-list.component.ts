@@ -20,18 +20,18 @@ import { FestivalModel } from '../../models';
   selector: 'app-festival-list',
   templateUrl: './festival-list.component.html',
   styleUrls: ['./festival-list.component.scss'],
-  animations: [
-    trigger('card', [
-      state('in', style({ transform: 'translateX(0)' })),
-      transition('void => *', [
-        style({ transform: 'translateX(-100%)' }),
-        animate(500),
-      ]),
-      transition('* => void', [
-        animate(500, style({ transform: 'translateX(100%)' })),
-      ]),
-    ]),
-  ],
+  // animations: [
+  //   trigger('card', [
+  //     state('in', style({ transform: 'translateX(0)' })),
+  //     transition('void => *', [
+  //       style({ transform: 'translateX(-100%)' }),
+  //       animate(500),
+  //     ]),
+  //     transition('* => void', [
+  //       animate(500, style({ transform: 'translateX(100%)' })),
+  //     ]),
+  //   ]),
+  // ],
 })
 export class FestivalListComponent implements OnInit {
   // isLoading = true;
