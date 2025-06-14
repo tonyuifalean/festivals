@@ -9,6 +9,8 @@ import { GoogleTagManagerService } from 'angular-google-tag-manager';
 import { environment } from '@environments/environment';
 import { TranslateService } from '@ngx-translate/core';
 
+declare let gtag: Function;
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -69,9 +71,16 @@ export class HomeComponent {
   public trackPartnerEvent() {
     if (environment.production) {
       const gtmTag = {
-        event: 'Became Partner',
+        event: 'became_partner', 
+        event_category: 'interaction',
+        event_label: 'Become Partner Button',
       };
       this.gtag.pushTag(gtmTag);
+
+      gtag('event', 'became_partner', {
+        event_category: 'interaction',
+        event_label: 'Become Partner Button'
+      });
     }
   }
 }
