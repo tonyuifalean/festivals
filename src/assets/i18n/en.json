@@ -32,6 +32,11 @@
       "UOL_1": "SIGHIȘOARA, the picturesque city shrouded in mystery",
       "UOL_2": "Top 10 curiosities about Sighișoara",
       "UOL_3": "Discover the Sighișoara Fortress in 48 hours"
+    },
+    "COLLABORATION": {
+      "TITLE": "Collaborate with Us",
+      "MESSAGE": "We're looking for restaurants, hotels, and other businesses to join our platform!",
+      "BUTTON_LABEL": "Become a partner"
     }
   },
   "ACCOMODATIONS_PAGE": "Accomodations",

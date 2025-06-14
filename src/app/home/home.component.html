@@ -6,53 +6,62 @@
 <div id="home-content-wrapper">
   <div class="home-row">
     <div class="home-row-img" [@img]>
-      <img src="assets/images/festivals.jpg" title="Festivals" alt="Festivals">
+      <img src="assets/images/festivals.jpg" title="Festivals" alt="Festivals" />
     </div>
     <div class="home-row-description">
       <p>{{ "HOME_PAGE.FESTIVALS.P_1" | translate }}</p>
       <p>{{ "HOME_PAGE.FESTIVALS.P_2" | translate }}</p>
       <p>{{ "HOME_PAGE.FESTIVALS.P_3" | translate }}</p>
-      <a mat-raised-button routerLink="../festivals">{{'MENU.FESTIVALS' | translate}}</a>
-      <a mat-raised-button routerLink="../festivals/festival-details/sighisoara-medieval-festival">{{'FESTIVAL.LIST.FESTIVAL_1.VIEW_FESTIVAL_SCHEDULE' | translate}}</a>
+      <a mat-raised-button routerLink="../festivals">{{
+        "MENU.FESTIVALS" | translate
+        }}</a>
+      <a mat-raised-button routerLink="../festivals/festival-details/sighisoara-medieval-festival">{{
+        "FESTIVAL.LIST.FESTIVAL_1.VIEW_FESTIVAL_SCHEDULE" | translate }}</a>
     </div>
   </div>
-  <br>
+  <br />
   <div class="home-row switch-order">
     <div class="home-row-img" [@img]>
-      <img src="assets/images/attractions.jpg" title="Attractions" alt="Attractions">
+      <img src="assets/images/attractions.jpg" title="Attractions" alt="Attractions" />
     </div>
     <div class="home-row-description">
       <p>{{ "HOME_PAGE.TOURIST_ATTRACTIONS.P_1" | translate }}</p>
       <p>{{ "HOME_PAGE.TOURIST_ATTRACTIONS.P_2" | translate }}</p>
       <p>{{ "HOME_PAGE.TOURIST_ATTRACTIONS.P_3" | translate }}</p>
-      <a mat-raised-button routerLink="../attractions">{{'MENU.ATTRACTIONS' | translate}}</a>
+      <a mat-raised-button routerLink="../attractions">{{
+        "MENU.ATTRACTIONS" | translate
+        }}</a>
     </div>
   </div>
-  <br>
+  <br />
   <div class="home-row">
     <div class="home-row-img" [@img]>
-      <img src="assets/images/accomodations.jpg" title="Accomodations" alt="Accomodations">
+      <img src="assets/images/accomodations.jpg" title="Accomodations" alt="Accomodations" />
     </div>
     <div class="home-row-description">
       <p>{{ "HOME_PAGE.ACCOMODATIONS.P_1" | translate }}</p>
       <p>{{ "HOME_PAGE.ACCOMODATIONS.P_2" | translate }}</p>
-      <a mat-raised-button routerLink="../accomodations">{{'MENU.ACCOMODATIONS' | translate}}</a>
+      <a mat-raised-button routerLink="../accomodations">{{
+        "MENU.ACCOMODATIONS" | translate
+        }}</a>
     </div>
   </div>
   <div class="home-row switch-order">
     <div class="home-row-img" [@img]>
-      <img src="assets/images/restaurants.jpg" title="Restaurants" alt="Restaurants">
+      <img src="assets/images/restaurants.jpg" title="Restaurants" alt="Restaurants" />
     </div>
     <div class="home-row-description">
       <p>{{ "HOME_PAGE.RESTAURANTS.P_1" | translate }}</p>
       <p>{{ "HOME_PAGE.RESTAURANTS.P_2" | translate }}</p>
       <p>{{ "HOME_PAGE.RESTAURANTS.P_3" | translate }}</p>
-      <a mat-raised-button routerLink="../restaurants">{{'MENU.RESTAURANTS' | translate}}</a>
+      <a mat-raised-button routerLink="../restaurants">{{
+        "MENU.RESTAURANTS" | translate
+        }}</a>
     </div>
   </div>
   <div class="home-row">
     <div class="home-row-img" [@img]>
-      <img src="assets/images/blog.jpg" title="Blog" alt="Blog">
+      <img src="assets/images/blog.jpg" title="Blog" alt="Blog" />
     </div>
     <div class="home-row-description">
       <p>{{ "HOME_PAGE.BLOG.P_1" | translate }}</p>
@@ -61,7 +70,17 @@
         <li>{{ "HOME_PAGE.BLOG.UOL_2" | translate }}</li>
         <li>{{ "HOME_PAGE.BLOG.UOL_3" | translate }}</li>
       </ul>
-      <a mat-raised-button routerLink="../blog">{{'MENU.BLOG' | translate}}</a>
+      <a mat-raised-button routerLink="../blog">{{
+        "MENU.BLOG" | translate
+        }}</a>
     </div>
+  </div>
+
+  <div class="home-row partner-wrapper">
+    <h3>{{ "HOME_PAGE.COLLABORATION.TITLE" | translate }}</h3>
+    <p>{{ "HOME_PAGE.COLLABORATION.MESSAGE" | translate }}</p>
+    <a mat-raised-button color="primary" href="mailto:admin@veezble.com" (click)="trackPartnerEvent()">
+      {{ "HOME_PAGE.COLLABORATION.BUTTON_LABEL" | translate }}
+    </a>
   </div>
 </div>

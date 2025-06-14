@@ -65,4 +65,13 @@ export class HomeComponent {
       this.gtag.pushTag(gtmTag);
     }
   }
+
+  public trackPartnerEvent() {
+    if (environment.production) {
+      const gtmTag = {
+        event: 'Became Partner',
+      };
+      this.gtag.pushTag(gtmTag);
+    }
+  }
 }
