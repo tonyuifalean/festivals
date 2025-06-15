@@ -12,6 +12,9 @@ import {
 } from 'ngx-cookieconsent';
 import { Subscription } from 'rxjs';
 import { AuthenticationService, User } from './shared';
+import { environment } from '@environments/environment';
+
+declare let gtag: Function;
 
 @Component({
   selector: 'app-root',
@@ -19,6 +22,7 @@ import { AuthenticationService, User } from './shared';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  currentYear: number = new Date().getFullYear();
   mobileQuery: MediaQueryList;
 
   fillerNav = [
@@ -74,7 +78,7 @@ export class AppComponent implements OnInit {
     // private authenticationService: AuthenticationService,
     private metatagService: Meta,
     private router: Router,
-    private ccService: NgcCookieConsentService
+    private ccService: NgcCookieConsentService,
   ) {
     this.mobileQuery = this.media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => this.changeDetectorRef.detectChanges();
@@ -92,20 +96,18 @@ export class AppComponent implements OnInit {
     //   (x) => (this.currentUser = x)
     // );
 
-    this.translate
-      .get(['cookie.message', 'cookie.dismiss', 'cookie.link'])
-      .subscribe((data) => {
-        if (this.ccService.getConfig()) {
-          this.ccService.getConfig().content = {
-            message: data['cookie.message'],
-            dismiss: data['cookie.dismiss'],
-            link: data['cookie.link'],
-          };
+    this.translate.get(['cookie.message', 'cookie.dismiss', 'cookie.link']).subscribe((data) => {
+      if (this.ccService.getConfig()) {
+        this.ccService.getConfig().content = {
+          message: data['cookie.message'],
+          dismiss: data['cookie.dismiss'],
+          link: data['cookie.link'],
+        };
 
-          this.ccService.destroy(); //remove previous cookie bar (with default messages)
-          this.ccService.init(this.ccService.getConfig()); // update config with translated messages
-        }
-      });
+        this.ccService.destroy(); //remove previous cookie bar (with default messages)
+        this.ccService.init(this.ccService.getConfig()); // update config with translated messages
+      }
+    });
   }
 
   ngOnInit(): void {
@@ -149,7 +151,7 @@ export class AppComponent implements OnInit {
       (event: NgcInitializingEvent) => {
         // the cookieconsent is initilializing... Not yet safe to call methods like `NgcCookieConsentService.hasAnswered()`
         console.log(`initializing: ${JSON.stringify(event)}`);
-      }
+      },
     );
 
     this.initializedSubscription = this.ccService.initialized$.subscribe(() => {
@@ -158,32 +160,27 @@ export class AppComponent implements OnInit {
       console.log(`initialized: ${JSON.stringify(event)}`);
     });
 
-    this.initializationErrorSubscription =
-      this.ccService.initializationError$.subscribe(
-        (event: NgcInitializationErrorEvent) => {
-          // the cookieconsent has failed to initialize...
-          console.log(
-            `initializationError: ${JSON.stringify(event.error?.message)}`
-          );
-        }
-      );
+    this.initializationErrorSubscription = this.ccService.initializationError$.subscribe(
+      (event: NgcInitializationErrorEvent) => {
+        // the cookieconsent has failed to initialize...
+        console.log(`initializationError: ${JSON.stringify(event.error?.message)}`);
+      },
+    );
 
     this.statusChangeSubscription = this.ccService.statusChange$.subscribe(
       (event: NgcStatusChangeEvent) => {
         // you can use this.ccService.getConfig() to do stuff...
-      }
+      },
     );
 
-    this.revokeChoiceSubscription = this.ccService.revokeChoice$.subscribe(
-      () => {
-        // you can use this.ccService.getConfig() to do stuff...
-      }
-    );
+    this.revokeChoiceSubscription = this.ccService.revokeChoice$.subscribe(() => {
+      // you can use this.ccService.getConfig() to do stuff...
+    });
 
     this.noCookieLawSubscription = this.ccService.noCookieLaw$.subscribe(
       (event: NgcNoCookieLawEvent) => {
         // you can use this.ccService.getConfig() to do stuff...
-      }
+      },
     );
   }
 
@@ -216,21 +213,28 @@ export class AppComponent implements OnInit {
     this.router.navigate(['/login']);
   }
 
-  updateCookieTranslation() {
-    this.translate
-      .get(['cookie.message', 'cookie.dismiss', 'cookie.link'])
-      .subscribe((data) => {
-        if (this.ccService.getConfig()) {
-          this.ccService.getConfig().content = {
-            message: data['cookie.message'],
-            dismiss: data['cookie.dismiss'],
-            link: data['cookie.link'],
-          };
-
-          this.ccService.destroy(); //remove previous cookie bar (with default messages)
-          this.ccService.init(this.ccService.getConfig()); // update config with translated messages
-        }
+  public trackCopyrightEvent() {
+    if (environment.production) {
+      gtag('event', 'click_copyright', {
+        event_category: 'interaction',
+        event_label: 'Access VEEZBLE Website',
       });
+    }
+  }
+
+  updateCookieTranslation() {
+    this.translate.get(['cookie.message', 'cookie.dismiss', 'cookie.link']).subscribe((data) => {
+      if (this.ccService.getConfig()) {
+        this.ccService.getConfig().content = {
+          message: data['cookie.message'],
+          dismiss: data['cookie.dismiss'],
+          link: data['cookie.link'],
+        };
+
+        this.ccService.destroy(); //remove previous cookie bar (with default messages)
+        this.ccService.init(this.ccService.getConfig()); // update config with translated messages
+      }
+    });
   }
 }
 

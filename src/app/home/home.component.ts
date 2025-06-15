@@ -70,13 +70,6 @@ export class HomeComponent {
 
   public trackPartnerEvent() {
     if (environment.production) {
-      const gtmTag = {
-        event: 'became_partner', 
-        event_category: 'interaction',
-        event_label: 'Become Partner Button',
-      };
-      this.gtag.pushTag(gtmTag);
-
       gtag('event', 'became_partner', {
         event_category: 'interaction',
         event_label: 'Become Partner Button'
