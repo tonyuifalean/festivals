@@ -46,6 +46,7 @@ export class FestivalListComponent implements OnInit {
   // defaultYear = '';
   // dataSource: FestivalElement[] = [];
   festivals: FestivalModel[] = [];
+  imageLoaded: { [id: string]: boolean } = {};
 
   constructor(
     public translate: TranslateService,

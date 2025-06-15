@@ -29,6 +29,7 @@ import { RestaurantModel } from './restaurant.model';
 })
 export class RestaurantsComponent {
   restaurants: RestaurantModel[] = RESTAURANTS;
+  imageLoaded: { [id: string]: boolean } = {};
 
   constructor(
     public translate: TranslateService,

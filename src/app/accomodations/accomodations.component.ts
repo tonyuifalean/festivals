@@ -29,6 +29,7 @@ import { AccomodationModel } from './accomodation.model';
 })
 export class AccomodationsComponent {
   accomodations: AccomodationModel[] = ACCOMODATIONS;
+  imageLoaded: { [id: string]: boolean } = {};
 
   constructor(
     public translate: TranslateService,

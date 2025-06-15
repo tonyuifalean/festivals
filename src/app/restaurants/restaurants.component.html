@@ -6,7 +6,14 @@
       <mat-card-title>{{restaurant.info.title}}</mat-card-title>
       <mat-card-subtitle>{{restaurant.address}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="assets/images/restaurants/{{restaurant.imgName}}" alt="{{restaurant.info.title}}">
+    <app-spinner *ngIf="!imageLoaded[restaurant.id]"></app-spinner>
+    <img 
+      mat-card-image 
+      src="assets/images/restaurants/{{restaurant.imgName}}"
+      alt="{{restaurant.info.title}}"
+      [style.visibility]="imageLoaded[restaurant.id] ? 'visible' : 'hidden'"
+      (load)="imageLoaded[restaurant.id] = true"
+      (error)="imageLoaded[restaurant.id] = true">
     <mat-card-actions>
       <!-- <a mat-raised-button>Open</a> -->
       <span class="copy-location-wrapper">

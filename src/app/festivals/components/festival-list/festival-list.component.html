@@ -6,8 +6,14 @@
       <mat-card-title>{{'FESTIVAL.LIST.FESTIVAL_' + festival.id + '.NAME' | translate}}</mat-card-title>
       <!-- <mat-card-subtitle>{{festival.address}}</mat-card-subtitle> -->
     </mat-card-header>
-    <img mat-card-image src="assets/images/festivals/{{festival.imageName}}"
-      alt="{{'FESTIVAL.LIST.FESTIVAL_' + festival.id + '.NAME' | translate}}">
+    <app-spinner *ngIf="!imageLoaded[festival.id]"></app-spinner>
+    <img 
+      mat-card-image 
+      src="assets/images/festivals/{{festival.imageName}}"
+      alt="{{'FESTIVAL.LIST.FESTIVAL_' + festival.id + '.NAME' | translate}}" 
+      [style.visibility]="imageLoaded[festival.id] ? 'visible' : 'hidden'"
+      (load)="imageLoaded[festival.id] = true"
+      (error)="imageLoaded[festival.id] = true">
     <mat-card-actions>
       <a mat-raised-button routerLink="./festival-details/{{festival.path}}">Open</a>
     </mat-card-actions>
