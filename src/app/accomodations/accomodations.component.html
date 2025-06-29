@@ -12,7 +12,7 @@
       src="assets/images/accomodations/{{accomodation.imgName}}" 
       alt="{{accomodation.info.title}}"
       [style.visibility]="imageLoaded[accomodation.id] ? 'visible' : 'hidden'" (load)="imageLoaded[accomodation.id] = true"
-      (error)="imageLoaded[accomodation.id] = true">>
+      (error)="imageLoaded[accomodation.id] = true">
     <mat-card-actions>
       <span class="copy-location-wrapper">
         <button mat-raised-button color="primary" (click)="copyLocation(accomodation.info.link)">Copy location</button>
