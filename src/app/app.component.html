@@ -1,11 +1,11 @@
-<div class="festival-main-container" [class.is-small-screen]="mobileQuery.matches">
+<div class="festival-main-container" [class.is-large-screen]="desktopQuery.matches">
   <mat-toolbar color="primary" class="festival-toolbar mat-elevation-z6">
     <button mat-icon-button class="toggle-sidebar" (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
     <a href="./home" class="nav-link home">
       <img
-        src="assets/images/sighisoara-festival{{ mobileQuery.matches ? '-tower' : '' }}.svg"
+        src="assets/images/sighisoara-festival{{ desktopQuery.matches ? '' : '-tower' }}.svg"
         title="Home"
         alt="Home"
         class="ng-star-inserted"
@@ -44,11 +44,11 @@
     <mat-sidenav
       class="festival-sidenav"
       #snav
-      [mode]="mobileQuery.matches ? 'over' : 'side'"
-      [fixedInViewport]="mobileQuery.matches"
+      [mode]="!desktopQuery.matches ? 'over' : 'side'"
+      [fixedInViewport]="!desktopQuery.matches"
       fixedTopGap="60"
     >
-      <mat-nav-list (click)="mobileQuery.matches ? snav.toggle() : false">
+      <mat-nav-list (click)="!desktopQuery.matches ? snav.toggle() : false">
         <a mat-list-item *ngFor="let nav of fillerNav" routerLink="{{ nav.route }}">
           {{ nav.name | translate }}
         </a>

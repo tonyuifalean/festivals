@@ -23,7 +23,7 @@ declare let gtag: Function;
 })
 export class AppComponent implements OnInit {
   currentYear: number = new Date().getFullYear();
-  mobileQuery: MediaQueryList;
+  desktopQuery: MediaQueryList;
 
   fillerNav = [
     {
@@ -59,7 +59,7 @@ export class AppComponent implements OnInit {
   public language: 'en' | 'ro' = 'en';
   public isAdminRoute = false;
   public isHomeRoute = false;
-  private _mobileQueryListener: () => void;
+  private _desktopQueryListener: () => void;
 
   //keep refs to subscriptions to be able to unsubscribe later
   private popupOpenSubscription!: Subscription;
@@ -80,9 +80,9 @@ export class AppComponent implements OnInit {
     private router: Router,
     private ccService: NgcCookieConsentService,
   ) {
-    this.mobileQuery = this.media.matchMedia('(max-width: 600px)');
-    this._mobileQueryListener = () => this.changeDetectorRef.detectChanges();
-    this.mobileQuery.addListener(this._mobileQueryListener);
+    this.desktopQuery = this.media.matchMedia('(min-width: 600px)');
+    this._desktopQueryListener = () => this.changeDetectorRef.detectChanges();
+    this.desktopQuery.addListener(this._desktopQueryListener);
 
     // list of available languages
     // translate.addLangs(['en', 'ro']);
@@ -195,7 +195,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnDestroy(): void {
-    this.mobileQuery.removeListener(this._mobileQueryListener);
+    this.desktopQuery.removeListener(this._desktopQueryListener);
 
     // unsubscribe to cookieconsent observables to prevent memory leaks
     this.popupOpenSubscription.unsubscribe();

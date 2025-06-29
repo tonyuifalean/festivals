@@ -12,7 +12,7 @@
     height: 60px;
     left: 0;
     min-height: 60px;
-    padding: 0 16px 0 0;
+    padding: 0 10px 0 0;
     position: fixed;
     right: 0;
     top: 0;
@@ -24,11 +24,11 @@
 
     .nav-link {
       &.home {
-        padding: 0.5rem 0;
+        padding: 0;
 
         img {
           height: 40px;
-          width: 150px;
+          width: 40px;
         }
       }
 
@@ -44,10 +44,10 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        font-size: 14px;
+        font-size: 20px;
 
         .material-icons {
-          font-size: 14px;
+          font-size: 20px;
         }
       }
     }
@@ -67,6 +67,10 @@
           color: white;
           padding: 0 0.5rem;
 
+          .contact-text {
+            display: none;
+          }
+
           img {
             height: 20px;
           }
@@ -76,10 +80,10 @@
   }
 
   .festival-sidenav-container {
-    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
-       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+      `<body>` to be our scrolling element for mobile layouts. */
+    flex: 1 0 auto;
     padding-top: 60px;
-    flex: 1;
 
     .festival-sidenav {
       position: fixed;
@@ -107,29 +111,31 @@
   }
 }
 
-.is-small-screen {
+.is-large-screen {
   .festival-toolbar {
     position: fixed;
-    padding: 0 10px 0 0;
+    padding: 0 16px 0 0;
     /* Make sure the toolbar will stay on top of the content as it scrolls past. */
     z-index: 2;
 
     .nav-link.home {
-      padding: 0;
+      padding: 0.5rem 0;
 
       img {
-        width: 40px;
+        width: 150px;
       }
     }
 
     .contact {
       .nav-link {
+        font-size: 14px;
+
         .contact-text {
-          display: none;
+          display: inline !important;
         }
 
         .material-icons {
-          font-size: 20px;
+          font-size: 14px;
         }
       }
     }
@@ -140,9 +146,9 @@
   }
 
   .festival-sidenav-container {
-    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
-      `<body>` to be our scrolling element for mobile layouts. */
-    flex: 1 0 auto;
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    flex: 1;
   }
 }
 
