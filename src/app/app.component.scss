@@ -156,6 +156,13 @@
   .mat-sidenav-container {
     background-color: unset !important;
     overflow: visible !important;
+
+    .mat-sidenav {
+      background-image: url('../assets/images/parchment.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
   }
 
   .page-title {
