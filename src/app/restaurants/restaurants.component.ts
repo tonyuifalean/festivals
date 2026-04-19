@@ -37,28 +37,16 @@ export class RestaurantsComponent {
     private gtag: GoogleTagManagerService,
     private meta: Meta,
     private title: Title,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
   ) {
-    this.meta.addTags([
-      {
-        name: 'description',
-        content:
-          'Discover the Restaurants in Sighisoara page, your guide to the finest dining experiences in this medieval city. / Descoperă pagina \"Restaurante în Sighișoara\", ghidul tău către cele mai rafinate experiențe culinare din acest oraș medieval.',
-      },
-      { name: 'author', content: 'VEEZBLE' },
-      {
-        name: 'keywords',
-        content:
-          'Sighisoara restaurants, Best dining Sighisoara, Traditional food Sighisoara, Top eateries Sighisoara, Sighisoara cuisine, Sighisoara dining guide, Gourmet experiences Sighisoara, Sighisoara food recommendations, Culinary spots Sighisoara, Sighisoara restaurant reviews / Restaurante din Sighișoara, Cele mai bune locuri de luat masa în Sighișoara, Mâncare tradițională Sighișoara, Top restaurante Sighișoara, Bucătăria Sighișoarei, Ghid de restaurante Sighișoara, Experiențe gourmet Sighișoara, Recomandări culinare Sighișoara, Locuri culinare Sighișoara, Recenzii restaurante Sighișoara',
-      },
-    ]);
+    this.setMetaTags();
     this.title.setTitle('Restaurants - Sighisoara Festival');
 
     if (environment.production) {
       const gtmTag = {
         event: 'page',
         page_title: 'Restaurants',
-        page_location: 'https://sighisoarafestival.com/restaurants'
+        page_location: 'https://sighisoarafestival.com/restaurants',
       };
       this.gtag.pushTag(gtmTag);
     }
@@ -67,7 +55,27 @@ export class RestaurantsComponent {
   copyLocation(locationLink: string) {
     this.clipboardService.copyFromContent(locationLink);
     this.snackBar.open('Location copied to Clipboard', 'Close', {
-      duration: 3000
+      duration: 3000,
     });
+  }
+
+  private setMetaTags(): void {
+    this.meta.updateTag({
+      name: 'description',
+      content:
+        'Discover the Restaurants in Sighisoara page, your guide to the finest dining experiences in this medieval city. / Descoperă pagina \"Restaurante în Sighișoara\", ghidul tău către cele mai rafinate experiențe culinare din acest oraș medieval.',
+    });
+    this.meta.updateTag({ name: 'author', content: 'VEEZBLE' });
+    this.meta.updateTag({
+      name: 'keywords',
+      content:
+        'Sighisoara restaurants, Best dining Sighisoara, Traditional food Sighisoara, Top eateries Sighisoara, Sighisoara cuisine, Sighisoara dining guide, Gourmet experiences Sighisoara, Sighisoara food recommendations, Culinary spots Sighisoara, Sighisoara restaurant reviews / Restaurante din Sighișoara, Cele mai bune locuri de luat masa în Sighișoara, Mâncare tradițională Sighișoara, Top restaurante Sighișoara, Bucătăria Sighișoarei, Ghid de restaurante Sighișoara, Experiențe gourmet Sighișoara, Recomandări culinare Sighișoara, Locuri culinare Sighișoara, Recenzii restaurante Sighișoara',
+    });
+    this.meta.updateTag({ property: 'og:type', content: 'website' });
+    this.meta.updateTag({ property: 'og:site_name', content: 'Sighisoara Festival' });
+    this.meta.updateTag({ property: 'og:title', content: 'Restaurants - Sighisoara Festival' });
+    this.meta.updateTag({ property: 'og:description', content: "Discover the finest dining experiences in Sighisoara. A guide to the best restaurants, traditional food, and culinary gems in this medieval city." });
+    this.meta.updateTag({ property: 'og:url', content: 'https://sighisoarafestival.com/restaurants' });
+    this.meta.updateTag({ property: 'og:image', content: 'https://sighisoarafestival.com/assets/images/restaurants.jpg' });
   }
 }

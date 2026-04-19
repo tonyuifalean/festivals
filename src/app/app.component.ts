@@ -120,23 +120,7 @@ export class AppComponent implements OnInit {
     });
 
     // Add tags for SEO purpose
-    this.metatagService.addTags([
-      {
-        name: 'description',
-        content:
-          "Discover the enchanting Sighisoara Festival website, your ultimate guide to the vibrant and colorful cultural celebrations of Sighisoara, Romania. Dive into the heart of medieval festivities, explore schedules, events, and exclusive insights into the world-famous Medieval Festival, along with other local celebrations and traditions. Experience the magic of Sighisoara through captivating images, detailed event descriptions, and practical visitor information. Join us to celebrate the rich heritage and lively spirit of Sighisoara's festivals! Descoperă site-ul Festivalului Sighișoara , ghidul tău suprem pentru sărbătorile culturale vibrante și colorate din Sighișoara, România. Scufundă-te în inima festivităților medievale, explorează programele, evenimentele și informații exclusive despre faimosul Festival Sighisoara Medievală, împreună cu alte sărbători și tradiții locale. Experimentează magia Sighișoarei prin imagini captivante, descrieri detaliate ale evenimentelor și informații practice pentru vizitatori. Alătură-te nouă pentru a celebra bogatul patrimoniu și spiritul plin de viață al festivalurilor din Sighișoara!",
-      },
-      {
-        name: 'keywords',
-        content:
-          'Sighisoara Festival website, Sighisoara cultural fest, Medieval Festival Sighisoara, Sighisoara event listings, Festival in Sighisoara, Sighisoara arts and culture, Sighisoara festival program, Visit Sighisoara festival, Sighisoara festival tickets, Sighisoara festival experience, Site Festivaluri in Sighișoara , evenimente culturale Sighișoara, sărbători medievale Sighișoara, programul Festivalului Sighișoara Medievala, calendarul evenimentelor Sighișoara, festivalul de artă Sighișoara, festivaluri de vară Sighișoara, evenimente de patrimoniu Sighișoara, spectacole live Sighișoara, momente importante ale festivalurilor din Sighișoara',
-      },
-      { name: 'robots', content: 'index, follow' },
-      { name: 'author', content: 'VEEZBLE' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'date', content: '2022-05-01', scheme: 'YYYY-MM-DD' },
-      { name: 'charset', content: 'UTF-8' },
-    ]);
+    this.setMetaTags();
 
     // subscribe to cookieconsent observables to react to main events
     this.popupOpenSubscription = this.ccService.popupOpen$.subscribe(() => {
@@ -235,6 +219,27 @@ export class AppComponent implements OnInit {
         this.ccService.init(this.ccService.getConfig()); // update config with translated messages
       }
     });
+  }
+
+  private setMetaTags(): void {
+    this.metatagService.updateTag({
+      name: 'description',
+      content:
+        "Discover the enchanting Sighisoara Festival website, your ultimate guide to the vibrant and colorful cultural celebrations of Sighisoara, Romania. Dive into the heart of medieval festivities, explore schedules, events, and exclusive insights into the world-famous Medieval Festival, along with other local celebrations and traditions. Experience the magic of Sighisoara through captivating images, detailed event descriptions, and practical visitor information. Join us to celebrate the rich heritage and lively spirit of Sighisoara's festivals! Descoperă site-ul Festivalului Sighișoara , ghidul tău suprem pentru sărbătorile culturale vibrante și colorate din Sighișoara, România. Scufundă-te în inima festivităților medievale, explorează programele, evenimentele și informații exclusive despre faimosul Festival Sighisoara Medievală, împreună cu alte sărbători și tradiții locale. Experimentează magia Sighișoarei prin imagini captivante, descrieri detaliate ale evenimentelor și informații practice pentru vizitatori. Alătură-te nouă pentru a celebra bogatul patrimoniu și spiritul plin de viață al festivalurilor din Sighișoara!",
+    });
+    this.metatagService.updateTag({
+      name: 'keywords',
+      content:
+        'Sighisoara Festival website, Sighisoara cultural fest, Medieval Festival Sighisoara, Sighisoara event listings, Festival in Sighisoara, Sighisoara arts and culture, Sighisoara festival program, Visit Sighisoara festival, Sighisoara festival tickets, Sighisoara festival experience, Site Festivaluri in Sighișoara , evenimente culturale Sighișoara, sărbători medievale Sighișoara, programul Festivalului Sighișoara Medievala, calendarul evenimentelor Sighișoara, festivalul de artă Sighișoara, festivaluri de vară Sighișoara, evenimente de patrimoniu Sighișoara, spectacole live Sighișoara, momente importante ale festivalurilor din Sighișoara',
+    });
+    this.metatagService.updateTag({ name: 'robots', content: 'index, follow' });
+    this.metatagService.updateTag({ name: 'author', content: 'VEEZBLE' });
+    this.metatagService.updateTag({
+      name: 'viewport',
+      content: 'width=device-width, initial-scale=1',
+    });
+    this.metatagService.updateTag({ name: 'date', content: '2022-05-01', scheme: 'YYYY-MM-DD' });
+    this.metatagService.updateTag({ name: 'charset', content: 'UTF-8' });
   }
 }
 

@@ -39,19 +39,7 @@ export class AccomodationsComponent {
     private title: Title,
     private snackBar: MatSnackBar
   )  {
-    this.meta.addTags([
-      {
-        name: 'description',
-        content:
-          'Visit the Accommodations in Sighisoara page for a curated selection of the best places to stay in this historic town. / Vizitează pagina \"Cazare în Sighișoara\" pentru o selecție atent aleasă a celor mai bune locuri de cazare din acest oraș istoric.',
-      },
-      { name: 'author', content: 'VEEZBLE' },
-      {
-        name: 'keywords',
-        content:
-          'Sighisoara accommodations, Hotels in Sighisoara, Sighisoara lodging, Stay in Sighisoara, Sighisoara guesthouses, Sighisoara vacation rentals, Best places to stay Sighisoara, Sighisoara hotel deals, Luxury accommodation Sighisoara, Budget hotels Sighisoara / Cazare în Sighișoara, Hoteluri în Sighișoara, Locuri de cazare în Sighișoara, Cazare în Sighișoara, Pensiuni în Sighișoara, Închirieri de vacanță în Sighișoara, Cele mai bune locuri de cazare în Sighișoara, Oferte la hoteluri în Sighișoara, Cazare de lux în Sighișoara, Hoteluri ieftine în Sighișoara',
-      },
-    ]);
+    this.setMetaTags();
     this.title.setTitle('Accomodations - Sighisoara Festival');
 
     if (environment.production) {
@@ -69,5 +57,25 @@ export class AccomodationsComponent {
     this.snackBar.open('Location copied to Clipboard', 'Close', {
       duration: 3000
     });
+  }
+
+  private setMetaTags(): void {
+    this.meta.updateTag({
+      name: 'description',
+      content:
+        'Visit the Accommodations in Sighisoara page for a curated selection of the best places to stay in this historic town. / Vizitează pagina \"Cazare în Sighișoara\" pentru o selecție atent aleasă a celor mai bune locuri de cazare din acest oraș istoric.',
+    });
+    this.meta.updateTag({ name: 'author', content: 'VEEZBLE' });
+    this.meta.updateTag({
+      name: 'keywords',
+      content:
+        'Sighisoara accommodations, Hotels in Sighisoara, Sighisoara lodging, Stay in Sighisoara, Sighisoara guesthouses, Sighisoara vacation rentals, Best places to stay Sighisoara, Sighisoara hotel deals, Luxury accommodation Sighisoara, Budget hotels Sighisoara / Cazare în Sighișoara, Hoteluri în Sighișoara, Locuri de cazare în Sighișoara, Cazare în Sighișoara, Pensiuni în Sighișoara, Închirieri de vacanță în Sighișoara, Cele mai bune locuri de cazare în Sighișoara, Oferte la hoteluri în Sighișoara, Cazare de lux în Sighișoara, Hoteluri ieftine în Sighișoara',
+    });
+    this.meta.updateTag({ property: 'og:type', content: 'website' });
+    this.meta.updateTag({ property: 'og:site_name', content: 'Sighisoara Festival' });
+    this.meta.updateTag({ property: 'og:title', content: 'Accommodations - Sighisoara Festival' });
+    this.meta.updateTag({ property: 'og:description', content: "Find the best places to stay in Sighisoara. A curated selection of hotels, guesthouses, and vacation rentals in this historic medieval town." });
+    this.meta.updateTag({ property: 'og:url', content: 'https://sighisoarafestival.com/accomodations' });
+    this.meta.updateTag({ property: 'og:image', content: 'https://sighisoarafestival.com/assets/images/accomodations.jpg' });
   }
 }
