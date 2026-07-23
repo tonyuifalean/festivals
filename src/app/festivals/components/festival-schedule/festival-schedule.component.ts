@@ -18,6 +18,7 @@ enum LocationKey {
   ZidulCetatii = 'zidulCetatii',
   MYsticalTransylvania = 'mysticalTransylvania',
   PrimariaMunicipiului = 'primariaMunicipiului',
+  AleeaCetatii = 'aleeaCetatii',
 }
 
 @Component({
@@ -26,11 +27,7 @@ enum LocationKey {
   styleUrls: ['./festival-schedule.component.scss'],
 })
 export class FestivalScheduleComponent {
-  dayValue = [
-    DayKey.Vineri,
-    DayKey.Sambata,
-    DayKey.Duminica
-  ];
+  dayValue = [DayKey.Vineri, DayKey.Sambata, DayKey.Duminica];
   dayFilterValue = {
     [DayKey.Vineri]: true,
     [DayKey.Sambata]: true,
@@ -45,8 +42,9 @@ export class FestivalScheduleComponent {
     // LocationKey.ZidulCetatii,
     LocationKey.MYsticalTransylvania,
     LocationKey.PrimariaMunicipiului,
+    LocationKey.AleeaCetatii,
   ];
-  locationFilterValue: {[key: string]: boolean} = {
+  locationFilterValue: { [key: string]: boolean } = {
     [LocationKey.PiataMuzeului]: true,
     [LocationKey.PiataCetatii]: true,
     [LocationKey.CuloarulBatranelorDoamne]: true,
@@ -55,6 +53,7 @@ export class FestivalScheduleComponent {
     // [LocationKey.ZidulCetatii]: true,
     [LocationKey.MYsticalTransylvania]: true,
     [LocationKey.PrimariaMunicipiului]: true,
+    [LocationKey.AleeaCetatii]: true,
   };
   translationKeyPrefix: string = 'FESTIVAL.LIST.FESTIVAL_1.SCHEDULE.';
 
@@ -69,7 +68,7 @@ export class FestivalScheduleComponent {
       const gtmTag = {
         event: 'page',
         page_title: 'Festival Schedule',
-        page_location: 'https://sighisoarafestival.com/festivals/festival-details'
+        page_location: 'https://sighisoarafestival.com/festivals/festival-details',
       };
       this.gtag.pushTag(gtmTag);
     }

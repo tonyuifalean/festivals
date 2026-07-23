@@ -1,5 +1,4 @@
-import { FestivalLocationModel } from "./festival-location.model";
-
+import { FestivalLocationModel } from './festival-location.model';
 
 export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
   {
@@ -59,25 +58,25 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
       lng: 24.79335322089667,
     },
   },
-  {
-    id: '4',
-    // Data below is needed for Google Maps pins
-    label: {
-      color: '#230E11',
-      text: 'Turnul Cizmarilor',
-    },
-    info: {
-      title: 'Turnul Cizmarilor',
-      link: 'https://goo.gl/maps/BVQ79cMfUcPbWoLS7',
-    },
-    options: {
-      // animation: google.maps.Animation.BOUNCE,
-    },
-    position: {
-      lat: 46.22127710132836,
-      lng: 24.79198576812061,
-    },
-  },
+  // {
+  //   id: '4',
+  //   // Data below is needed for Google Maps pins
+  //   label: {
+  //     color: '#230E11',
+  //     text: 'Turnul Cizmarilor',
+  //   },
+  //   info: {
+  //     title: 'Turnul Cizmarilor',
+  //     link: 'https://goo.gl/maps/BVQ79cMfUcPbWoLS7',
+  //   },
+  //   options: {
+  //     // animation: google.maps.Animation.BOUNCE,
+  //   },
+  //   position: {
+  //     lat: 46.22127710132836,
+  //     lng: 24.79198576812061,
+  //   },
+  // },
   {
     id: '5',
     // Data below is needed for Google Maps pins
@@ -116,42 +115,61 @@ export const FESTIVAL_LOCATIONS: FestivalLocationModel[] = [
   //     lng: 24.790696945883838,
   //   },
   // },
+  // {
+  //   id: '7',
+  //   // Data below is needed for Google Maps pins
+  //   label: {
+  //     color: '#230E11',
+  //     text: 'MYstical Transylvania',
+  //   },
+  //   info: {
+  //     title: 'MYstical Transylvania',
+  //     link: 'https://maps.app.goo.gl/4kkLxHoXHUqqeYH36',
+  //   },
+  //   options: {
+  //     // animation: google.maps.Animation.BOUNCE,
+  //   },
+  //   position: {
+  //     lat: 46.21944756693958,
+  //     lng: 24.791854549196515,
+  //   },
+  // },
+  // {
+  //   id: '8',
+  //   // Data below is needed for Google Maps pins
+  //   label: {
+  //     color: '#230E11',
+  //     text: 'Primăria municipiului Sighișoara',
+  //   },
+  //   info: {
+  //     title: 'Primăria municipiului Sighișoara',
+  //     link: 'https://maps.app.goo.gl/BWJGpqaGw9YEW31w9',
+  //   },
+  //   options: {
+  //     // animation: google.maps.Animation.BOUNCE,
+  //   },
+  //   position: {
+  //     lat: 46.220205135835826,
+  //     lng: 24.793711963596543,
+  //   },
+  // },
   {
-    id: '7',
+    id: '9',
     // Data below is needed for Google Maps pins
     label: {
       color: '#230E11',
-      text: 'MYstical Transylvania',
+      text: 'Aleea Cetății',
     },
     info: {
-      title: 'MYstical Transylvania',
-      link: 'https://maps.app.goo.gl/4kkLxHoXHUqqeYH36',
+      title: 'Aleea Cetății',
+      link: 'https://maps.app.goo.gl/J77MLDM1ofuJMySe7',
     },
     options: {
       // animation: google.maps.Animation.BOUNCE,
     },
     position: {
-      lat: 46.21944756693958,
-      lng: 24.791854549196515,
-    },
-  },
-  {
-    id: '8',
-    // Data below is needed for Google Maps pins
-    label: {
-      color: '#230E11',
-      text: 'Primăria municipiului Sighișoara',
-    },
-    info: {
-      title: 'Primăria municipiului Sighișoara',
-      link: 'https://maps.app.goo.gl/BWJGpqaGw9YEW31w9',
-    },
-    options: {
-      // animation: google.maps.Animation.BOUNCE,
-    },
-    position: {
-      lat: 46.220205135835826,
-      lng: 24.793711963596543,
+      lat: 46.219622,
+      lng: 24.793859,
     },
   },
 ];
