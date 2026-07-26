@@ -27,10 +27,10 @@ enum LocationKey {
   styleUrls: ['./festival-schedule.component.scss'],
 })
 export class FestivalScheduleComponent {
-  dayValue = [DayKey.Vineri, DayKey.Sambata, DayKey.Duminica];
+  dayValue = [/*DayKey.Vineri, DayKey.Sambata, */ DayKey.Duminica];
   dayFilterValue = {
-    [DayKey.Vineri]: true,
-    [DayKey.Sambata]: true,
+    [DayKey.Vineri]: false,
+    [DayKey.Sambata]: false,
     [DayKey.Duminica]: true,
   };
   locationValue = [
